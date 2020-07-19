@@ -1,0 +1,30 @@
+{
+    "name": "Letter",
+    "shortName": "letter",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"People's Computer Company",
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com",
+	},
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "People's Computer Company Newsletter",
+	"publisher": "People's Computer Company",
+	"date": {
+	    "year": 1972,
+	    "month": 10
+	},
+	"url": "https://archive.org/details/1972-10-peoples-computer-company/page/30/mode/2up",
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "letter.qb64",
+    },
+}

@@ -1,0 +1,19 @@
+This file describes the purpose of the individual files found in this
+distribution.  Depending on the particular game, some of these files
+may not be present.
+
+MANIFEST          This file.
+README.txt        Documentation copied from the source material.
+classic.bas       BASIC source code for the 'classic' game (Borland Turbo BASIC).
+classic.exe       MS-DOS executable version of "classic.bas".
+classic.qb64.bas  BASIC source code for the 'classic' game (QB64 version).
+classic.qb64.exe  Windows executable version of "classic.qb64.bas".
+game.zip          Contains all files except QB64 versions.
+games.nfo         Info file for the Vintage BASIC Games Project.
+menu.bas          Menu for selecting the "classic" or "modern" version.
+menu.exe          MS-DOS executable version of menu.bas.
+metadata.txt      Table of Internet Archive metadata that should be set.
+modern.bas        BASIC source code for the "modern" game (Borland Turbo BASIC).
+modern.exe        MS-DOS executable version of "modern.bas".
+modern.qb64.bas   BASIC source code for the "modern" game (QB64 version).
+modern.qb64.exe   Windows executable version of "modern.qb64.bas".

@@ -1,0 +1,27 @@
+{
+    "name": "Stars",
+    "shortName": "stars",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"People's Computer Company"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "People's Computer Company Newsletter",
+	"publisher": "People's Computer Company",
+	"date": "1972-12",
+	"url": "https://archive.org/details/1972-12-peoples-computer-company/page/1/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "stars.qb64"
+    }
+}

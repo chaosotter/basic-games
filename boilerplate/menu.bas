@@ -6,7 +6,7 @@
 60 COLOR 10: PRINT " (1) MODERN"
 70 COLOR 15: PRINT
 80 PRINT "     This version maintains the functionality of the original, but includes"
-90 PRINT "     some modern niceties such as lowercase suppose, standard input checking,"
+90 PRINT "     some modern niceties such as lowercase support, standard input checking,"
 100 PRINT "     and color.  Grammatical and typographical errors have been corrected."
 110 PRINT
 120 COLOR 12: PRINT " (2) CLASSIC"

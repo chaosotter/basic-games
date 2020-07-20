@@ -33,7 +33,7 @@ class Library(object):
                         data = file.read()
                         config = json.loads(data)
                     game = Game(entry.path, config)
-                    self._games[game.ID()] = game
+                    self._games[game.Name()] = game
                 except json.decoder.JSONDecodeError as e:
                     print('Malformed JSON in %s:' % (config_path,))
                     raise e
@@ -66,11 +66,14 @@ class Game(object):
     def ID(self):
         return self._config['ia']['id']
 
+    def Name(self):
+        return self._config['shortName']
+
     def Path(self):
         return self._path
 
     def Publish(self):
-        dest = os.path.join('..', 'publish', self._config['shortName'])
+        dest = os.path.join('..', 'publish', self.Name())
         print('Publishing game %s to %s...' % (self.ID(), dest))
 
         boiler = os.path.join('..', 'boilerplate')
@@ -114,7 +117,7 @@ class Game(object):
             subprocess.run(['cp', os.path.join('..', 'boilerplate', name), os.path.join(dest, name)])
 
     def Finalize(self):
-        dest = os.path.join('..', 'publish', self._config['shortName'])
+        dest = os.path.join('..', 'publish', self.Name())
         for name in ('classic.bas', 'classic.qb64.bas',
                      'modern.bas', 'modern.qb64.bas',
                      'MANIFEST', 'games.nfo',
@@ -132,7 +135,7 @@ class Game(object):
         os.chdir(dest)
         subprocess.run(['zip', 'game.zip',
                     'menu.bas', 'menu.exe', 'classic.bas', 'classic.exe', 'modern.bas', 'modern.exe',
-                    'MANIFEST', 'games.nfo', 'README.txt', 'manifest.txt'])
+                    'MANIFEST', 'games.nfo', 'README.txt', 'metadata.txt'])
 
 
 def Help():
@@ -151,7 +154,7 @@ def main():
         Help()
     elif sys.argv[1] == 'list':
         for game in lib.List():
-            print('%-30s  %s' % (game.ID(), game.Path()))
+            print('%-30s  %s' % (game.Name(), game.Path()))
     elif sys.argv[1] == 'publish':
         game = lib.Game(sys.argv[2])
         game.Publish()

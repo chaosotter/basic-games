@@ -25,6 +25,6 @@
 250 COLOR 15: PRINT " <<<"
 260 a$ = INKEY$: IF a$ = "" THEN 260
 270 IF a$ = "1" THEN COLOR 7, 0: CHAIN "modern.exe"
-280 IF a$ = "2" THEN COLOR 7, 0: CHAIN "classic.exe"
+280 IF a$ = "2" THEN COLOR 7, 0: CLS: CHAIN "classic.exe"
 290 GOTO 260
 

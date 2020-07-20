@@ -5,6 +5,9 @@ import os
 import subprocess
 import sys
 
+DOSBOX_PATH = '/cygdrive/d/DOS/SRC'
+QB64_PATH = '/home/meiss_000/qb64'
+
 class Library(object):
     """The library all of games in the respository."""
 
@@ -67,7 +70,9 @@ class Game(object):
         return self._path
 
     def Publish(self):
-        dest = os.path.join('..', 'publish', self.ID())
+        dest = os.path.join('..', 'publish', self._config['shortName'])
+        print('Publishing game %s to %s...' % (self.ID(), dest))
+
         boiler = os.path.join('..', 'boilerplate')
         subprocess.run(["mkdir", dest])
         for name in ('classic.bas', 'classic.qb64.bas',
@@ -80,7 +85,7 @@ class Game(object):
                 ('modern.bas', 'modern.qb64.bas')):
             if target not in self._files:
                 subprocess.run(['cp', os.path.join(self._path, name), os.path.join(dest, target)])
-        for name in ('games.nfo', 'menu.bas', 'menu.exe', 'MANIFEST', 'zip.sh'):
+        for name in ('games.nfo', 'menu.bas', 'menu.exe', 'MANIFEST'):
             subprocess.run(['cp', os.path.join(boiler, name), os.path.join(dest, name)])
 
         def Attr(file, key, value):
@@ -100,6 +105,46 @@ class Game(object):
             file.write('\n%s\n' % (self._config['origin']['url'],))
             file.close()
 
+    def Dosbox(self):
+        dest = DOSBOX_PATH
+        subprocess.run(['mkdir', dest])
+        for name in ('classic.bas', 'modern.bas'):
+            subprocess.run(['cp', os.path.join(self._path, name), os.path.join(dest, name)])
+        for name in ('menu.bas', 'menu.exe'):
+            subprocess.run(['cp', os.path.join('..', 'boilerplate', name), os.path.join(dest, name)])
+
+    def Finalize(self):
+        dest = os.path.join('..', 'publish', self._config['shortName'])
+        for name in ('classic.bas', 'classic.qb64.bas',
+                     'modern.bas', 'modern.qb64.bas',
+                     'MANIFEST', 'games.nfo',
+                     'README.txt', 'metadata.txt'):
+            subprocess.run(['chmod', '644', os.path.join(dest, name)])
+        for (before, after) in (
+                ('CLASSIC.EXE', 'classic.exe'),
+                ('MODERN.EXE', 'modern.exe')):
+            subprocess.run(['cp', os.path.join(DOSBOX_PATH, before), os.path.join(dest, after)])
+        for name in ('classic.qb64.exe', 'modern.qb64.exe'):
+            subprocess.run(['cp', os.path.join(QB64_PATH, name), os.path.join(dest, name)])
+        for name in ('classic.exe', 'classic.qb64.exe', 'modern.exe', 'modern.qb64.exe', 'menu.exe'):
+            subprocess.run(['chmod', '755', os.path.join(dest, name)])
+
+        os.chdir(dest)
+        subprocess.run(['zip', 'game.zip',
+                    'menu.bas', 'menu.exe', 'classic.bas', 'classic.exe', 'modern.bas', 'modern.exe',
+                    'MANIFEST', 'games.nfo', 'README.txt', 'manifest.txt'])
+
+
+def Help():
+    print('Subcommands:')
+    print()
+    print('  help     -- This output.')
+    print('  list     -- List games ordered by IA identifier.')
+    print('  publish  -- Prepare a directory in ../publish with the short name.')
+    print('  dosbox   -- Prepare local directory for Turbo BASIC in Dosbox.')
+    print('  finalize -- Copy executables into place prior to final upload.')
+
+
 def main():
     lib = Library(os.path.join('..', 'games'))
     if sys.argv[1] == 'help':
@@ -108,11 +153,14 @@ def main():
         for game in lib.List():
             print('%-30s  %s' % (game.ID(), game.Path()))
     elif sys.argv[1] == 'publish':
-        if not lib.HasGame(sys.argv[2]):
-            print('Unknown game: %s' % (sys.argv[2],))
-            sys.exit()
         game = lib.Game(sys.argv[2])
         game.Publish()
+    elif sys.argv[1] == 'dosbox':
+        game = lib.Game(sys.argv[2])
+        game.Dosbox()
+    elif sys.argv[1] == 'finalize':
+        game = lib.Game(sys.argv[2])
+        game.Finalize()
 
 if __name__ == '__main__':
     main()

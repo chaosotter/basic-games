@@ -1,0 +1,28 @@
+{
+    "name": "Bagels",
+    "shortName": "bagels",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"D. Resek",
+	"T. Rowe"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "People's Computer Company Newsletter",
+	"publisher": "People's Computer Company",
+	"date": "1972-12",
+	"url": "https://archive.org/details/1972-12-peoples-computer-company/page/17/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "bagels.qb64"
+    }
+}

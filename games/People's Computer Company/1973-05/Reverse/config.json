@@ -1,0 +1,27 @@
+{
+    "name": "Reverse",
+    "shortName": "reverse",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"People's Computer Company"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "People's Computer Company Newsletter",
+	"publisher": "People's Computer Company",
+	"date": "1973-05",
+	"url": "https://archive.org/details/1973-05-peoples-computer-company/page/n5/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "reverse.qb64"
+    }
+}

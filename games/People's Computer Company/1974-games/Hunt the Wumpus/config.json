@@ -1,0 +1,27 @@
+{
+    "name": "Hunt the Wumpus",
+    "shortName": "wumpus",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"People's Computer Company"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "People's Computer Company Newsletter",
+	"publisher": "People's Computer Company",
+	"date": "1973-11",
+	"url": "https://archive.org/details/1973-11-peoples-computer-company/page/22/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "wumpus.qb64"
+    }
+}

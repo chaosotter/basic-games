@@ -1,0 +1,27 @@
+{
+    "name": "Button, Button, Who's Got the Button?",
+    "shortName": "button",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Dave Kaufman"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "People's Computer Company Newsletter",
+	"publisher": "People's Computer Company",
+	"date": "1973-08",
+	"url": "https://archive.org/details/1974-peoples-computer-company-games/page/5/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "button.qb64"
+    }
+}

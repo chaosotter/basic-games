@@ -1,0 +1,27 @@
+{
+    "name": "Caves2",
+    "shortName": "caves2",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Dave Kaufman"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "People's Computer Company Newsletter",
+	"publisher": "People's Computer Company",
+	"date": "1973-06",
+	"url": "https://archive.org/details/1973-09-peoples-computer-company/page/11/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "caves2.qb64"
+    }
+}

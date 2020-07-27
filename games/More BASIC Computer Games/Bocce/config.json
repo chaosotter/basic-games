@@ -1,0 +1,30 @@
+{
+    "name": "Bocce",
+    "shortName": "bocce",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Victor Bendall"
+    ],
+    "editors": [
+	"David Ahl"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "More BASIC Computer Games",
+	"publisher": "Creative Computing",
+	"date": "1977-07",
+	"url": "https://archive.org/details/More_BASIC_Computer_Games"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "bocce.qb64"
+    }
+}

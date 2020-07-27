@@ -1,0 +1,31 @@
+{
+    "name": "Big 6"
+    "shortName": "big6",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Steve Heywood",
+	"Dave Alvey"
+    ],
+    "editors": [
+	"David Ahl"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "More BASIC Computer Games",
+	"publisher": "Creative Computing",
+	"date": "1979",
+	"url": "https://archive.org/details/More_BASIC_Computer_Games"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "big6.qb64"
+    }
+}

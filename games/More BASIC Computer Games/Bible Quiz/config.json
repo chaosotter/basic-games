@@ -1,0 +1,30 @@
+{
+    "name": "Bible Quiz",
+    "shortName": "bible",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Steve Wentworth"
+    ],
+    "editors": [
+	"David Ahl"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "More BASIC Computer Games",
+	"publisher": "Creative Computing",
+	"date": "1976-03",
+	"url": "https://archive.org/details/More_BASIC_Computer_Games"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "bible.qb64"
+    }
+}

@@ -145,6 +145,7 @@ def Help():
     print('  list     -- List games ordered by IA identifier.')
     print('  publish  -- Prepare a directory in ../publish with the short name.')
     print('  dosbox   -- Prepare local directory for Turbo BASIC in Dosbox.')
+    print('  prep     -- A combination of "publish" and "dosbox".')
     print('  finalize -- Copy executables into place prior to final upload.')
 
 
@@ -160,6 +161,10 @@ def main():
         game.Publish()
     elif sys.argv[1] == 'dosbox':
         game = lib.Game(sys.argv[2])
+        game.Dosbox()
+    elif sys.argv[1] == 'prep':
+        game = lib.Game(sys.argv[2])
+        game.Publish()
         game.Dosbox()
     elif sys.argv[1] == 'finalize':
         game = lib.Game(sys.argv[2])

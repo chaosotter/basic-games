@@ -70,7 +70,7 @@
 780 PRINT: PRINT: GOTO 340
 790 PRINT
 800 F = 0
-810 A = INT(RND(1) * 5) = 1: C = Z - Y + A
+810 A = INT(RND(1) * 5) + 1: C = Z - Y + A
 820 M = 12000
 830 PRINT "MILES", "SPEED", "LONGITUDE", "LATITUDE", "COURSE"
 840 PRINT "-----", "-----", "---------", "--------", "------"

@@ -1,6 +1,6 @@
 1 CLS: COLOR 12: PRINT TAB(38); "Cup"
 2 PRINT TAB(31); "Creative Computing"
-3 PRINT TAB(18); "Morristown, New Jersey"
+3 PRINT TAB(29); "Morristown, New Jersey"
 4 PRINT: PRINT: PRINT: COLOR 15
 5 RANDOMIZE TIMER
 10 DIM S(30, 60)

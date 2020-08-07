@@ -2,7 +2,7 @@
 90 RANDOMIZE TIMER
 100 PRINT TAB(37); "Column"
 110 PRINT TAB(31); "Creative Computing"
-120 PRINT TAB(18); "Morristown, New Jersey"
+120 PRINT TAB(29); "Morristown, New Jersey"
 130 PRINT: PRINT: PRINT: COLOR 14
 140 PRINT "This program will show you a card trick.  After the first deal pick a card and"
 150 PRINT "type the number of the column containing it.  The dealer will then pick up the"

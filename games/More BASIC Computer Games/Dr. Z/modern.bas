@@ -22,7 +22,7 @@
 380 GOTO 690
 390 PRINT "That's very interesting, tell me more."
 410 GOTO 690
-420 PRINT "Have you left this way long?"
+420 PRINT "Have you felt this way long?"
 440 GOTO 690
 450 PRINT "Do you think this is reasonable in light of your interest?"
 470 GOTO 690

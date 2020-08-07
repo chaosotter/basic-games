@@ -31,7 +31,7 @@
 400 PRINT
 410 PRINT "Time", "Speed", "Longitude", "Latitude", "Course"
 420 FOR T = 0 TO 5 STEP .5
-430 COLOR 11: PRINT T, X, Y, Z,: COLOR 10: INPUT A: COLOR 15
+430 COLOR 11: PRINT T, INT(X), Y, Z,: COLOR 10: INPUT A: COLOR 15
 440 IF T = INT(T) AND T = M THEN 620
 450 IF X <= H THEN 490
 460 PRINT: PRINT "Sorry -- the speed of the UFO has exceeded"; H; "MPH.  This speed is too"
@@ -72,7 +72,7 @@
 830 PRINT "Miles", "Speed", "Longitude", "Latitude", "Course"
 840 PRINT "-----", "-----", "---------", "--------", "------"
 850 P = X + 1
-860 COLOR 11: PRINT M, X, Y, Z, C: COLOR 15
+860 COLOR 11: PRINT INT(M), INT(X), Y, Z, C: COLOR 15
 870 C = Z - Y
 880 X = X + INT(RND(1) * 5000) + 2000: M = M - X / 60
 890 Y = Y - INT(RND(1) * 10): Z = Z - INT(RND(1) * 10): C = Z - Y + A ^ 2

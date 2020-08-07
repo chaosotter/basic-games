@@ -150,9 +150,9 @@
 3171 PRINT "Sorry, you lost by"; K1; "seconds."
 3172 GOTO 8600
 3200 IF FNP(T) > 3200 THEN 3203
-3201 COLOR 11: PRINT "  "; FNT(T), "  "; FNA(S), "  "; INT(X), "  "; FNP(T), "  ";
+3201 COLOR 11: PRINT "  "; INT(FNT(T) * 10) / 10, "  "; INT(FNA(S) * 10) / 10, "  "; INT(X), "  "; INT(FNP(T) * 10) / 10, "  ";
 3202 GOTO 3210
-3203 COLOR 11: PRINT "  "; FNT(T), "  "; FNA(S), "  "; INT(X), "  Finish", "  ";
+3203 COLOR 11: PRINT "  "; INT(FNT(T) * 10) / 10, "  "; INT(FNA(S) * 10) / 10, "  "; INT(X), "  Finish", "  ";
 3210 COLOR 10: INPUT A1: COLOR 15
 3220 LET A = A1 / 2.04545
 3230 IF A1 >= 0 THEN 3600

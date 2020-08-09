@@ -1,0 +1,30 @@
+{
+    "name": "Strike 9",
+    "shortName": "strike9",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Bruce Grembowski"
+    ],
+    "editors": [
+	"David Ahl"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "More BASIC Computer Games",
+	"publisher": "Creative Computing",
+	"date": "1977-01",
+	"url": "https://archive.org/details/More_BASIC_Computer_Games"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "strike9.qb64"
+    }
+}

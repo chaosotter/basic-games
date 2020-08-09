@@ -1,0 +1,30 @@
+{
+    "name": "Smash",
+    "shortName": "smash",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Creative Computing"
+    ],
+    "editors": [
+	"David Ahl"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "More BASIC Computer Games",
+	"publisher": "Creative Computing",
+	"date": "1979",
+	"url": "https://archive.org/details/More_BASIC_Computer_Games"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "smash.qb64"
+    }
+}

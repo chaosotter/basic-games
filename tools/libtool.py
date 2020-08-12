@@ -5,7 +5,7 @@ import os
 import subprocess
 import sys
 
-DOSBOX_PATH = '/cygdrive/d/DOS/SRC'
+DOSBOX_PATH = '/cygdrive/f/DOS/SRC'
 QB64_PATH = '/home/meiss_000/qb64'
 
 class Library(object):

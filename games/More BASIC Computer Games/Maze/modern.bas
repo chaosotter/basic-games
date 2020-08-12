@@ -16,7 +16,7 @@
 180 PRINT "different and has only one way through it."
 200 PRINT
 210 COLOR 10: PRINT "What are your dimensions (horizontal, vertical)";
-220 CLEAR 100: REM ERASE ALL ARRAYS AND VARIABLE VALUES
+220 CLEAR: REM ERASE ALL ARRAYS AND VARIABLE VALUES
 230 INPUT H, V: COLOR 15
 240 H = INT(ABS(H)): V = INT(ABS(V))
 250 IF H >= 5 AND V >= 5 THEN 270

@@ -1,6 +1,6 @@
 {
-    "name": "Spiral Galaxy",
-    "shortName": "spiral",
+    "name": "23 Polar Formulas",
+    "shortName": "polar23",
     "platform": {
 	"system": "Coco"
     },
@@ -22,6 +22,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "spiral.coco"
+	"id": "polar23.coco"
     }
 }

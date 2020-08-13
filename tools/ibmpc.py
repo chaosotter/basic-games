@@ -55,8 +55,7 @@ def Finalize(game, dest):
                  'games.nfo',
                  'README.txt',
                  'metadata.txt'):
-        subprocess.run(['chmod',
-                        '644',
+        subprocess.run(['chmod', '644',
                         os.path.join(dest, name)])
 
     for (before, after) in (

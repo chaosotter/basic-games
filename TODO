@@ -1,2 +1,4 @@
-Dodgem is broken in Dosbox (both versions hang).
 Convoy is having update issue on IA.
+
+Coco hints:
+$ imgtool put coco_vdk_rsdos coco.dsk GAME.BAS GAME.TXT --ascii=ascii

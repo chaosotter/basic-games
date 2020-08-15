@@ -1,0 +1,27 @@
+{
+    "name": "CC Speller",
+    "shortName": "speller",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Lynn Davis"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-04",
+	"url": "https://archive.org/details/color-computer-magazine-1983-04/page/n39/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "speller.coco"
+    }
+}

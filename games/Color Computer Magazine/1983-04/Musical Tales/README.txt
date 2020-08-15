@@ -1,4 +1,4 @@
-(From Color Computer Magazine, March 1984.)
+(From Color Computer Magazine, April 1984.)
 
     MUSICAL TALES: If you and your computer could collaborate to write
     a story and then put your collective words to music, you would

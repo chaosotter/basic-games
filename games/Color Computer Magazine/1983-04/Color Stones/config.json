@@ -1,0 +1,27 @@
+{
+    "name": "Color Stones"
+    "shortName": "stones",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Richard Ramella"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-04",
+	"url": "https://archive.org/details/color-computer-magazine-1983-04/page/n33/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "stones.coco"
+    }
+}

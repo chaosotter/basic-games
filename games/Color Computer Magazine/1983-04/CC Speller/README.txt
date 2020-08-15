@@ -1,4 +1,4 @@
-(From Color Computer Magazine, April 1984.)
+(From Color Computer Magazine, April 1983.)
 
   Interface your Color Computer with your child's spelling problems
   and improve grades.

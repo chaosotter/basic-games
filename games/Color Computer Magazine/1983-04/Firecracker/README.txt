@@ -1,7 +1,7 @@
 [This game is Part 3 of 3 of The Sorcerer's Puzzles.  See "Color
 Stones" and "Red Rover" for Parts 1 and 2.]
 
-(From Color Computer Magazine, April 1984.)
+(From Color Computer Magazine, April 1983.)
 
 "Your final test for the night is Firecracker.  It is in the Red
 Room."  Bob jerked a calloused thumb behind him.  Again a glow, red

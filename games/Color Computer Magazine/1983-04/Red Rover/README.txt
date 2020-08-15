@@ -1,7 +1,7 @@
 [This game is Part 2 of 3 of The Sorcerer's Puzzles.  See "Color
 Stones" and "Firecracker" for Parts 1 and 3.]
 
-(From Color Computer Magazine, April 1984.)
+(From Color Computer Magazine, April 1983.)
 
 "When, or should I say if, you complete the Color Stones, your next
 test awaits you in the Yellow Room."  Bob pointed one of his crooked

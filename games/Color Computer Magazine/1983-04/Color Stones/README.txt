@@ -1,7 +1,7 @@
 [This game is Part 1 of 3 of The Sorcerer's Puzzles.  See "Red Rover"
 and "Firecracker" for Parts 2 and 3.]
 
-(From Color Computer Magazine, April 1984.)
+(From Color Computer Magazine, April 1983.)
 
 After a long and perilous journey across the Darklands the girl named
 Sunflower and the boy named Poke climbed the mountain and stood at the

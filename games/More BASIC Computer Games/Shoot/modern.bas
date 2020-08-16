@@ -1,7 +1,7 @@
 5 CLS: COLOR 12
 10 PRINT TAB(37); "Shoot"
 20 PRINT TAB(31); "Creative Computing"
-30 PRINT TAB(18); "Morristown, New Jersey"
+30 PRINT TAB(29); "Morristown, New Jersey"
 40 PRINT: PRINT: PRINT: COLOR 15
 50 RANDOMIZE TIMER
 110 COLOR 10: INPUT "Do you want instructions (Y/N)"; A$

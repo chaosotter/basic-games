@@ -1,0 +1,28 @@
+{
+    "name": "Space Trek",
+    "shortName": "spactrek",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Jake Commander",
+	"Kerry Leichtman"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-05",
+	"url": "https://archive.org/details/color-computer-magazine-1983-05/page/n37/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "spactrek.coco"
+    }
+}

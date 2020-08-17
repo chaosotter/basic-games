@@ -1,0 +1,27 @@
+{
+    "name": "Notecard",
+    "shortName": "notecard",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"R. F. Miller"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-05",
+	"url": "https://archive.org/details/color-computer-magazine-1983-05/page/n45/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "notecard.coco"
+    }
+}

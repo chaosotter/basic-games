@@ -31,16 +31,19 @@
 380 PRINT
 390 COLOR 10: PRINT "How many players";
 400 INPUT P: COLOR 15
+405 IF P < 1 THEN PRINT "You must have at least one player.": GOTO 390
 410 I1 = 0
-420 COLOR 10: PRINT "How many rows";
+420 COLOR 10: PRINT "How many rows (1-9)";
 430 INPUT R: COLOR 15
-440 IF R <= 9 THEN 470
-450 PRINT "Too many many rows (9 is maximum).  Now, ";
+440 IF R < 1 THEN PRINT "Too few rows.": GOTO 420
+445 IF R <= 9 THEN 470
+450 PRINT "Too many rows (9 is maximum)."
 460 GOTO 420
-470 COLOR 10: PRINT "How many columns";
+470 COLOR 10: PRINT "How many columns (1-9)";
 480 INPUT C: COLOR 15
+485 IF C < 1 THEN PRINT "Too few columns.": GOTO 470
 490 IF C <= 9 THEN 530
-500 PRINT "Too many columns (9 is maximum).  Now, ";
+500 PRINT "Too many columns (9 is maximum)."
 510 GOTO 470
 530 PRINT
 540 FOR I = 1 TO R

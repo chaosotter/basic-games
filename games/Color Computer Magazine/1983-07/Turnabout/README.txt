@@ -1,5 +1,5 @@
-[This game is Part 1 of 3 of The Sorcerer's Puzzles II.  See
-"Abecedarian" and "Turnabout" for Parts 2 and 3.]
+[This game is Part 3 of 3 of The Sorcerer's Puzzles II.  See
+"Disappearing Act" and "Abecedarian" for Parts 1 and 2.]
 
 (From Color Computer Magazine, July 1983.)
 

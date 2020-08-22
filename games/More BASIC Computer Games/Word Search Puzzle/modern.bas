@@ -14,7 +14,7 @@
 130 PRINT "that particular word.  If this persists, try either giving fewer words or"
 140 PRINT "bigger puzzle dimensions!"
 160 PRINT: PRINT
-280 CLEAR 3000
+280 'CLEAR 3000
 300 'DEF FNA(Z) = INT(RND(1) * Z + 1)
 310 COLOR 10: INPUT "How many columns does your printer have"; TW: COLOR 15
 320 COLOR 10: INPUT "Do you want a solution printout"; X$: COLOR 15

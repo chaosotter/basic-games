@@ -76,7 +76,7 @@
 655 IF A < 10000 THEN 560
 660 P = P - 100: PRINT "Warhead launched!": FOR X = 1 TO A * 2 STEP 35000
 670 NEXT X
-680 IF O = 1 THEN 690: PRINT "Missed, too bad.": GOTO 830
+680 IF O = 1 THEN 690: ELSE PRINT "Missed, too bad.": GOTO 830
 690 PRINT "Direct hit... enemy ship's power down."
 700 P(1) = P(1) - 1000
 705 GOTO 830
@@ -106,16 +106,16 @@
 890 IF A < 100000 THEN 870
 892 P(1) = P(1) - 1000
 894 PRINT "Enemy fires laser!"
-900 IF O = 1 THEN 910: PRINT "Missed... whew!": GOTO 1010
+900 IF O = 1 THEN 910: ELSE PRINT "Missed... whew!": GOTO 1010
 910 PRINT "Direct hit!  Power down.": P = P - 3000: GOTO 1010
-920 IF A > 100000 THEN 870: IF A < 10000 THEN 870
+920 IF A > 100000 THEN 870: ELSE IF A < 10000 THEN 870
 930 P(1) = P(1) - 100: PRINT "Enemy warhead fired."
 940 FOR D = 1 TO A STEP 35000: NEXT D
-950 IF O = 1 THEN 960: PRINT "Missed... whew!": GOTO 1010
+950 IF O = 1 THEN 960: ELSE PRINT "Missed... whew!": GOTO 1010
 960 P = P - 1000: PRINT "Direct hit!  Power down.": GOTO 1010
-970 IF A > 11000 THEN 870: P(1) = P(1) - 10: PRINT "Enemy fires shell!"
+970 IF A > 11000 THEN 870: ELSE P(1) = P(1) - 10: PRINT "Enemy fires shell!"
 980 FOR D = 1 TO A STEP 1000: NEXT D
-990 IF O = 1 THEN 1000: PRINT "Missed... whew!": GOTO 1010
+990 IF O = 1 THEN 1000: ELSE PRINT "Missed... whew!": GOTO 1010
 1000 PRINT "Direct hit!  Power down.": P = P - 100
 1010 PRINT: COLOR 11: PRINT "Status of ship -- ";
 1020 PRINT "Range:"; STR$(A); ", Power:"; P: COLOR 15

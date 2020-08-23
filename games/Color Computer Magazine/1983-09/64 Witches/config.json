@@ -1,0 +1,27 @@
+{
+    "name": "64 Witches",
+    "shortName": "64witch",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Richard Ramella"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-09",
+	"url": "https://archive.org/details/color-computer-magazine-1983-09/page/n21/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "64witch.coco"
+    }
+}

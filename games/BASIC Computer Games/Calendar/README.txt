@@ -1,0 +1,11 @@
+Calendar
+
+This program prints out a calendar for any year.  You must specify the
+starting day of the week of the year in Statement 130.  (Sunday (0),
+Monday (-1), Tuesday (-02), etc.).  You can determine this by using
+the program WEEKDAY.  You must also make two changes for leap years in
+Statements 360 and 620.  The program listing describes the necessary
+changes.  Running the program produces a nice 12-month calendar.
+
+The program was written by Geoffrey Chase of the Abbey, Portsmouth,
+Rhode Island.

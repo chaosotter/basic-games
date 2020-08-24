@@ -28,7 +28,8 @@ The most valuable contribution you can make at the moment is that of
 **source material**.  We have access to the more famous sources of the
 day (the "BASIC Games" books from *Creative Computing*, Tim Hartnell's
 "Giant Books", etc.), but more obscure sources and your own creations
-from back in the day are eagerly sought after.
+from back in the day are eagerly sought after.  Check
+[here](status.md) for the current status of materials being processed.
 
 The origins of many of these games are somewhat murky and their
 availability for redistribution equally so.  If you are the original

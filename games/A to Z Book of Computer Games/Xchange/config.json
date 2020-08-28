@@ -1,0 +1,27 @@
+{
+    "name": "Xchange",
+    "shortName": "xchange",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Thomas C. McIntire"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "The A to Z Book of Computer Games",
+	"publisher": "TAB Books Inc.",
+	"date": "1979",
+	"url": "https://archive.org/details/A_to_Z_Book_of_Computer_Games_1979_Thomas_C_McIntire"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "xchange.qb64"
+    }
+}

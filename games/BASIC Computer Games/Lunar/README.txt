@@ -8,7 +8,7 @@ control of directional stabilization rockets and/or the retro rocket.
 The three versions presented here represent the most popular of the
 many variations.
 
-[Note: See "LEM" and 'Rocket" for other versions.]
+[Note: See "LEM" and "Rocket" for other versions.]
 
 In most versions of this game, the temptation is to slow up too soon
 and then have no fuel left for the lower part of the journey.  This,

@@ -1,4 +1,4 @@
-LEM
+Rocket
 
 This game in its many different versions and names (ROCKET, LUNAR,
 LEM, and APOLLO) is by far and away the single most popular computer
@@ -8,17 +8,16 @@ control of directional stabilization rockets and/or the retro rocket.
 The three versions presented here represent the most popular of the
 many variations.
 
-[Note: See "Lunar" and "Rocket" for other versions.]
+[Note: See "Lunar" and "LEM" for other versions.]
 
 In most versions of this game, the temptation is to slow up too soon
 and then have no fuel left for the lower part of the journey.  This,
 of course, is disasterous (as you will find out when you land your own
 capsule)!
 
-LEM was written by William Labaree II of Alexandria, Virginia.
+Rocket was written by Eric Peters at DEC.
 
-This is the most comprehensive of the three versions and permits you
-to control the time interval of firing, the thrust, and the attitude
-angle.  It also allows you to work in the metric or English system of
-measurement.  The instructions in the program dialog are very
-complete, so you shouldn't have any trouble.
+In this version, you start 500 feet above the lunar surface and
+control the burn rate in 1-second bursts.  Each unit of fuel slows
+your descent by 1 ft/sec.  The maximum thrust of your engine is 30
+ft/sec/sec.

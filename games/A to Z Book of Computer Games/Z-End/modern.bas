@@ -1,0 +1,80 @@
+5 CLS: COLOR 12
+10 REM  "Z-END"
+15 PRINT TAB(37); "Z-End": PRINT: PRINT
+20 REM
+25 RANDOMIZE TIMER
+30 GOSUB 9000
+40 COLOR 10: PRINT "Skip the rules (Y/N)";
+50 INPUT Q$: COLOR 15
+60 IF LEFT$(Q$, 1) = "Y" OR LEFT$(Q$, 1) = "y" THEN 150
+70 COLOR 14: PRINT
+80 PRINT "I'll print the alphabet, and you're first.  You type the number of letters"
+90 PRINT "that I should omit next time.  We take turns, and the limit per turn is five."
+100 PRINT "The one that gets the 'Z' is the loser, and that's Z-End!"
+110 PRINT
+120 PRINT "Good luck, cuz I'm clever..."
+150 PRINT: COLOR 15
+155 LET Q$ = " "
+160 DATA A,B,C,D,E,F,G,H,I,J,K,L,M
+170 DATA N,O,P,Q,R,S,T,U,V,W,X,Y,Z,*
+180 LET Z = 1
+185 LET Q = 0
+190 GOSUB 500
+195 IF LEFT$(Q$, 1) = "Y" OR LEFT$(Q$, 1) = "y" THEN 155
+200 LET P = 2
+205 PRINT
+210 COLOR 10: PRINT "Your turn (1-5)";
+215 LET Q = 0
+220 INPUT Q: COLOR 15
+230 IF Q < 1 THEN 300
+240 IF Q > 5 THEN 300
+250 GOSUB 500
+260 IF LEFT$(Q$, 1) = "Y" OR LEFT$(Q$, 1) = "y" THEN 155
+270 GOSUB 800
+280 GOTO 190
+290 PRINT
+300 PRINT "Illegal entry -- must be in range 1 to 5!"
+310 GOTO 210
+500 LET Z = Z + Q
+550 FOR I = 1 TO 27
+560 READ Z$
+570 IF I = Z THEN 590
+580 NEXT I
+590 LET J = Z
+600 COLOR 13: FOR I = J TO 26
+610 PRINT Z$;
+615 READ Z$
+620 NEXT I
+630 RESTORE
+640 PRINT: COLOR 15
+650 IF 26 - Z = 0 THEN 700
+660 RETURN
+700 PRINT "Z-End -- ";
+710 IF P = 1 THEN 780
+720 PRINT "Oops!"
+730 PRINT
+740 COLOR 10: PRINT "Do it again (Y/N)";
+750 INPUT Q$: COLOR 15
+760 IF LEFT$(Q$, 1) = "Y" OR LEFT$(Q$, 1) = "y" THEN PRINT: PRINT: GOTO 660
+765 PRINT: PRINT "Goodbye."
+770 END
+780 PRINT "Ha ha!"
+790 GOTO 730
+800 PRINT
+810 IF 26 - Z < 6 THEN 900
+820 IF 26 - Z > 10 THEN 840
+830 GOTO 920
+840 LET Q = INT(10 * RND(1))
+850 IF Q < 1 THEN 840
+860 IF Q > 5 THEN 840
+870 PRINT "My pick is"; STR$(Q); "."
+880 LET P = 1
+890 RETURN
+900 LET Q = 26 - Z
+910 GOTO 870
+920 LET Q = 1
+930 GOTO 870
+9000 REM  "RANDOM NUMBER ROUTINE"
+9010 LET Z = RND(1)
+9020 RETURN
+

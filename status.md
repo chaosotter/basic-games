@@ -20,6 +20,7 @@ efforts within the collection.
 ### Books
 
 * BASIC Computer Games
+* Color Computer Playground
 
 ### Magazines
 

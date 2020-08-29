@@ -1,0 +1,30 @@
+{
+    "name": "Life for Two",
+    "shortName": "life4two",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Brian Wyvill"
+    ],
+    "editors": [
+	"David Ahl"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "BASIC Computer Games",
+	"publisher": "Creative Computing",
+	"date": "1978",
+	"url": "https://archive.org/details/Basic_Computer_games_Microcomputer_Edition_1978_Creative_Computing"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "life4two.qb64"
+    }
+}

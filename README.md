@@ -14,8 +14,8 @@ directly in the browser.
 
 Your assistance in building up the collection is gratefully
 appreciated.  There aren't detailed instructions available yet on the
-layout and tooling of this responsibility for direct submissions of
-new games, but typos and mistakes always creep in, and corrections are
+layout and tooling of this repository for direct submissions of new
+games, but typos and mistakes always creep in, and corrections are
 always welcome.
 
 That said, please be mindful that this is a **preservation** project,

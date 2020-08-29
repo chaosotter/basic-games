@@ -7,6 +7,7 @@ efforts within the collection.
 
 ### Books
 
+* A to Z Book of Computer Games
 * More BASIC Computer Games
 
 ### Magazines
@@ -18,7 +19,6 @@ efforts within the collection.
 
 ### Books
 
-* A to Z Book of Computer Games
 * BASIC Computer Games
 
 ### Magazines

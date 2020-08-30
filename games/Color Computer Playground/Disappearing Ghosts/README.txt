@@ -55,3 +55,23 @@ This time you kept a careful count.  You type the number 5.
 
 A happy blue and white ghost appears on the TV screen.  "RIGHT!" it
 says.
+
+Background...
+
+The Disappearing Ghosts game was designed by Angela Bradshaw, a
+student at Patrick Henry High School in Roanoke, Virginia.
+
+In order to finish her program on schedule, Angela took the computer
+home from school with her.  She spent an entire weekend teaching the
+computer how to draw the ghosts' shape just right.
+
+When she returned to school on Monday morning she showed off her
+ghosts.  Her teacher decided that the ghosts' shape still wasn't
+realistic enough.  Angela had to rewrite the entire program.
+
+Angela was disappointed.  She almost gave up.  But instead, she spent
+all day Monday creating a new Ghosts program.
+
+On Tuesday Angela showed her teacher the new ghosts.  He liked them!
+And Angela was proud of her new program.  This is the program she
+created.

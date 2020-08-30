@@ -1,0 +1,27 @@
+{
+    "name": "Scrambled Eggs",
+    "shortName": "scramegg",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Fred D'Ignazio"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "The Color Computer Playground",
+	"publisher": "Radio Shack",
+	"date": "1984",
+	"url": "https://archive.org/details/Color_Computer_Playground_1984_Fred_DIgnazio"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "scramegg.coco"
+    }
+}

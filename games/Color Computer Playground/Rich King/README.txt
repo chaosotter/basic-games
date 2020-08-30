@@ -58,3 +58,14 @@ to count the diamonds again.
 Each time you get the number of diamonds right, the king smiles at
 you, shouts "RIGHT!" and plays a happy tune on his royal whistle.
 Maybe someday he will even give you a bag of diamonds as a reward!
+
+Background...
+
+The Rich King game was designed by Joni Burdette and Beth Ann
+Hostutler, two students at Patrick Henry High School in Roanoke,
+Virginia.
+
+The girls took the high-school computer course to escape from their
+other "boring" classes.  They became so excited with computers that
+they began planning for a computer career.  Both girls became
+enthusiastic computer gamers at a local game arcade.

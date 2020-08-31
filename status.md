@@ -8,6 +8,7 @@ efforts within the collection.
 ### Books
 
 * A to Z Book of Computer Games
+* Color Computer Playground
 * More BASIC Computer Games
 
 ### Magazines
@@ -20,7 +21,7 @@ efforts within the collection.
 ### Books
 
 * BASIC Computer Games
-* Color Computer Playground
+* Creepy Computer Games
 
 ### Magazines
 

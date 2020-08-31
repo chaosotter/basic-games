@@ -1,0 +1,31 @@
+{
+    "name": "Computer Nightmare",
+    "shortName": "nitemare",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Brendon Kavanagh"
+    ],
+    "editors": [
+	"Jenny Tyler",
+	"Chris Oxlade"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Creepy Computer Games",
+	"publisher": "Usborne Publishing Ltd.",
+	"date": "1983",
+	"url": "https://archive.org/details/Creepy_Computer_Game_1983_Usborne_Publishing"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "nitemare.qb64"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Orbit",
+    "shortName": "orbit",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Tom Goodrick"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-10",
+	"url": "https://archive.org/details/color-computer-magazine-1983-10/page/n65/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "orbit.coco"
+    }
+}

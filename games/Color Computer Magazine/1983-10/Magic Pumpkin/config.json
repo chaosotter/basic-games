@@ -1,0 +1,28 @@
+{
+    "name": "Magic Pumpkin",
+    "shortName": "mpumpkin",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"George Aftamonow",
+	"Ellen Aftamonow"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-10",
+	"url": "https://archive.org/details/color-computer-magazine-1983-10/page/n19/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "mpumpkin.coco"
+    }
+}

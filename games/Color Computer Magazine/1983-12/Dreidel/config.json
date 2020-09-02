@@ -1,0 +1,27 @@
+{
+    "name": "Dreidel",
+    "shortName": "dreidel",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Harold Schneider"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1983-12",
+	"url": "https://archive.org/details/color-computer-magazine-1983-12/page/n63/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "dreidel.coco"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Morse Code Generator",
+    "shortName": "morscode",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Stephen Ritger"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1984-03",
+	"url": "https://archive.org/details/TheColorComputer198403/page/n95/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "morscode.coco"
+    }
+}

@@ -9,6 +9,7 @@ efforts within the collection.
 
 * A to Z Book of Computer Games
 * Color Computer Playground
+* Creepy Computer Games
 * More BASIC Computer Games
 
 ### Magazines
@@ -22,7 +23,6 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
-* Creepy Computer Games
 
 ### Magazines
 

@@ -1,6 +1,6 @@
 MAD HOUSE
 
-You're trapped in a weird house where everything moves including the
+You're trapped in a weird house where everything moves, including the
 walls.  If the doorways would line up, even for a moment, you could
 make a dash for freedom.  You've found a console which appears to
 control some of the movements in the house.  Keys X and C make the

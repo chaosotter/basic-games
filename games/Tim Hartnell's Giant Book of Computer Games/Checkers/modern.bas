@@ -54,19 +54,22 @@
 530 IF Q(M) = E THEN 570
 540 IF B < 2 OR Q(A) = CK AND B < 4 THEN 500
 550 IF SC < 300 THEN 470
-560 PRINT: PRINT "I concede the game": END
+560 PRINT: PRINT "I concede the game!": END
 570 Q(M) = Q(A): Q(A) = E
 580 RETURN
 590 REM ********************************
 600 CLS: PRINT: PRINT
-610 PRINT "      COMPUTER:"; CO
-620 PRINT "         HUMAN:"; HU: PRINT: PRINT
-630 PRINT "    1 2 3 4 5 6 7 8"
+610 COLOR 15: PRINT TAB(28); "      Computer:";: COLOR 12: PRINT CO
+620 COLOR 15: PRINT TAB(28); "         Human:";: COLOR 12: PRINT HU: COLOR 15: PRINT: PRINT
+630 COLOR 13: PRINT TAB(28); "    1 2 3 4 5 6 7 8": COLOR 15
 640 FOR F = 80 TO 10 STEP -10
-650 PRINT F / 10; " ";
-660 FOR G = 1 TO 8: PRINT CHR$(Q(F + G)); " ";: NEXT G
-670 PRINT F / 10: NEXT F
-680 PRINT "    1 2 3 4 5 6 7 8"
+650 COLOR 13: PRINT TAB(28); F / 10; " ";: COLOR 15
+660 FOR G = 1 TO 8
+665 C$ = CHR$(Q(F + G))
+666 IF C$ = "C" OR C$ = "$" THEN COLOR 12: ELSE IF C$ = "H" OR C$ = "K" THEN COLOR 11: ELSE COLOR 15
+667 PRINT C$; " ";: NEXT G
+670 COLOR 13: PRINT F / 10: COLOR 15: NEXT F
+680 COLOR 13: PRINT TAB(28); "    1 2 3 4 5 6 7 8": COLOR 15
 690 IF CO = 12 OR HU = 12 THEN 710
 700 RETURN
 710 IF HU = 12 THEN PRINT "You have won"
@@ -76,10 +79,10 @@
 750 REM 99 TO CONCEDE
 760 PRINT: PRINT
 770 PRINT "Enter your move"
-780 INPUT "From"; A
+780 COLOR 10: INPUT "From (row, column)"; A: COLOR 15
 790 IF A = 99 THEN GOTO 730
 800 IF Q(A) <> H AND Q(A) <> HK THEN 780
-810 INPUT "To"; B
+810 COLOR 10: INPUT "To"; B: COLOR 15
 820 IF Q(B) <> E THEN 810
 830 Q(B) = Q(A): Q(A) = E
 840 REM ********************************
@@ -90,17 +93,17 @@
 890 REM ********************************
 900 IF ABS(A - B) < 12 THEN RETURN
 910 TY = RND
-920 IF TY < .3 THEN PRINT "Good move": GOSUB 1340
+920 IF TY < .3 THEN PRINT "Good move!": GOSUB 1340
 930 IF TY > .7 THEN PRINT "Got me!": GOSUB 1340
 940 HU = HU + 1: Q((A + B) / 2) = E: GOSUB 600
 950 FOR T = 82 TO 88: IF Q(T) = H THEN Q(T) = HK
 960 NEXT T
-970 PRINT: INPUT "Can you jump again (Y or N)"; A$
+970 PRINT: COLOR 10: INPUT "Can you jump again (Y or N)"; A$: COLOR 15
 980 IF A$ <> "y" AND A$ <> "Y" THEN RETURN
 990 A = B: GOTO 800
 1000 REM *******************************
 1010 REM Initialise
-1020 CLS: PRINT "Press any key": N = 1
+1020 CLS: PRINT "Press any key.": N = 1
 1030 N = N + 1: IF INKEY$ = "" THEN 1030
 1040 CLS
 1050 PRINT "Please stand by"

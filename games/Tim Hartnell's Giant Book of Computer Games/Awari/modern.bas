@@ -26,7 +26,9 @@
 240 IF C < 6 THEN 180
 250 IF GM = 0 THEN 370
 260 C = GM
-270 PRINT "I'll move from "; CHR$(64 + C): INPUT Z$
+270 PRINT "I'll move from "; CHR$(64 + C); "."
+275 PRINT: COLOR 13: PRINT "(Press any key.)"
+276 IF INKEY$ = "" THEN 276
 280 FOR Z = C TO C + A(C)
 290 IF Z > 12 THEN A(Z - 12) = A(Z - 12) + 1
 300 IF Z < 13 THEN A(Z) = A(Z) + 1
@@ -43,7 +45,9 @@
 410 IF A(C) <> 0 THEN 440
 420 IF W < 20 THEN 390
 430 GOTO 510
-440 PRINT "I'll move from "; CHR$(64 + C): INPUT Z$
+440 PRINT "I'll move from "; CHR$(64 + C); "."
+445 PRINT: COLOR 13: PRINT "(Press any key.)"
+446 IF INKEY$ = "" THEN 446
 450 FOR Z = C TO C + A(C)
 460 IF Z < 13 THEN A(Z) = A(Z) + 1
 470 IF Z > 12 THEN A(Z - 6) = A(Z - 6) + 1
@@ -52,17 +56,17 @@
 500 REM ********************************
 510 REM End of game
 520 GOSUB 710
-530 PRINT: PRINT "That's the end of the game"
+530 PRINT: PRINT "That's the end of the game."
 540 PRINT
 550 IF B(1) > B(2) THEN PRINT "You're the winner!"
 560 IF B(1) < B(2) THEN PRINT "And I'm the winner!"
 570 IF B(1) = B(2) THEN PRINT "It looks like a draw!"
-580 PRINT: PRINT "My score was"; B(2)
-590 PRINT "and yours was"; B(1)
+580 PRINT: PRINT "My score was"; B(2); "and yours was"; STR$(B(1)); "."
 600 END
 610 REM ********************************
 620 REM Human move
-630 INPUT "Which pit to start with"; A$
+630 COLOR 10: INPUT "Which pit to start with (G-L)"; A$: COLOR 15
+635 IF A$ >= "a" AND A$ <= "z" THEN A$ = CHR$(ASC(A$) - 32)
 640 B = ASC(A$) - 64
 650 IF B < 7 OR B > 12 THEN 630
 660 CO = B: Z = B + A(B): IF Z > 12 THEN Z = Z - 12
@@ -77,19 +81,19 @@
 750 RETURN
 760 REM ********************************
 770 REM Print board
-780 CLS: PRINT: PRINT: PRINT
-790 PRINT "    A  B  C  D  E  F": PRINT "   ";
+780 CLS: PRINT: PRINT: PRINT: COLOR 15
+790 PRINT TAB(28); "    A  B  C  D  E  F": PRINT TAB(31);
 800 FOR C = 1 TO 6
-810 PRINT A(C);
+810 COLOR 12: PRINT A(C);: COLOR 15
 820 NEXT C
-830 PRINT: PRINT B(1); "                 "; B(2): PRINT "   ";
+830 PRINT: COLOR 11: PRINT TAB(28); B(1);: COLOR 12: PRINT "                  "; B(2): COLOR 15: PRINT TAB(31);
 840 FOR C = 12 TO 7 STEP -1
-850 PRINT A(C);
+850 COLOR 11: PRINT A(C);: COLOR 15
 860 NEXT C
-870 PRINT: PRINT "    L  K  J  I  H  G"
+870 PRINT: PRINT TAB(28); "    L  K  J  I  H  G"
 880 PRINT: PRINT
 890 RETURN
-900 PRINT "I move from "; CHR$(64 + GM)
+900 PRINT "I move from "; CHR$(64 + GM); "."
 910 C = GM
 920 REM ********************************
 930 REM Initialise

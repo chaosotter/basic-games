@@ -1,0 +1,27 @@
+{
+    "name": "Roulette",
+    "shortName": "roulette",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Tim Hartnell"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Tim Hartnell's Giant Book of Computer Games",
+	"publisher": "Ballantine Books",
+	"date": "1984",
+	"url": "https://archive.org/details/timhartnellsgian00timh"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "roulette.qb64"
+    }
+}

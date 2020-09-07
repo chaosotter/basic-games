@@ -1,5 +1,5 @@
 10 REM Rural Pursuits
-20 RANDOMIZE VAL(RIGHT$(TIME$, 2))
+20 RANDOMIZE TIMER
 30 YR = 1
 40 MO = INT(RND * 1000 + 7000)
 50 LA = INT(RND * 1000 + 100)
@@ -56,7 +56,7 @@
 560 P = P - WP
 570 GOSUB 870
 580 PRINT "Stand by for a year..."
-590 IF INKEY$ = "" THEN 590
+590 XX = 2.0: GOSUB 1000
 600 BA = INT(P * L * LA * W * 3 / 100000)
 610 CO = INT(CP * L * LA * W * 2.7 / 17000)
 620 WH = INT(WP * L * LA * W * 1.4 / 9300)
@@ -65,12 +65,12 @@
 650 PRINT: PRINT T; "tons were harvested"
 660 RT = INT((.5 + 8.7 * BA + 5.94 * CO + 2.2 * WH) * (CS - CX + 1))
 670 IF BA = 0 AND CO = 0 AND WH = 0 THEN RT = 0
-680 FOR Z = 1 TO 2000: NEXT Z
+680 XX = 1.0: GOSUB 1000
 690 PRINT: PRINT "And your total return"
 700 PRINT "was $"; RT
 710 MO = MO + RT
 720 LA = INT(LA - LA / (W + .01))
-730 FOR Z = 1 TO 2000: NEXT Z
+730 XX = 2.0: GOSUB 1000
 740 RETURN
 750 GOSUB 870
 760 PRINT "You have survived for 10 years"
@@ -87,4 +87,7 @@
 870 CLS
 880 PRINT: PRINT
 890 RETURN
+1000 ST = TIMER + XX
+1010 IF TIMER < ST THEN 1010
+1020 RETURN
 

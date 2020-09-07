@@ -1,9 +1,8 @@
 5 DIM B$(12), M$(6), M(7)
-6 WIDTH 40
 10 REM The Bannochburn Legacy
 20 REM  All inputs must be in upper case
 30 GOSUB 4480
-40 PRINT
+40 CLS
 50 IF M(7) = 0 AND S(7) = 0 AND W(7) = 0 THEN PRINT "The adventure has ended.": PRINT "You have exhausted all your powers.": PRINT: PRINT "You fought bravely and well": PRINT "but could not endure.": PRINT: PRINT "Farewell...": END
 60 PRINT N$; ", your attributes are:"
 70 IF M(7) > 0 THEN PRINT " Magic:"; M(7)
@@ -150,17 +149,17 @@
 1480 COST = INT(RND * K) + 1
 1490 PRINT "Now, this final challenge"
 1500 PRINT "carries a huge penalty"
-1510 PRINT "of"; COST; "attribute pOints": GOSUB 4990
+1510 PRINT "of"; COST; "attribute points": GOSUB 4990
 1520 DIFF = W(7) - W(6)
 1530 IF DIFF > 5 THEN DIFF = DIFF - 6: GOTO 1530
 1540 IF DIFF < -5 THEN DIFF = DIFF + 6: GOTO 1540
 1550 GOSUB 190
 1560 GOSUB 2600
-1570 IF VICTORY = 1 THEN W(7) = W(7) + COST: PRINT "And you defeated the Guardianl"
+1570 IF VICTORY = 1 THEN W(7) = W(7) + COST: PRINT "And you defeated the Guardian!"
 1580 IF VICTORY = 0 THEN W(7) = W(7) - COST: PRINT "But the Guardian got the": PRINT "better of you, "; N$; "!!"
 1590 IF W(7) < 0 THEN W(7) = 0
 1600 GOSUB 4990
-1610 INPUT ZZ$: PRINT: PRINT
+1610 CLS: PRINT: PRINT
 1620 PRINT "And now, at the end of the"
 1630 PRINT "final battle, your position"
 1640 PRINT "is:   Magic..."; M(7)
@@ -174,7 +173,7 @@
 1720 PRINT "You needed at least 10 points"
 1730 PRINT "to win the game, and you've"
 1740 PRINT "done it, "; N$; "!": GOSUB 4990
-1750 INPUT ZZ$: PRINT: PRINT: PRINT
+1750 CLS: PRINT: PRINT: PRINT
 1760 PRINT "You've succeeded, O hero of"
 1770 PRINT "these dark and dangerous"
 1780 PRINT "times. I hereby dub thee"
@@ -225,14 +224,12 @@
 2230 FI = INT(RND * 2): GOSUB 4990
 2240 IF FI = 0 THEN PRINT "The monster attacks and the": PRINT "fight is underway"
 2250 IF FI = 1 THEN PRINT "You attack first, and the": PRINT "battle is joined..."
-2255 INPUT ZZ$
 2260 GOSUB 2600
 2270 ROLL = INT(RND * 6) + 1
 2280 VICTORY = 0
 2290 IF (DIFF < 0 AND ROLL > ABS(DIFF)) OR (DIFF > 0 AND ROLL <= DIFF) OR (DIFF = 0 AND ROLL < 4) THEN VICTORY = 1
 2300 IF VICTORY = 1 THEN GOSUB 2460
 2310 IF VICTORY = 0 THEN GOSUB 2530
-2315 INPUT ZZ$
 2320 GOSUB 4990
 2330 PRINT "After that fight, your"
 2340 PRINT "attributes are:"
@@ -264,16 +261,16 @@
 2600 REM Fight effects
 2610 FOR J = 1 TO RND * 10 + 2
 2620 ON (INT(RND * 6 + 1)) GOSUB 2610, 2680, 2690, 2700, 2710, 2720
-2630 FOR P = 1 TO 100 + RND * 100: NEXT P
+2630 XX = 0.2: GOSUB 6000
 2640 PRINT: PRINT
 2650 NEXT J
-2660 RETURN
-2670 PRINT "    Bash!!!!": FOR P = 1 TO 100: NEXT P: RETURN
-2680 PRINT , "Aaaaaarghhh!": FOR P = 1 TO 20: NEXT P: RETURN
-2690 PRINT "Rip": FOR P = 1 TO 100: NEXT P: PRINT , , "Tear!": FOR P = 1 TO 100: NEXT P: RETURN
+2660 CLS: RETURN
+2670 PRINT "    Bash!!!!": XX = 0.1: GOSUB 6000: RETURN
+2680 PRINT , "Aaaaaarghhh!": XX = 0.1: GOSUB 6000: RETURN
+2690 PRINT "Rip": FOR P = 1 TO 100: NEXT P: PRINT , , "Tear!": XX = 0.1: GOSUB 6000: RETURN
 2700 FOR E = 1 TO 20: PRINT "!!! ";: NEXT E: RETURN
 2710 RETURN
-2720 FOR E = 1 TO 3: PRINT "!*&&*@!!   ";: NEXT E: FOR P = 1 TO 20: NEXT P: RETURN
+2720 FOR E = 1 TO 3: PRINT "!*&&*@!!   ";: NEXT E: XX = 0.1: GOSUB 6000: RETURN
 2730 REM *******************************
 2740 REM Contents
 2750 K = 2 + INT(RND * 8)
@@ -405,7 +402,8 @@
 4010 PRINT "the window in the east wall. Through"
 4020 PRINT "the window you can see the mullioned"
 4030 PRINT "windows of the Great Hall across the"
-4040 PRINT "Contoured Garden. Exits from the"
+4040 PRINT "Contoured Garden.  Exits from the"
+4050 PRINT "Gallery  are to the north and"
 4060 PRINT "to the east....."
 4070 RETURN
 4080 PRINT "This is the most magnificent"
@@ -499,7 +497,10 @@
 4970 DATA "Warlock","Fearbringer","Soulthreat","Kneecrusher","Wolvling","Guardian"
 4980 REM ***********************
 4990 REM Pause routine
-5000 FOR P = 1 TO 1000: NEXT P
+5000 ZZ = 0.5: GOSUB 6000
 5010 PRINT
 5020 RETURN
+6000 ST = TIMER + ZZ
+6010 IF TIMER < ST THEN 6010
+6020 RETURN
 

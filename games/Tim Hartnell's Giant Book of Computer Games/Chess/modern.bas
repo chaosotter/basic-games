@@ -6,9 +6,9 @@
 50 GOSUB 2820
 60 GOSUB 2580
 70 REM *********************************
-80 IF A$ = "S" THEN END
-90 IF A$ = "X" THEN PRINT "EXCHANGING SIDES": GOSUB 3540: A$ = ""
-100 IF A$ = "P" THEN GOSUB 3730
+80 IF A$ = "S" OR a$ = "s" THEN END
+90 IF A$ = "X" OR A$ = "x" THEN PRINT "Exchanging sides": GOSUB 3540: A$ = ""
+100 IF A$ = "P" OR A$ = "p" THEN GOSUB 3730
 110 REM ********************************
 120 FOR Z = 1 TO 16: T(Z) = 0: NEXT Z
 130 U = 0
@@ -19,7 +19,7 @@
 180 FOR Q = 1 TO U: IF A(T(Q)) = KB THEN T(Q) = T(U): T(U) = KM
 190 NEXT Q
 200 Q = INT(RND * 3)
-210 IF A$ = "C" THEN Q = 0
+210 IF A$ = "C" OR A$ = "c" THEN Q = 0
 220 IF Q < U THEN Q = Q + 1
 230 Z = T(Q): GOSUB 280
 240 IF MM = 1 THEN GOSUB 2500: GOTO 40
@@ -242,13 +242,13 @@
 2410 IF A(Z) = BB THEN GOSUB 1560
 2420 IF A(Z) = RB THEN GOSUB 1300
 2430 IF A(Z) = QB THEN GOSUB 1040
-2440 IF A(Z) = KB AND A$ <> "C" AND RND < .07 THEN GOSUB 1870
+2440 IF A(Z) = KB AND A$ <> "C" AND A$ <> "c" AND RND < .07 THEN GOSUB 1870
 2450 IF MM = 0 AND Q < U THEN GOTO 2370
 2460 IF MM = 1 THEN GOSUB 2500: GOTO 40
 2470 UK = UK + 1: IF UK > 8 THEN 2230
 2480 GOTO 2360
 2490 REM *******************************
-2500 IF A(Z) = KB AND A$ <> "C" AND RND > .1 THEN MM = 0: GOTO 2360
+2500 IF A(Z) = KB AND A$ <> "C" AND A$ <> "c" AND RND > .1 THEN MM = 0: GOTO 2360
 2510 IF A(Z) = PB AND ((X - 10 * INT(X / 10) > Z - 10 * INT(Z / 10) OR ABS(X - Z) > 11)) THEN MM = 0: U = U + 1: GOTO 230
 2520 IF A(X) = K THEN PRINT "CHECK": MM = 0: U = U + 1: GOTO 230
 2530 A(X) = A(Z): A(Z) = E
@@ -261,13 +261,15 @@
 2580 CLS
 2590 GOSUB 2670
 2600 FOR X = 8 TO 1 STEP -1
-2610 PRINT TAB(10); X; " ";
+2610 COLOR 13: PRINT TAB(30); X; " ";: COLOR 15
 2620 FOR Y = 10 TO 80 STEP 10
 2630 IF A(Y + 1) = PB THEN A(Y + 1) = QB
 2640 IF A(Y + 8) = B THEN A(Y + 8) = Q
-2650 PRINT CHR$(A(X + Y)); " ";
-2660 NEXT Y: PRINT X: NEXT X: MM = 0
-2670 PRINT: PRINT TAB(14); "A B C D E F G H": PRINT
+2645 C$ = CHR$(A(X + Y))
+2646 IF C$ >= "A" AND C$ <= "Z" THEN COLOR 12: ELSE IF C$ >= "a" AND C$ <= "z" THEN COLOR 11: ELSE COLOR 15
+2650 PRINT C$; " ";: COLOR 15
+2660 NEXT Y: COLOR 13: PRINT X: COLOR 15: NEXT X: MM = 0
+2670 PRINT: COLOR 13: PRINT TAB(34); "A B C D E F G H": COLOR 15: PRINT
 2680 REM *******************************
 2690 RETURN
 2700 Z = KM
@@ -283,21 +285,24 @@
 2800 GOTO 2230
 2810 REM *******************************
 2820 PRINT
-2830 INPUT "FROM (LETTER,NUMBER)"; A$
+2830 COLOR 10: INPUT "From (e.g., G4)"; A$: COLOR 15
 2840 IF LEN(A$) <> 2 THEN 2820
-2850 INPUT "TO"; B$
+2845 C$ = LEFT$(A$, 1): IF C$ >= "a" AND C$ <= "z" THEN A$ = CHR$(ASC(C$) - 32) + RIGHT$(A$, 1)
+2850 COLOR 10: INPUT "To"; B$: COLOR 15
 2860 IF LEN(B$) <> 2 THEN 2850
+2865 C$ = LEFT$(B$, 1): IF C$ >= "a" AND C$ <= "z" THEN B$ = CHR$(ASC(C$) - 32) + RIGHT$(B$, 1)
 2870 X = 10 * (ASC(A$) - 64) + VAL(RIGHT$(A$, 1))
 2880 Y = 10 * (ASC(B$) - 64) + VAL(RIGHT$(B$, 1))
 2890 PRINT "Enter C - check"
 2900 PRINT "      P - to print board"
 2910 PRINT "      X - to exchange sides"
 2920 PRINT "      S - to stop game"
-2930 INPUT "Or press RETURN to continue"; A$
+2930 INPUT "Or press Enter to continue"; A$
 2940 IF A(Y) >= 75 AND A(Y) <= 82 THEN GOSUB 3660
 2950 A(Y) = A(X): A(X) = 46: RETURN
 2960 REM *******************************
-2970 CLS: PRINT "PLEASE ENGAGE CAPS LOCK": PRINT "THEN PRESS RETURN"
+2970 CLS: PRINT "Please engage Caps Lock then press Enter."
+2975 PRINT: PRINT "(Actually, you don't have to.)"
 2980 N = N + 1: IF INKEY$ = "" THEN 2980
 2990 RANDOMIZE N: CLS: PRINT "Please stand by"
 3010 MM = 0: A$ = ""

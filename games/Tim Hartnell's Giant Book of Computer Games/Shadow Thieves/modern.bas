@@ -10,27 +10,27 @@
 100 CLS
 110 REM ****** MAJOR GAME CYCLE *********
 120 GOTO 230
-130 PRINT "*********************************"
+130 COLOR 1: PRINT: PRINT STRING$(79, 247): COLOR 15
 140 Q = Q - 1: IF Q < 1 THEN 880
-150 PRINT: PRINT "TIME REMAINING:"; Q
-160 PRINT: PRINT TAB(RND(1) * 6); "YOU ARE IN CAVERN"; Y
-170 IF X > 0 THEN PRINT "YOU HAVE COME FROM CAVERN"; X
-180 IF R$(1) > "" OR R$(2) > "" OR R$(3) > "" OR R$(4) > "" THEN PRINT "YOU ARE CARRYING:"
+150 PRINT: COLOR 12: PRINT "Time remaining:"; Q: COLOR 15
+160 PRINT "You are in cavern"; STR$(Y); ".  ";
+170 IF X > 0 THEN PRINT "You have come from cavern"; STR$(X); "." ELSE PRINT
+180 IF R$(1) > "" OR R$(2) > "" OR R$(3) > "" OR R$(4) > "" THEN PRINT "You are carrying:"
 190 Z = 1
-200 IF R$(Z) > "" THEN PRINT Z; " - "; R$(Z)
+200 IF R$(Z) > "" THEN COLOR 11: PRINT "   "; Z; " - "; R$(Z): COLOR 15
 210 IF Z < 4 THEN Z = Z + 1: GOTO 200
 220 RETURN
 230 GOSUB 130
 240 IF LEN(F$(Y)) = 0 THEN 430
-250 PRINT: PRINT "THE CAVERN CONTAINS A "; F$(Y)
+250 PRINT: PRINT "The cavern contains a "; F$(Y); "."
 260 IF INKEY$ <> "" THEN 260
-270 PRINT: PRINT "DO YOU WANT IT (Y OR N)?"
+270 PRINT: COLOR 10: PRINT "Do you want it (Y/N)?": COLOR 15
 280 Q$ = INKEY$
 290 IF Q$ <> "Y" AND Q$ <> "y" AND Q$ <> "N" AND Q$ <> "n" THEN 280
 300 IF Q$ = "N" OR Q$ = "n" THEN 430
 310 IF R$(1) = "" OR R$(2) = "" OR R$(3) = "" OR R$(4) = "" THEN 390
-320 PRINT "YOU ARE CARRYING TOO MUCH"
-330 INPUT "WHICH ITEM DO YOU WANT TO DROP"; S
+320 PRINT "You are carrying too much."
+330 COLOR 10: INPUT "Which item do you want to drop (1-4)"; S: COLOR 15
 340 IF S < 1 OR S > 4 THEN 330
 350 T$ = R$(S)
 360 R$(S) = F$(Y)
@@ -42,23 +42,23 @@
 420 GOSUB 130
 430 IF LEN(D$(Y)) = 0 THEN 600
 440 IF ASC(D$(Y)) = 42 THEN 820
-450 PRINT: PRINT "THERE IS A "; D$(Y); " HERE, WHO"
-460 PRINT "WANTS A "; E$(Y); " TO LET YOU PASS"
+450 PRINT: PRINT "There is a "; D$(Y); " here, who"
+460 PRINT "wants a "; E$(Y); " to let you pass."
 470 XX = 1.5: GOSUB 2000
 480 G = 1
 490 IF R$(G) = E$(Y) AND E$(Y) <> "" THEN 550
 500 IF G < 4 THEN G = G + 1: GOTO 490
-510 PRINT: PRINT "YOU MUST RETURN TO"; X
+510 PRINT: PRINT "You must return to cavern"; STR$(X); "."
 520 XX = 2.0: GOSUB 2000
 530 P = X: X = Y: Y = P
 540 GOTO 230
-550 PRINT "AND YOU HAVE IT!"
+550 PRINT "And you have it!"
 560 XX = 1.5: GOSUB 2000
-570 PRINT "THE "; D$(Y); " VANISHES!": D$(Y) = ""
+570 PRINT "The "; D$(Y); " vanishes!": D$(Y) = ""
 580 F$(Y) = R$(G)
 590 R$(G) = ""
-600 PRINT: PRINT "TUNNELS LEAD TO"; A(Y, 1); ","; A(Y, 2); ","; A(Y, 3); "AND"; A(Y, 4)
-610 PRINT: INPUT "WHERE DO YOU WANT TO GO"; M
+600 PRINT: PRINT "Tunnels lead to"; STR$(A(Y, 1)); ","; STR$(A(Y, 2)); ","; STR$(A(Y, 3)); ", and"; STR$(A(Y, 4)); "."
+610 COLOR 10: INPUT "Where do you want go"; M: COLOR 15
 620 IF M = 0 THEN Q = Q - 5: M = 1 + INT(RND(1) * 16): GOTO 670
 630 G = 1
 640 IF A(Y, G) = M THEN 670
@@ -72,11 +72,11 @@
 720 REM **** SUCCESS *****
 730 CLS
 740 FOR I = 1 TO 32: PRINT TAB(I); "*": NEXT I
-750 PRINT: PRINT "YOU HAVE MADE IT!!"
-760 PRINT: PRINT "YOUR CAVERN-MASTER RATING IS"; 100 * (100 - Q) + 2 * Q
-770 IF R$(1) > "" OR R$(2) > "" OR R$(3) > "" OR R$(4) > "" THEN PRINT "YOU GOT OUT WITH:"
+750 PRINT: PRINT "You have made it!"
+760 PRINT: PRINT "Your cavern-master rating is"; STR$(100 * (100 - Q) + 2 * Q); "."
+770 IF R$(1) > "" OR R$(2) > "" OR R$(3) > "" OR R$(4) > "" THEN PRINT "You got out with:"
 780 FOR T = 1 TO 4
-790 PRINT TAB(INT(RND(1) * 7 + 1)); R$(T)
+790 COLOR 11: PRINT TAB(4); R$(T): COLOR 15
 800 NEXT T
 810 END
 820 REM *** TELEPORTATION ***
@@ -86,7 +86,7 @@
 860 GOTO 230
 870 REM ****************
 880 REM *** END 'O THE LINE ***
-890 PRINT: PRINT "SORRY, FRIEND, BUT TIME IS UP"
+890 PRINT: PRINT "Sorry, friend, but time is up!"
 900 END
 910 REM ****************
 920 REM *** DISTRIBUTE INHABITANTS/GOODIES ***
@@ -125,16 +125,16 @@
 1250 RETURN
 1260 REM ********************
 1270 REM **** INHABITANTS ****
-1280 DATA "HAIRY HOBGOBLIN","BALD BERSERKER","SKINNY SKELETON","GRUESOME GNOME","CUNNING CONJURER"
-1290 DATA "CRAZY CENTIPEDE","DEMENTED DWARF","SAVAGE SHRIEKER","CREEPY CRAWLIE","ROTTEN RODENT"
-1300 DATA "TERRIBLE TOAD","STICKY STURGE","GHASTLY GHOUL","WICKED WEASEL","LUMPY LEGEND"
-1310 DATA "ZANY ZOMBIE","CROOKED CRAB","WRATHFUL WRAITH","WEIRD WEREWOLF","GIANT GARGOYLE"
+1280 DATA "hairy hobgoblin","bald berserker","skinny skeleton","gruesome gnome","cunning conjurer"
+1290 DATA "crazy centipede","demented dwarf","savage shrieker","creepy crawlie","rotten rodent"
+1300 DATA "terrible toad","sticky stirge","ghastly ghoul","wicked weasel","lumpy legend"
+1310 DATA "zany zombie","crooked crab","wrathful wraith","weird werewolf","giant gargoyle"
 1320 REM ********************
 1330 REM **** THE LOOT ****
-1340 DATA "PIECE OF COPPER","SPUNKTRUM COIN","PLATINUM SHIELD","COPPER HEADBAND","MAGIC SCROLL"
-1350 DATA "FABULOUS POTION","WAND OF HEALING","SWORD OF FIRE","SPARKLING AMULET","WAR HAMMER"
-1360 DATA "PIECE OF COPPER","SPUNKTRUM COIN","PLATINUM SHIELD","COPPER HEADBAND","MAGIC SCROLL"
-1370 DATA "FABULOUS POTION","WAND OF HEALING","SWORD OF FIRE","SPARKLING AMULET","WAR HAMMER"
+1340 DATA "piece of copper","spunktrum coin","platinum shield","copper headband","magic scroll"
+1350 DATA "fabulous potion","wand of healing","sword of fire","sparkling amulet","war hammer"
+1360 DATA "piece of copper","spunktrum coin","platinum shield","copper headband","magic scroll"
+1370 DATA "fabulous potion","wand of healing","sword of fire","sparkling amulet","war hammer"
 2000 ST = TIMER + ZZ
 2010 IF TIMER < ST THEN 2010
 2020 RETURN

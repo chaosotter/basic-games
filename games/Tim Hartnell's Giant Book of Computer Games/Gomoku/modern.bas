@@ -6,25 +6,27 @@
 50 GOSUB 130
 60 GOSUB 320
 70 GOSUB 130
-80 IF L > 3 THEN PRINT: PRINT "I WIN!!": END
+80 IF L > 3 THEN PRINT: PRINT "I win!": END
 90 GOTO 40
 100 E = A
 110 E = E + N: IF A(E) <> Z THEN RETURN
 120 K = K + 1: GOTO 110
 130 CLS
 140 PRINT: PRINT: PRINT
-150 PRINT TAB(12); "1 2 3 4 5 6 7 8"
-160 FOR A = 1 TO 8: PRINT TAB(8); A; " ";
+150 COLOR 13: PRINT TAB(32); "1 2 3 4 5 6 7 8": COLOR 15
+160 FOR A = 1 TO 8: COLOR 13: PRINT TAB(28); A; " ";: COLOR 15
 170 FOR B = 2 TO 9
-180 PRINT CHR$(A(A * 10 + B)); " ";
+175 C$ = CHR$(A(A * 10 + B))
+176 IF C$ = "C" THEN COLOR 12: ELSE IF C$ = "H" THEN COLOR 11: ELSE COLOR 15
+180 PRINT C$; " ";
 190 NEXT B
-200 PRINT A
+200 COLOR 13: PRINT A: COLOR 15
 210 NEXT A
-220 PRINT TAB(12); "1 2 3 4 5 6 7 8"
+220 COLOR 13: PRINT TAB(32); "1 2 3 4 5 6 7 8": COLOR 15
 230 RETURN
 240 PRINT: PRINT
-250 PRINT "Please enter your move..."
-260 INPUT G
+250 COLOR 10: PRINT "Please enter your move (e.g., 42)"
+260 INPUT G: COLOR 15
 270 G = G + 1
 280 IF G < 12 OR G > 89 OR A(G) <> 46 THEN 260
 290 Z = H
@@ -37,7 +39,7 @@
 360 N = -N: GOSUB 100
 370 IF K > L THEN L = K
 380 NEXT X
-390 IF L > 3 THEN PRINT: PRINT "You win!!": END
+390 IF L > 3 THEN PRINT: PRINT "You win!": END
 400 T = 1
 410 IF T <> 2 THEN Z = C
 420 IF T = 2 THEN Z = H
@@ -62,7 +64,7 @@
 610 G = INT(RND * 77) + 13
 620 IF A(G) = 46 THEN 650
 630 A = A + 1: IF A < 100 THEN 610
-640 PRINT: PRINT "I concede the game": PRINT "to a master!!": END
+640 PRINT: PRINT "I concede the game to a master!": END
 650 A(G) = C
 660 Z = C: A = G: L = 0
 670 FOR X = 1 TO 4
@@ -84,8 +86,7 @@
 840 NEXT Q
 850 DATA 1,9,10,11
 860 H = ASC("H"): C = ASC("C")
-870 PRINT: PRINT "Enter Y if you want the"
-880 PRINT "first move, N if you don't"
+870 PRINT: PRINT "Enter Y if you want the first move and N if you don't."
 890 N = 0
 900 N = N + 1
 910 A$ = INKEY$

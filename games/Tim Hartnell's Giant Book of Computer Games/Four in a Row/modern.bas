@@ -60,7 +60,7 @@
 590 IF A(B - 9) = E AND A(B + 1) <> E THEN COUNT = COUNT + 1: M(COUNT) = B - 9
 600 NEXT B
 610 IF COUNT <> 0 THEN 640
-620 PRINT: PRINT "I think we should call it a draw"
+620 PRINT: PRINT "I think we should call it a draw..."
 630 PRINT: PRINT: PRINT: END
 640 MOVE = M(INT(RND * COUNT) + 1)
 650 A(MOVE) = C
@@ -87,24 +87,25 @@
 860 REM PRINT BOARD
 870 CLS: PRINT: PRINT
 880 FOR K = 10 TO 70 STEP 10
-890 PRINT TAB(5);
+890 PRINT TAB(34);
 900 FOR J = 1 TO 7
-910 PRINT CHR$(A(K + J)); " ";
-920 NEXT J
+905 C$ = CHR$(A(K + J))
+906 IF C$ = "C" THEN COLOR 12: ELSE IF C$ = "H" THEN COLOR 11: ELSE COLOR 15
+910 PRINT C$; " ";
+920 NEXT J: PRINT
 930 NEXT K
-940 PRINT TAB(5); "1 2 3 4 5 6 7"
+940 COLOR 13: PRINT TAB(34); "1 2 3 4 5 6 7": COLOR 15
 950 PRINT: PRINT
 960 RETURN
 970 REM **********
 980 REM HUMAN MOVE
 990 PRINT "Your move...": PRINT
-1000 PRINT "Which column do you wish to"
-1010 INPUT "move into"; J
+1000 COLOR 10: INPUT "Which column do you wish to move into (1-7)"; J: COLOR 15
 1020 Z = J
 1030 Z = Z + 10
 1040 IF A(Z + 10) = E THEN 1030
 1050 IF A(Z) = E THEN A(Z) = H: RETURN
-1060 PRINT "You can't move there"
+1060 PRINT "You can't move there!"
 1070 GOTO 1000
 1080 REM **********
 1090 REM INITIALISE

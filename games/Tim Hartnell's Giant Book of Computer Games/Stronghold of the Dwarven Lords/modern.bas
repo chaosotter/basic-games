@@ -5,30 +5,29 @@
 40 REM *********************************
 50 M = M + 1
 60 CLS: PRINT: PRINT
-70 PRINT "STEP NUMBER"; M
+70 PRINT "Step number"; M
 80 PRINT
-90 PRINT "NORTH: ";
+90 COLOR 15: PRINT "North: ";: COLOR 13
 100 IF A(D + 1, E) = S THEN PRINT "OPEN"
 110 IF A(D + 1, E) = X THEN PRINT "WALL"
-120 PRINT "SOUTH: ";
+120 COLOR 15: PRINT "South: ";: COLOR 13
 130 IF A(D - 1, E) = S THEN PRINT "OPEN"
 140 IF A(D - 1, E) = X THEN PRINT "WALL"
-150 PRINT "EAST: ";
+150 COLOR 15: PRINT " East: ";: COLOR 13
 160 IF A(D, E + 1) = S THEN PRINT "OPEN"
 170 IF A(D, E + 1) = X THEN PRINT "WALL"
-180 PRINT "WEST: ";
+180 COLOR 15: PRINT " West: ";: COLOR 13
 190 IF A(D, E - 1) = S THEN PRINT "OPEN"
 200 IF A(D, E - 1) = X THEN PRINT "WALL"
-210 PRINT
-220 PRINT "THE DWARVEN SOURCE BEAM READS";
-230 PRINT 100 * ABS(Z - D) + 10 * ABS(Y - E)
+210 PRINT: COLOR 15
+220 COLOR 11: PRINT "The dwarven source beam reads";
+230 PRINT 100 * ABS(Z - D) + 10 * ABS(Y - E): COLOR 15
 240 REM ********************************
 250 PRINT: PRINT: PRINT
-260 PRINT "Which direction do you want"
-270 PRINT "to move?"
-280 PRINT: PRINT "N - north, S - south"
-290 PRINT "E - east, W - west, H - help"
-300 INPUT A$
+260 PRINT "Which direction do you want to move?"
+280 PRINT "N - north, S - south, E - east, W - west, H - help"
+300 PRINT: COLOR 10: INPUT "Your move"; A$: COLOR 15
+305 IF A$ >= "a" AND A$ <= "z" THEN A$ = CHR$(ASC(A$) - 32)
 310 IF A$ = "N" AND A(D + 1, E) = X THEN 300
 320 IF A$ = "S" AND A(D - 1, E) = X THEN 300
 330 IF A$ = "E" AND A(D, E + 1) = X THEN 300
@@ -49,14 +48,14 @@
 480 REM help
 490 CLS
 500 PRINT
-510 PRINT "North"
-520 FOR B = 15 TO 1 STEP -1
-530 FOR C = 1 TO 15
-540 IF A(B, C) = X THEN PRINT "#";
-550 IF B = D AND C = E THEN PRINT "*";: GOTO 570
-560 IF A(B, C) = S THEN PRINT " ";
-570 NEXT C: PRINT: NEXT B
-580 PRINT "South"
+510 COLOR 13: PRINT TAB(37); "North": COLOR 15
+520 FOR B = 15 TO 1 STEP -1: PRINT TAB(25);
+530 FOR c = 1 TO 15
+540 IF A(B, c) = X THEN PRINT CHR$(178); CHR$(178);
+550 IF B = D AND c = E THEN PRINT "**";: GOTO 570
+560 IF A(B, c) = S THEN PRINT "  ";
+570 NEXT c: PRINT: NEXT B
+580 COLOR 13: PRINT TAB(37); "South": COLOR 15
 590 M = M + 15
 600 XX = 2.0: GOSUB 1000
 610 CLS: A(D, E) = S
@@ -72,14 +71,14 @@
 720 IF B = 2 THEN Y = 2
 730 IF B = 3 THEN Z = 2
 740 X = 1: S = 2
-750 FOR B = 1 TO 15: FOR C = 1 TO 15
-760 A(B, C) = X: IF RND > .8 THEN A(B, C) = S
-770 IF C < 2 OR C > 14 OR B < 2 OR B > 14 THEN A(B, C) = X
-780 NEXT C: NEXT B
+750 FOR B = 1 TO 15: FOR c = 1 TO 15
+760 A(B, c) = X: IF RND > .8 THEN A(B, c) = S
+770 IF c < 2 OR c > 14 OR B < 2 OR B > 14 THEN A(B, c) = X
+780 NEXT c: NEXT B
 790 D = 2: E = 2
 800 FOR F = 1 TO 68
-810 READ B: READ C
-820 A(B, C) = S
+810 READ B: READ c
+820 A(B, c) = S
 830 NEXT F
 840 M = -15
 850 RETURN

@@ -182,9 +182,12 @@
 1820 RE = 1: REM RE is sales resistance factor
 1830 RETURN
 1840 REM delay subroutine
-1850 FOR Z = 1 TO 3000: NEXT Z: RETURN
+1850 XX = 1.5: GOSUB 2000: RETURN
 1860 DATA "eponyms","bicycles","harmonicas"
 1870 DATA "kazoos","lecterns","moleskins"
 1880 DATA "carpetbags","pith helmets","sky hooks"
 1890 DATA "barbells"
+2000 ZZ = TIMER + XX
+2010 IF TIMER < ZZ THEN 2010
+2020 RETURN
 

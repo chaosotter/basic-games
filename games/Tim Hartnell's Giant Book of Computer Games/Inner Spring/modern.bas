@@ -7,32 +7,34 @@
 60 GOTO 30
 70 REM ************************
 80 PRINT: PRINT: PRINT
-90 PRINT "MY FIRST NUMBER IS"; A
-100 PRINT "     MY SECOND IS"; B
+90 PRINT "My first number is";: COLOR 11: PRINT A;: COLOR 15: PRINT "and my second is";
+100 COLOR 11: PRINT STR$(B);: COLOR 15: PRINT "."
 110 PRINT
-120 PRINT "YOU HAVE $"; D
+115 D$ = STR$(D): D$ = RIGHT$(D$, LEN(D$) - 1)
+120 COLOR 12: PRINT "You have $"; D$; ".": COLOR 15
 130 PRINT
-140 PRINT "HOW MUCH DO YOU BET"
-150 PRINT "MY NEXT NUMBER LIES"
-160 PRINT "BETWEEN"; A; "AND"; B;
-170 INPUT E
+135 IF A > B THEN X = A: A = B: B = X
+140 COLOR 10: PRINT "How much do you bet my next number lies betwen"; A; "and"; STR$(B);
+170 INPUT E: COLOR 15
 180 IF E > D THEN 170
 190 D = D - E
 200 GOSUB 500
-210 PRINT: PRINT "MY NUMBER WAS"; C
+210 PRINT: PRINT "My number was"; STR$(C); "."
 220 GOSUB 500
 230 IF NOT (C > A AND C < B OR C < A AND C > B) THEN 290
-240 PRINT "WELL DONE, YOU WIN $"; 2 * E
+235 E$ = STR$(2 * E): E$ = RIGHT$(E$, LEN(E$) - 1)
+240 PRINT "Well done, you win $"; E$; "."
 250 D = D + 3 * E
-260 GOSUB 500
+260 XX = 1.2: GOSUB 1000
 270 RETURN
 280 REM ************************
-290 PRINT "SORRY, YOU LOSE $"; E
-300 GOSUB 500
+290 E$ = STR$(E): E$ = RIGHT$(E$, LEN(E$) - 1)
+295 PRINT "Sorry, you lose $"; E$; "."
+300 XX = 1.2: GOSUB 1000
 310 RETURN
 320 REM ************************
 330 D = 20
-340 CLS
+340 CLS: COLOR 15
 350 A = INT(RND * 13) + 1
 360 B = INT(RND * 13) + 1
 370 IF ABS(A - B) < 2 OR ABS(A - B) > 6 THEN 360
@@ -41,11 +43,7 @@
 400 RETURN
 410 REM ************************
 420 PRINT
-430 PRINT "THE GAME IS OVER"
-440 PRINT
-450 PRINT "YOU ARE BROKE!"
-460 PRINT
-470 PRINT "THANKS FOR THE GAME"
+430 PRINT "The game is over, and you are broke!  Thanks for the game."
 480 END
 490 REM ************************
 500 XX = 0.7: GOSUB 1000: RETURN

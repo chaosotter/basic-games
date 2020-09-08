@@ -21,13 +21,13 @@
 210 REM ****************************
 220 PRINT "THE "; A$(1); " "; A$(2); " "; A$(3)
 230 PRINT "     IN THE "; A$(4); "..."
-240 PRINT A$(S); " FOR "; A$(6); ","
+240 PRINT A$(5); " FOR "; A$(6); ","
 250 PRINT "   TO "; A$(7); " THE "; A$(8); "..."
 260 PRINT " "; A$(9); ", THEN "; A$(10)
 270 PRINT "    ..."; A$(11); ", "; A$(12); "."
 280 PRINT: PRINT
 290 REM ****************************
-300 IF INKEY$ = "" THEN 300
+300 XX = 5.0: GOSUB 1000
 310 GOTO 90
 320 REM ****************************
 330 DATA "APPLICANT","SUPPLICANT","MENDICANT","BEGGAR","ASPIRANT","CLAIMANT","POSTULANT","CONVOY","SENTINEL","CASTELLAN"
@@ -46,4 +46,7 @@
 460 READ B$
 470 NEXT N
 480 RETURN
+1000 ST = TIMER + XX
+1010 IF TIMER < ST THEN 1010
+1020 RETURN
 

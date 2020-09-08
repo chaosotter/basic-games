@@ -5,8 +5,7 @@
 40 GOSUB 430: REM Human guess
 50 GOSUB 150: REM Computer guess
 60 IF HS + CS < 26 THEN 30
-70 PRINT "That's brings us to the end"
-80 PRINT "of a round of Proboscidean!"
+70 PRINT "That brings us to the end of a round of Proboscidean!"
 90 PRINT
 100 IF HS > CS THEN PRINT "You're the winner!"
 110 IF CS > HS THEN PRINT "I'm the winner, human!"
@@ -43,13 +42,13 @@
 420 REM ********************
 430 REM Human guess
 440 MOVE = 1
-450 PRINT: INPUT "Enter card choice number one"; A
+450 PRINT: COLOR 10: INPUT "Enter card number one"; A: COLOR 15
 460 IF A < 1 OR A > 52 THEN 450
-470 IF RIGHT$(A$(A), 1) = " " THEN PRINT "That card has been picked": GOTO 450
+470 IF RIGHT$(A$(A), 1) = " " THEN PRINT "That card has been picked!": GOTO 450
 480 MID$(A$(A), 3, 1) = " "
-490 INPUT "Enter card number two"; B
+490 COLOR 10: INPUT "Enter card number two"; B: COLOR 15
 500 IF B < 1 OR B > 52 OR B = A THEN 490
-510 IF RIGHT$(A$(B), 1) = " " THEN PRINT "That card has been picked": GOTO 490
+510 IF RIGHT$(A$(B), 1) = " " THEN PRINT "That card has been picked!": GOTO 490
 520 MID$(A$(B), 3, 1) = " "
 530 GOSUB 610
 540 IF LEFT$(A$(A), 1) = LEFT$(A$(B), 1) THEN PRINT "Yes, they are a pair": HS = HS + 1
@@ -60,26 +59,26 @@
 590 RETURN
 600 REM ********************
 610 REM Print out
-620 CLS: PRINT "My score is"; CS; "and": PRINT "   yours is"; HS
-630 PRINT: PRINT "We are playing on level"; 10 * LEVEL
-640 PRINT: PRINT "  ";
+620 CLS: PRINT "My score is";: COLOR 12: PRINT CS;: COLOR 15: PRINT "and yours is";: COLOR 11: PRINT STR$(HS);: COLOR 15: PRINT "."
+630 PRINT: PRINT "We are playing on level"; STR$(10 * LEVEL); "."
+640 PRINT: PRINT TAB(8);
 650 FOR Z = 1 TO 52
-660 IF Z = 6 THEN PRINT "  ";
-670 PRINT Z; " ";
+665 Z$ = STR$(Z): Z$ = RIGHT$(Z$, 2)
+670 COLOR 11: PRINT Z$; "  ";: COLOR 15
 680 B$ = RIGHT$(A$(Z), 1)
-690 IF B$ = "X" THEN PRINT "-- ";
-700 IF B$ = " " THEN PRINT LEFT$(A$(Z), 2); " ";
-710 IF 5 * (INT(Z / 5)) = Z THEN PRINT
+690 IF B$ = "X" THEN COLOR 7: PRINT "--  ";: COLOR 15
+700 IF B$ = " " THEN COLOR 13: PRINT LEFT$(A$(Z), 2); "  ";: COLOR 15
+710 IF 5 * (INT(Z / 5)) = Z THEN PRINT: PRINT TAB(8);
 720 NEXT Z
 730 PRINT
 740 PRINT
-750 IF MOVE = 1 THEN PRINT "Your cards:"; A; "and"; B
-760 IF MOVE = 0 THEN PRINT "My cards:-"; A; "and"; B
+750 IF MOVE = 1 THEN PRINT "Your cards:"; A; "and"; STR$(B); "."
+760 IF MOVE = 0 THEN PRINT "My cards:"; A; "and"; STR$(B); "."
 770 RETURN
 780 REM ********************
 790 REM Initialise/Shuffle
 800 RANDOMIZE VAL(RIGHT$(TIME$, 2))
-820 CLS: PRINT "Please stand by, card-sharp!"
+820 CLS: COLOR 15: PRINT "Please stand by, card-sharp!"
 830 PRINT: PRINT "Start flexing those memory muscles..."
 840 CS = 0: HS = 0: R = 1: MOVE = 3
 850 FOR B = 1 TO 52
@@ -95,7 +94,7 @@
 950 NEXT J
 960 PRINT: PRINT "What level of difficulty (1 - 10)?"
 970 PRINT "(10 is easy, 1 is almost IMPOSSIBLE!)"
-980 INPUT LEVEL: IF LEVEL < 1 OR LEVEL > 10 THEN 980
+980 PRINT: COLOR 10: INPUT "Your choice (1-10)"; LEVEL: COLOR 15: IF LEVEL < 1 OR LEVEL > 10 THEN 980
 990 LEVEL = LEVEL / 10
 1000 RETURN
 1010 DATA "AHX","2HX","3HX","4HX","5HX","6HX","7HX","8HX","9HX","THX","JHX","QHX","KHX"

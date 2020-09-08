@@ -1,5 +1,5 @@
 10 REM Under'n'over
-20 RANDOMIZE VAL(RIGHT$(TIME$, 2))
+20 RANDOMIZE TIMER
 30 CLS
 40 M = 30
 50 GOSUB 450
@@ -19,7 +19,7 @@
 190 GOSUB 470
 200 INPUT "Now how much would you like to bet"; A
 210 GOSUB 470
-220 IF A > M THEN PRINT "You haven't got that muchl": PRINT: GOTO 200
+220 IF A > M THEN PRINT "You haven't got that much!": PRINT: GOTO 200
 230 B = INT(RND * 6) + 1
 240 PRINT , "Die one came up"; B
 250 GOSUB 470
@@ -40,11 +40,14 @@
 400 GOSUB 450
 410 GOSUB 470
 420 IF M < 1 THEN PRINT "You're flat broke, buddy": PRINT "so I gotta close the casino": PRINT: PRINT "There's no room for deadbeats in my joint": END
-430 PRINT
+430 CLS
 440 GOTO 50
 450 PRINT: PRINT "You now have $"; M
 460 RETURN
-470 FOR P = 1 TO 1000: NEXT P
+470 XX = 0.8: GOSUB 1000
 480 PRINT: PRINT
 490 RETURN
+1000 ST = TIMER + XX
+1010 IF TIMER < ST THEN 1010
+1020 RETURN
 

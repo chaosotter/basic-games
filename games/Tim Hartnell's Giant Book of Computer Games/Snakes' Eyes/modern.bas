@@ -1,14 +1,13 @@
 10 REM Snakes Eyes
-20 CLS
+20 CLS: COLOR 15
 30 H = 0: CZ = 0
 40 HS = 0: CS = 0
 50 PRINT "Please stand by..."
 60 GOSUB 700
-70 PRINT: PRINT
-80 PRINT "Your total is"; HS: PRINT
+70 PRINT
+80 PRINT "Your total is";: COLOR 11: PRINT STR$(HS);: COLOR 15: PRINT ".": PRINT
 90 GOSUB 710
-100 PRINT "Press 'R' to roll"
-110 PRINT "'Q' to quit"
+100 COLOR 10: PRINT "Press 'R' to roll or 'Q' to quit": COLOR 15
 120 N = 0
 130 W$ = INKEY$
 140 N = N + 1
@@ -17,15 +16,15 @@
 170 GOSUB 370
 180 IF Z = 7 THEN 350
 190 HS = HS + Z
-200 PRINT: PRINT "Your total is"; HS
+200 PRINT
 210 GOTO 60
-220 PRINT: PRINT: PRINT "Stand by"
+220 PRINT: PRINT: PRINT "Stand by..."
 230 GOSUB 700
 240 GOSUB 370
 250 IF Z = 7 THEN 330
 260 CS = CS + Z
-270 PRINT: PRINT "My total is"; CS
-280 PRINT "Your total is"; HS
+270 PRINT: COLOR 12: PRINT "My total is"; STR$(CS); "."
+280 COLOR 11: PRINT "Your total is"; STR$(HS); ".": COLOR 15
 290 IF CS < HS THEN 220
 300 IF CS = HS THEN PRINT "It's a dead heat!"
 310 IF CS > HS THEN 350
@@ -39,18 +38,18 @@
 390 FOR Q = 1 TO 20
 400 X = INT(RND * 6) + 1
 410 Y = INT(RND * 6) + 1
-420 PRINT: PRINT "Die one:"; X; "   Die two:"; Y
+420 LOCATE 2, 1: PRINT "Die one:";: COLOR 11: PRINT X;: COLOR 15: PRINT "   Die two:";: COLOR 11: PRINT Y: COLOR 15
 430 XX = 0.1: GOSUB 1000
 440 NEXT Q
 450 CLS
 460 GOSUB 710
-470 PRINT "Die one:"; X; "   Die two:"; Y
+470 PRINT "Die one:";: COLOR 11: PRINT X;: COLOR 15: PRINT "   Die two:";: COLOR 11: PRINT Y: COLOR 15
 489 Z = X + Y
 490 GOSUB 700
 500 RETURN
 510 PRINT: PRINT "The score is:"
-520 PRINT , "You:"; H
-530 PRINT , " He:"; CZ
+520 COLOR 11: PRINT , "You:"; H
+530 COLOR 12: PRINT , " He:"; CZ: COLOR 15
 540 IF CZ + H = 9 THEN 580
 550 GOSUB 710
 560 IF H > CZ THEN PRINT "You are leading!"
@@ -60,15 +59,13 @@
 600 IF CZ + H = 9 THEN 620
 610 GOTO 40
 620 PRINT: PRINT: PRINT
-630 PRINT "Well, buddy, that's the end"
-640 PRINT "    of the game..."
+630 PRINT "Well, buddy, that's the end of the game..."
 650 PRINT: PRINT: PRINT
-660 PRINT "Your final score was"; H
-670 PRINT "and mine was"; CZ: PRINT
-680 IF H < CZ THEN PRINT "I'm the winner!!": END
-690 PRINT "You're the winner!!": END
-700 XX = 1.0: GOSUB 1000: RETURN
-710 PRINT "-------------------------": PRINT: RETURN
+660 PRINT "Your final score was"; H; " and mine was"; STR$(CZ); ".": PRINT
+680 IF H < CZ THEN PRINT "I'm the winner!": END
+690 PRINT "You're the winner!": END
+700 XX = 0.7: GOSUB 1000: RETURN
+710 COLOR 9: PRINT STRING$(40, 196): COLOR 15: PRINT: RETURN
 1000 ST = TIMER + XX
 1010 IF TIMER < ST THEN 1010
 1020 RETURN

@@ -1,5 +1,5 @@
 10 REM No Sweat
-20 RANDOMIZE VAL(RIGHT$(TIME$, 2))
+20 RANDOMIZE TIMER
 30 M = 30
 40 CLS: GOSUB 240
 50 INPUT "How much would you like to bet"; A
@@ -18,18 +18,21 @@
 180 NEXT C
 190 GOSUB 280: GOSUB 280
 200 IF M > 250 THEN 310
-210 IF M > 0 THEN INPUT ZZ$: GOTO 40
+210 IF M > 0 THEN 40
 220 PRINT "The game is over, 'cos you're broke!"
 230 GOTO 220
 240 PRINT "***************************"
 250 PRINT "   Your stake is now $"; M
 260 PRINT "***************************"
 270 RETURN
-280 FOR P = 1 TO 1000
-290 NEXT P
+280 XX = 1.0: GOSUB 1000
 300 RETURN
 310 FOR J = 1 TO 30
 320 PRINT "You've topped $250!"
 330 PRINT TAB(J); "Well done!!"
 340 NEXT J
+350 END
+1000 ST = TIMER + XX
+1010 IF TIMER < ST THEN 1010
+1020 RETURN
 

@@ -7,15 +7,14 @@
 70 CLS
 80 GUESS = GUESS + 1
 90 PRINT: PRINT
-100 PRINT "Guess number"; GUESS
+100 COLOR 12: PRINT "Guess number"; GUESS: COLOR 15
 110 PRINT
-120 PRINT "My guess is"; B(1); B(2); B(3); B(4)
-130 PRINT: PRINT
-140 INPUT "How many blacks"; B
+120 PRINT "My guess is:";: COLOR 13: PRINT B(1); B(2); B(3); B(4): COLOR 15
+130 PRINT
+140 COLOR 10: INPUT "How many blacks (right digit, right place)"; B: COLOR 15
 150 IF B = 4 THEN GOTO 600
 160 IF B = 3 THEN 190
-170 PRINT: PRINT
-180 INPUT "And how many whites"; W
+180 COLOR 10: INPUT "How many whites (right digit, wrong place)"; W: COLOR 15
 190 IF W + B = 4 THEN Q = 4: C(1) = B(1): C(2) = B(2): C(3) = B(3): C(4) = B(4)
 200 IF B + W = 0 THEN C(B(1)) = 0: C(B(2)) = 0: C(B(3)) = 0: C(B(4)) = 0: GOTO 30
 210 IF B > AID THEN FOR Z = 1 TO 4: E(Z) = B(Z): NEXT Z: AID = B
@@ -59,7 +58,7 @@
 580 NEXT Z
 590 RETURN
 600 PRINT: PRINT
-610 PRINT "I guessed your code of"; B(1); B(2); B(3); B(4)
-620 PRINT TAB(5); "in just"; GUESS; "guesses"
+610 PRINT "I guessed your code of";: COLOR 13: PRINT STR$(B(1)); STR$(B(2)); STR$(B(3)); STR$(B(4));: COLOR 15
+620 PRINT " in just"; GUESS; "guesses!"
 630 END
 

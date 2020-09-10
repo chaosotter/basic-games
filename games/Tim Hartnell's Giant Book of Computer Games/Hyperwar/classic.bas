@@ -125,7 +125,7 @@
 1250 PRINT "********************************************"
 1260 IF T > 0 THEN PRINT: PRINT "Dosznti destruction tally is"; T
 1270 PRINT ">>>Ships galactic co-ordinates are"; X; Y; Z
-1280 PRINT: PRINT ">>>>>Doszntl mothership located at"; A; B; C
+1280 PRINT: PRINT ">>>>>Dosznti mothership located at"; A; B; C
 1290 PRINT: PRINT "The Dosznti is ";
 1300 IF A <> X OR B <> Y THEN PRINT "to the";
 1310 IF A < X THEN PRINT " north";

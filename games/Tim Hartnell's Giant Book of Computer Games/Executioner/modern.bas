@@ -1,7 +1,7 @@
 10 REM Executioner
 20 CLS
 30 N = 0: Y = 0
-40 COLOR 13: PRINT "Press 'E' when you're read to face the Executioner...": COLOR 15
+40 COLOR 13: PRINT "Press 'E' when you're ready to face the Executioner...": COLOR 15
 60 N = N + 1: IF INKEY$ <> "e" AND INKEY$ <> "E" THEN 60
 70 RANDOMIZE N
 80 FOR G = 1 TO RND * 22 + 1

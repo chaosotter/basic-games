@@ -1,8 +1,7 @@
 10 REM Executioner
 20 CLS
 30 N = 0: Y = 0
-40 PRINT "Press 'E' when you're ready"
-50 PRINT "to face the Executioner..."
+40 COLOR 13: PRINT "Press 'E' when you're read to face the Executioner...": COLOR 15
 60 N = N + 1: IF INKEY$ <> "e" AND INKEY$ <> "E" THEN 60
 70 RANDOMIZE N
 80 FOR G = 1 TO RND * 22 + 1
@@ -15,14 +14,15 @@
 150 D(G) = B(G)
 160 NEXT G
 170 Q = INT(N + N / 2 + .5)
-180 CLS: PRINT: PRINT "You have to guess the executioner's"
-190 PRINT "word in just"; Q; "guesses"
+180 CLS: COLOR 15: PRINT: PRINT "You have to guess the executioner's word in just"; Q; "guesses."
 200 GOSUB 480
 210 FOR J = 1 TO Q: Y = Y + 1
 220 GOSUB 400
 230 IF H = N THEN 340
 240 PRINT: PRINT: PRINT Q + 1 - J; "chances left..."
-250 PRINT: INPUT "Enter your next guess"; C$
+250 PRINT: COLOR 10: PRINT "Enter your next guess": COLOR 15
+252 C$ = INKEY$: IF C$ = "" THEN 252
+255 IF C$ >= "a" AND C$ <= "z" THEN C$ = CHR$(ASC(C$) - 32)
 260 F = ASC(C$)
 270 FOR G = 1 TO N
 280 IF D(G) = F THEN D(G) = 0: J = J - 1
@@ -31,17 +31,16 @@
 310 GOSUB 400
 320 PRINT: PRINT: PRINT "So sorry, but you gotta go now!"
 330 GOTO 370
-340 PRINT: PRINT "Whew! You've staved off"
-350 PRINT "execution for another day"
-360 PRINT "You got it in"; Y - 1; "guesses"
-370 PRINT: PRINT "The Executioner's word was "; A$
+340 PRINT: PRINT "Whew!  You've staved off execution for another day."
+360 PRINT "You got it in"; Y - 1; "guesses."
+370 PRINT: PRINT "The Executioner's word was ";: COLOR 11: PRINT A$: COLOR 15
 380 END
 400 H = 0: CLS: PRINT: PRINT: PRINT
 410 FOR E = 1 TO N
-420 IF B(E) = D(E) THEN PRINT ".";
-430 IF B(E) <> D(E) THEN PRINT CHR$(B(E));: H = H + 1
+420 IF B(E) = D(E) THEN COLOR 14: PRINT ".";: COLOR 15
+430 IF B(E) <> D(E) THEN COLOR 11: PRINT CHR$(B(E));: COLOR 15: H = H + 1
 440 NEXT E
-450 PRINT: PRINT: IF H <> N THEN PRINT "You have"; H; "correct letters"
+450 PRINT: PRINT: IF H <> N THEN PRINT "You have"; H; "correct letters."
 460 PRINT
 470 RETURN
 480 XX = 0.5: GOSUB 1000

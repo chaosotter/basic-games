@@ -1,4 +1,5 @@
 10 REM Cavalcade of Puzzles
+15 RANDOMIZE TIMER
 20 GOSUB 2530
 30 X = .5: N = 0
 40 PRINT "Think of a number between"

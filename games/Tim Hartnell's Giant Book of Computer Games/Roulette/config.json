@@ -1,6 +1,6 @@
 {
     "name": "Roulette",
-    "shortName": "roulette",
+    "shortName": "rouletteth",
     "platform": {
 	"system": "IBM PC"
     },
@@ -22,6 +22,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "roulette.qb64"
+	"id": "rouletteth.qb64"
     }
 }

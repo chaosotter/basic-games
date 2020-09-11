@@ -1,6 +1,6 @@
 {
     "name": "Knightsbridge",
-    "shortName": "knights",
+    "shortName": "knightbr",
     "platform": {
 	"system": "IBM PC"
     },
@@ -22,6 +22,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "knights.qb64"
+	"id": "knightbr.qb64"
     }
 }

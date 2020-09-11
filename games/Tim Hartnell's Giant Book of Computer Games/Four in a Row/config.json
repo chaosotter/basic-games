@@ -1,6 +1,6 @@
 {
     "name": "Four in a Row",
-    "shortName": "fourrow",
+    "shortName": "fourrowth",
     "platform": {
 	"system": "IBM PC"
     },
@@ -22,6 +22,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "fourrow.qb64"
+	"id": "fourrowth.qb64"
     }
 }

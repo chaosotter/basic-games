@@ -11,6 +11,7 @@ efforts within the collection.
 * Color Computer Playground
 * Creepy Computer Games
 * More BASIC Computer Games
+* Tim Hartnell's Giant Book of Computer Games
 
 ### Magazines
 

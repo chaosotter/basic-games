@@ -1,4 +1,4 @@
-TUTANKBAMEN'S TOMB
+TUTANKHAMEN'S TOMB
 
 Tutankhamen was pharaoh of the 18th Dynasty of Egypt, around 1360 B.C.
 He became king at the age of 11.  The reason he is so well known today

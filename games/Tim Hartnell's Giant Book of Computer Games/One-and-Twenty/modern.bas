@@ -1,7 +1,7 @@
 10 REM One-and-Twenty
 20 HS = 0: CS = 0
 30 H = 0: C = 0: N = 0
-40 PRINT
+40 CLS: PRINT
 50 COLOR 10: PRINT "Press 'R' to roll, 'S' to stand": COLOR 15
 60 A$ = INKEY$
 70 N = N + 1

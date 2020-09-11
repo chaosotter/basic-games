@@ -1,5 +1,5 @@
 10 REM Switcheroo
-20 CLS
+20 CLS: COLOR 15
 30 PRINT: PRINT "Please stand by..."
 40 GOSUB 100
 50 GOSUB 230
@@ -23,10 +23,10 @@
 230 REM Print out
 240 CLS
 250 PRINT: PRINT: PRINT
-260 PRINT "Move number"; M
+260 COLOR 12: PRINT TAB(33); "Move number"; M: COLOR 15
 270 PRINT: PRINT: PRINT
-280 PRINT A$
-290 PRINT: PRINT "Which number to switcheroo?"
+280 COLOR 11: PRINT TAB(35); A$: COLOR 15
+290 PRINT: PRINT: COLOR 10: PRINT TAB(26); "Which number to switcheroo?": COLOR 15
 300 IF INKEY$ <> "" THEN 300
 310 C$ = INKEY$
 320 R = VAL(C$)
@@ -38,9 +38,7 @@
 380 A$ = LEFT$(A$, R - 1) + B$
 390 RETURN
 400 PRINT: PRINT: PRINT
-410 PRINT A$
-420 PRINT: PRINT: PRINT
-430 PRINT "You did it, champ!"
+430 COLOR 12: PRINT "You did it, champ!": COLOR 15
 440 PRINT: PRINT "And it took just"; M; "moves..."
 450 END
 

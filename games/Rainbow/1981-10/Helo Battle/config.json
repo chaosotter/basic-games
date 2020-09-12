@@ -1,0 +1,27 @@
+{
+    "name": "Helo Battle",
+    "shortName": "helobat",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Falsoft"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1981-10",
+	"url": "https://archive.org/details/rainbowmagazine-1981-10/page/n7/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "helobat.coco"
+    }
+}

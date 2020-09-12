@@ -1,0 +1,27 @@
+{
+    "name": "Oh, Gob!",
+    "shortName": "ohgob",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Fred Scerbo"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-01",
+	"url": "https://archive.org/details/rainbowmagazine-1982-01/page/n9/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "ohgob.coco"
+    }
+}

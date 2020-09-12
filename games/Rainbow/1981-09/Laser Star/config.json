@@ -1,0 +1,27 @@
+{
+    "name": "Laser Star",
+    "shortName": "laserstar",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"JARB Software"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1981-09",
+	"url": "https://archive.org/details/rainbowmagazine-1981-09/page/n9/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "laserstar.coco"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Sky-Eye",
+    "shortName": "skyeye",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Fred Scerbo",
+	"Robert Dobbert"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-03",
+	"url": "https://archive.org/details/198203Rainbow/page/n3/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "skyeye.coco"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "3D Maze",
+    "shortName": "3dmaze",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Scott L. Bain"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-04",
+	"url": "https://archive.org/details/198204Rainbow/page/n5/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "3dmaze.coco"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "JARBCode",
+    "shortName": "jarbcode",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Julie Kerr"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-05",
+	"url": "https://archive.org/details/198205Rainbow/page/n51/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "jarbcode.coco"
+    }
+}

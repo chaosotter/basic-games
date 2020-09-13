@@ -1,0 +1,28 @@
+{
+    "name": "Wild, Wild Web",
+    "shortName": "wildweb",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Fred Scerbo",
+	"Dale Haggerty"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-04",
+	"url": "https://archive.org/details/198204Rainbow/page/n35/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "wildweb.coco"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Swamp Wars",
+    "shortName": "swampwar",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Robert Dobbert",
+	"Dale Haggerty"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-06",
+	"url": "https://archive.org/details/198206Rainbow/page/n47/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "swampwar.coco"
+    }
+}

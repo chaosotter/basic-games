@@ -1,0 +1,27 @@
+{
+    "name": "Tuning",
+    "shortName": "tuning",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Julie Kerr"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-04",
+	"url": "https://archive.org/details/198204Rainbow/page/n35/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "tuning.coco"
+    }
+}

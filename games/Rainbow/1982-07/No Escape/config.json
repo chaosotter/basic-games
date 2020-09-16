@@ -1,0 +1,27 @@
+{
+    "name": "No Escape",
+    "shortName": "noescape",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Jim Ebbert"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-07",
+	"url": "https://archive.org/details/198207Rainbow/page/n41/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "noescape.coco"
+    }
+}

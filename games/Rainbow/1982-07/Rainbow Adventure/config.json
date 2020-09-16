@@ -1,0 +1,27 @@
+{
+    "name": "Rainbow Adventure",
+    "shortName": "rainadv",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Jorge Mir"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-07",
+	"url": "https://archive.org/details/198207Rainbow/page/n7/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "rainadv.coco"
+    }
+}

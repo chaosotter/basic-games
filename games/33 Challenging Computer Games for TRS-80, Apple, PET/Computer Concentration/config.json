@@ -1,0 +1,27 @@
+{
+    "name": "Computer Concentration",
+    "shortName": "concent",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"David Chance"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "33 Challenging Computer Games for TRS-80/Apple/PET",
+	"publisher": "TAB Books Inc.",
+	"date": "1981",
+	"url": "https://archive.org/details/33_Challenging_Computer_Games_1981_Tab_Books"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "concent.qb64"
+    }
+}

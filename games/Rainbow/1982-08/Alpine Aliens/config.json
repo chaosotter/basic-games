@@ -1,0 +1,27 @@
+{
+    "name": "Alpine Aliens",
+    "shortName": "alpine",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Fred Scerbo",
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-08",
+	"url": "https://archive.org/details/198208Rainbow/page/n33/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "alpine.coco"
+    }
+}

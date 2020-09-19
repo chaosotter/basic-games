@@ -1,0 +1,27 @@
+{
+    "name": "Memory Test",
+    "shortName": "memtest",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Del Walrath"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-09",
+	"url": "https://archive.org/details/198209Rainbow/page/n13/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "memtest.coco"
+    }
+}

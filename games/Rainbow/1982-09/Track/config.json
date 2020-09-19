@@ -1,0 +1,27 @@
+{
+    "name": "Track",
+    "shortName": "track",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Al Hine"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-09",
+	"url": "https://archive.org/details/198209Rainbow/page/n59/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "track.coco"
+    }
+}

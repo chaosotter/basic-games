@@ -1,0 +1,27 @@
+{
+    "name": "Sailor",
+    "shortName": "sailor",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"John Fraysse"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-10",
+	"url": "https://archive.org/details/198210Rainbow/page/n79/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "sailor.coco"
+    }
+}

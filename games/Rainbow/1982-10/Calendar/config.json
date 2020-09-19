@@ -1,0 +1,27 @@
+{
+    "name": "Calendar",
+    "shortName": "calendar",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Herbert B. Ridge"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-10",
+	"url": "https://archive.org/details/198210Rainbow/page/n7/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "calendar.coco"
+    }
+}

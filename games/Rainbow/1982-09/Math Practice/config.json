@@ -1,0 +1,27 @@
+{
+    "name": "Math Practice",
+    "shortName": "mathprac",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Geoff Wells"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-09",
+	"url": "https://archive.org/details/198209Rainbow/page/n81/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "mathprac.coco"
+    }
+}

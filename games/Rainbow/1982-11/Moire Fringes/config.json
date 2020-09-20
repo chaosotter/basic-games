@@ -1,0 +1,28 @@
+{
+    "name": "Moire Fringes",
+    "shortName": "moire",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"R. T. Delburgo",
+	"D. Delburgo"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-11",
+	"url": "https://archive.org/details/198211Rainbow/page/n21/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "moire.coco"
+    }
+}

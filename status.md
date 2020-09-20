@@ -17,7 +17,7 @@ efforts within the collection.
 
 * Color Computer Magazine (through March 1984)
 * People's Computer Company Newsletter (through Nov. 1973)
-* Rainbow Magazine (through July 1982)
+* Rainbow Magazine (through Nov. 1982)
 
 ## Source materials in progress
 
@@ -30,4 +30,4 @@ efforts within the collection.
 
 * Color Computer Magazine (all issues after March 1984)
 * People's Computer Company Newsletter (all issues after Nov. 1973)
-* Rainbow Magazine (all issues after July 1982)
+* Rainbow Magazine (all issues after Nov. 1982)

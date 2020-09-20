@@ -1,0 +1,27 @@
+{
+    "name": "Startrench Warfare",
+    "shortName": "starwarf",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Fred Scerbo"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-11",
+	"url": "https://archive.org/details/198211Rainbow/page/n7/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "starwarf.coco"
+    }
+}

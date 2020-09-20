@@ -1,0 +1,27 @@
+{
+    "name": "Towers of Hanoi",
+    "shortName": "hanoi",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Robert A. Kelley"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-11",
+	"url": "https://archive.org/details/198211Rainbow/page/n41/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "hanoi.coco"
+    }
+}

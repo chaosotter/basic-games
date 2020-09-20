@@ -1,0 +1,27 @@
+{
+    "name": "Health",
+    "shortName": "health",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"John Fernald"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-11",
+	"url": "https://archive.org/details/198211Rainbow/page/n123/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "health.coco"
+    }
+}

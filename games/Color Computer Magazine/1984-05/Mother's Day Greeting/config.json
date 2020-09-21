@@ -1,0 +1,27 @@
+{
+    "name": "Mother's Day Greeting",
+    "shortName": "momday",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Jean Plesser"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Color Computer Magazine",
+	"publisher": "New England Publications, Inc.",
+	"date": "1984-05",
+	"url": "https://archive.org/details/color-computer-magazine-1984-05/page/n51/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "momday.coco"
+    }
+}

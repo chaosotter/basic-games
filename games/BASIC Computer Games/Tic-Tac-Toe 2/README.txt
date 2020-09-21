@@ -15,7 +15,7 @@ after each move.  This is ideally suited to a CRT terminal,
 particularly if you modify it to not print out a new board after each
 move, but rather use the cursor to make the move.
 
-The first program was written by Tom Koos while a student researcher
+The first program was written by Tom Kloos while a student researcher
 at the Oregon Museum of Science and Industry; it was extensively
 modified by Steve North of Creative Computing.  The author of the
 second game is Curt Flick of Akron, Ohio.

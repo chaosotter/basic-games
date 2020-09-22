@@ -1,0 +1,28 @@
+{
+    "name": "Retro-Action",
+    "shortName": "retroact",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Les Battyanyi",
+	"Todd Harrison"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Tim Hartnell's Second Giant Book of Computer Games",
+	"publisher": "Ballantine Books",
+	"date": "1985",
+	"url": "https://archive.org/details/second-giant-book-of-computer-games"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "retroact.qb64"
+    }
+}

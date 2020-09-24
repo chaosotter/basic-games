@@ -1,6 +1,7 @@
 import os
 import subprocess
 
+import c64
 import coco
 import ibmpc
 
@@ -57,6 +58,8 @@ class Game(object):
             ibmpc.Prepare(self, dest)
         elif self.Platform() == 'Coco':
             coco.Prepare(self, dest)
+        elif self.Platform() == 'C64':
+            c64.Prepare(self, dest)
 
         def Attr(file, key, value):
             file.write("%-20s  %s\n" % (key, value))

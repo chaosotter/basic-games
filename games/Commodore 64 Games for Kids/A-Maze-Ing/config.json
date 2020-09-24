@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "shortName": "",
+    "name": "A-Maze-Ing",
+    "shortName": "amazeing",
     "platform": {
 	"system": "C64"
     },
@@ -23,6 +23,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": ".c64"
+	"id": "amazeing.c64"
     }
 }

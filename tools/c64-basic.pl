@@ -11,44 +11,44 @@
 
 # token map
 
-%token = ( 0x80 => 'end',     0x81 => 'for',    0x82 => 'next',   0x83 => 'data',
-	   0x84 => 'input#',  0x85 => 'input',  0x86 => 'dim',    0x87 => 'read',
-	   0x88 => 'let',     0x89 => 'goto',   0x8a => 'run',    0x8b => 'if',
-	   0x8c => 'restore', 0x8d => 'gosub',  0x8e => 'return', 0x8f => 'rem',
+%token = ( 0x80 => 'END',     0x81 => 'FOR',    0x82 => 'NEXT',   0x83 => 'DATA',
+	   0x84 => 'INPUT#',  0x85 => 'INPUT',  0x86 => 'DIM',    0x87 => 'READ',
+	   0x88 => 'LET',     0x89 => 'GOTO',   0x8a => 'RUN',    0x8b => 'IF',
+	   0x8c => 'RESTORE', 0x8d => 'GOSUB',  0x8e => 'RETURN', 0x8f => 'REM',
 
-	   0x90 => 'stop',    0x91 => 'on',     0x92 => 'wait',   0x93 => 'load',
-	   0x94 => 'save',    0x95 => 'verify', 0x96 => 'def',    0x97 => 'poke',
-	   0x98 => 'print#',  0x99 => 'print',  0x9a => 'cont',   0x9b => 'list',
-	   0x9c => 'clr',     0x9d => 'cmd',    0x9e => 'sys',    0x9f => 'open',
+	   0x90 => 'STOP',    0x91 => 'ON',     0x92 => 'WAIT',   0x93 => 'LOAD',
+	   0x94 => 'SAVE',    0x95 => 'VERIFY', 0x96 => 'DEF',    0x97 => 'POKE',
+	   0x98 => 'PRINT#',  0x99 => 'PRINT',  0x9a => 'CONT',   0x9b => 'LIST',
+	   0x9c => 'CLR',     0x9d => 'CMD',    0x9e => 'SYS',    0x9f => 'OPEN',
 
-	   0xa0 => 'close',   0xa1 => 'get',    0xa2 => 'new',    0xa3 => 'tab(',
-	   0xa4 => 'to',      0xa5 => 'fn',     0xa6 => 'spc(',   0xa7 => 'then',
-	   0xa8 => 'not',     0xa9 => 'step',   0xaa => '+',      0xab => '-',
-	   0xac => '*',       0xad => '/',      0xae => '^',      0xaf => 'and',
+	   0xa0 => 'CLOSE',   0xa1 => 'GET',    0xa2 => 'NEW',    0xa3 => 'TAB(',
+	   0xa4 => 'TO',      0xa5 => 'FN',     0xa6 => 'SPC(',   0xa7 => 'THEN',
+	   0xa8 => 'NOT',     0xa9 => 'STEP',   0xaa => '+',      0xab => '-',
+	   0xac => '*',       0xad => '/',      0xae => '^',      0xaf => 'AND',
 
-	   0xb0 => 'or',      0xb1 => '>',      0xb2 => '=',      0xb3 => '<',
-	   0xb4 => 'sgn',     0xb5 => 'int',    0xb6 => 'abs',    0xb7 => 'usr',
-	   0xb8 => 'fre',     0xb9 => 'pos',    0xba => 'sqr',    0xbb => 'rnd',
-	   0xbc => 'log',     0xbd => 'exp',    0xbe => 'cos',    0xbf => 'sin',
+	   0xb0 => 'OR',      0xb1 => '>',      0xb2 => '=',      0xb3 => '<',
+	   0xb4 => 'SGN',     0xb5 => 'INT',    0xb6 => 'ABS',    0xb7 => 'USR',
+	   0xb8 => 'FRE',     0xb9 => 'POS',    0xba => 'SQR',    0xbb => 'RND',
+	   0xbc => 'LOG',     0xbd => 'EXP',    0xbe => 'COS',    0xbf => 'SIN',
 
-	   0xc0 => 'tan',     0xc1 => 'atn',    0xc2 => 'peek',   0xc3 => 'len',
-	   0xc4 => 'str$',    0xc5 => 'val',    0xc6 => 'asc',    0xc7 => 'chr$',
-	   0xc8 => 'left$',   0xc9 => 'right$', 0xca => 'mid$',   0xcb => 'go' );
+	   0xc0 => 'TAN',     0xc1 => 'ATN',    0xc2 => 'PEEK',   0xc3 => 'LEN',
+	   0xc4 => 'STR$',    0xc5 => 'VAL',    0xc6 => 'ASC',    0xc7 => 'CHR$',
+	   0xc8 => 'LEFT$',   0xc9 => 'RIGHT$', 0xca => 'MID$',   0xcb => 'GO' );
 
 
 # PETSCII map (C64 version)
 
-%cmap =  ( 0x00 => '{x00}',     0x01 => '{x01}',      0x02 => '{x02}',     0x03 => '{x03}',
-	   0x04 => '{x04}',     0x05 => '{wht}',      0x06 => '{x06}',     0x07 => '{x07}',
-	   0x08 => '{shifton}', 0x09 => '{shiftoff}', 0x0a => '{x0a}',     0x0b => '{x0b}',
-	   0x0c => '{x0c}',     0x0d => '{return}',   0x0e => '{so}',      0x0f => '{x0f}',
+%cmap =  ( 0x00 => '{X00}',     0x01 => '{X01}',      0x02 => '{X02}',     0x03 => '{X03}',
+	   0x04 => '{X04}',     0x05 => '{WHT}',      0x06 => '{X06}',     0x07 => '{X07}',
+	   0x08 => '{SHIFTON}', 0x09 => '{SHIFTOFF}', 0x0a => '{x0A}',     0x0b => '{X0B}',
+	   0x0c => '{X0C}',     0x0d => '{RETURN}',   0x0e => '{SO}',      0x0f => '{X0F}',
 
-	   0x10 => '{x10}',     0x11 => '{down}',     0x12 => '{rvs}',     0x13 => '{home}',
-	   0x14 => '{del}',     0x15 => '{x15}',      0x16 => '{x16}',     0x17 => '{x17}',
-	   0x18 => '{x18}',     0x19 => '{x19}',      0x1a => '{x1a}',     0x1b => '{x1b}',
-	   0x1c => '{red}',     0x1d => '{right}',    0x1e => '{grn}',     0x1f => '{blu}',
+	   0x10 => '{X10}',     0x11 => '{DOWN}',     0x12 => '{RVS}',     0x13 => '{HOME}',
+	   0x14 => '{DEL}',     0x15 => '{X15}',      0x16 => '{X16}',     0x17 => '{X17}',
+	   0x18 => '{X18}',     0x19 => '{X19}',      0x1a => '{X1A}',     0x1b => '{X1B}',
+	   0x1c => '{RED}',     0x1d => '{RIGHT}',    0x1e => '{GRN}',     0x1f => '{BLU}',
 
-	   0x20 => '{space}',   0x21 => '!',          0x22 => '"',         0x23 => '#',
+	   0x20 => '{SPACE}',   0x21 => '!',          0x22 => '"',         0x23 => '#',
 	   0x24 => '$',         0x25 => '%',          0x26 => '&',         0x27 => "'",
 	   0x28 => '(',         0x29 => ')',          0x2a => '*',         0x2b => '+',
 	   0x2c => ',',         0x2d => '-',          0x2e => '.',         0x2f => '/',
@@ -58,65 +58,65 @@
 	   0x38 => '8',         0x39 => '9',          0x3a => ':',         0x3b => ';',
 	   0x3c => '<',         0x3d => '=',          0x3e => '>',         0x3f => '?',
 
-	   0x40 => '@',         0x41 => 'a',          0x42 => 'b',         0x43 => 'c',
-	   0x44 => 'd',         0x45 => 'e',          0x46 => 'f',         0x47 => 'g',
-	   0x48 => 'h',         0x49 => 'i',          0x4a => 'j',         0x4b => 'k',
-	   0x4c => 'l',         0x4d => 'm',          0x4e => 'n',         0x4f => 'o',
+	   0x40 => '@',         0x41 => 'A',          0x42 => 'B',         0x43 => 'C',
+	   0x44 => 'D',         0x45 => 'E',          0x46 => 'F',         0x47 => 'G',
+	   0x48 => 'H',         0x49 => 'I',          0x4a => 'J',         0x4b => 'K',
+	   0x4c => 'L',         0x4d => 'M',          0x4e => 'N',         0x4f => 'O',
 
-	   0x50 => 'p',         0x51 => 'q',          0x52 => 'r',         0x53 => 's',
-	   0x54 => 't',         0x55 => 'u',          0x56 => 'v',         0x57 => 'w',
-	   0x58 => 'x',         0x59 => 'y',          0x5a => 'z',         0x5b => '[',
+	   0x50 => 'P',         0x51 => 'Q',          0x52 => 'R',         0x53 => 'S',
+	   0x54 => 'T',         0x55 => 'U',          0x56 => 'V',         0x57 => 'W',
+	   0x58 => 'X',         0x59 => 'Y',          0x5a => 'Z',         0x5b => '[',
 	   0x5c => '{#}',       0x5d => ']',          0x5e => '^',         0x5f => '{<-}',
 
-	   0x60 => '{x60}',     0x61 => '{x61}',      0x62 => '{x62}',     0x63 => '{x63}',
-	   0x64 => '{x64}',     0x65 => '{x65}',      0x66 => '{x66}',     0x67 => '{x67}',
-	   0x68 => '{x68}',     0x69 => '{x69}',      0x6a => '{x6a}',     0x6b => '{x6b}',
-	   0x6c => '{x6c}',     0x6d => '{x6d}',      0x6e => '{x6e}',     0x6f => '{x6f}',
+	   0x60 => '{X60}',     0x61 => '{X61}',      0x62 => '{X62}',     0x63 => '{X63}',
+	   0x64 => '{X64}',     0x65 => '{X65}',      0x66 => '{X66}',     0x67 => '{X67}',
+	   0x68 => '{X68}',     0x69 => '{X69}',      0x6a => '{X6A}',     0x6b => '{X6B}',
+	   0x6c => '{X6C}',     0x6d => '{X6D}',      0x6e => '{X6E}',     0x6f => '{X6F}',
 
-	   0x70 => '{x70}',     0x71 => '{x71}',      0x72 => '{x72}',     0x73 => '{x73}',
-	   0x74 => '{x74}',     0x75 => '{x75}',      0x76 => '{x76}',     0x77 => '{x77}',
-	   0x78 => '{x78}',     0x79 => '{x79}',      0x7a => '{x7a}',     0x7b => '{x7b}',
-	   0x7c => '{x7c}',     0x7d => '{x7d}',      0x7e => '{x7e}',     0x7f => '{x7f}',
+	   0x70 => '{X70}',     0x71 => '{X71}',      0x72 => '{X72}',     0x73 => '{X73}',
+	   0x74 => '{X74}',     0x75 => '{X75}',      0x76 => '{X76}',     0x77 => '{X77}',
+	   0x78 => '{X78}',     0x79 => '{X79}',      0x7a => '{X7A}',     0x7b => '{X7B}',
+	   0x7c => '{X7C}',     0x7d => '{X7D}',      0x7e => '{X7E}',     0x7f => '{X7F}',
 
-	   0x80 => '{x80}',     0x81 => '{c1}',       0x82 => '{x82}',     0x83 => '{x83}',
-	   0x84 => '{x84}',     0x85 => '{f1}',       0x86 => '{f3}',      0x87 => '{f5}',
-	   0x88 => '{f7}',      0x89 => '{f2}',       0x8a => '{f4}',      0x8b => '{f6}',
-	   0x8c => '{f8}',      0x8d => '{lf}',       0x8e => '{shiftin}', 0x8f => '{x8f}',
+	   0x80 => '{X80}',     0x81 => '{C1}',       0x82 => '{X82}',     0x83 => '{X83}',
+	   0x84 => '{X84}',     0x85 => '{F1}',       0x86 => '{F3}',      0x87 => '{F5}',
+	   0x88 => '{F7}',      0x89 => '{F2}',       0x8a => '{F4}',      0x8b => '{F6}',
+	   0x8c => '{F8}',      0x8d => '{LF}',       0x8e => '{SHIFTIN}', 0x8f => '{X8F}',
 
-	   0x90 => '{blk}',     0x91 => '{up}',       0x92 => '{off}',     0x93 => '{clr}',
-	   0x94 => '{ins}',     0x95 => '{c2}',       0x96 => '{c3}',      0x97 => '{c4}',
-	   0x98 => '{c5}',      0x99 => '{c6}',       0x9a => '{c7}',      0x9b => '{c8}',
-	   0x9c => '{pur}',     0x9d => '{left}',     0x9e => '{yel}',     0x9f => '{cyn}',
+	   0x90 => '{BLK}',     0x91 => '{UP}',       0x92 => '{OFF}',     0x93 => '{CLR}',
+	   0x94 => '{INS}',     0x95 => '{C2}',       0x96 => '{C3}',      0x97 => '{C4}',
+	   0x98 => '{C5}',      0x99 => '{C6}',       0x9a => '{C7}',      0x9b => '{C8}',
+	   0x9c => '{PUR}',     0x9d => '{LEFT}',     0x9e => '{YEL}',     0x9f => '{CYN}',
 
-	   0xa0 => '{sspace}',  0xa1 => '{ck}',       0xa2 => '{ci}',      0xa3 => '{ct}',
-	   0xa4 => '{c@}',      0xa5 => '{cg}',       0xa6 => '{c+}',      0xa7 => '{cm}',
-	   0xa8 => '{s#}',      0xa9 => '{c#}',       0xaa => '{cn}',      0xab => '{cq}',
-	   0xac => '{cd}',      0xad => '{cz}',       0xae => '{cs}',      0xaf => '{cp}',
+	   0xa0 => '{SSPACE}',  0xa1 => '{CK}',       0xa2 => '{CI}',      0xa3 => '{CT}',
+	   0xa4 => '{C@}',      0xa5 => '{CG}',       0xa6 => '{C+}',      0xa7 => '{CM}',
+	   0xa8 => '{S#}',      0xa9 => '{C#}',       0xaa => '{CN}',      0xab => '{CQ}',
+	   0xac => '{CD}',      0xad => '{CZ}',       0xae => '{CS}',      0xaf => '{CP}',
 
-	   0xb0 => '{ca}',      0xb1 => '{ce}',       0xb2 => '{cr}',      0xb3 => '{cw}',
-	   0xb4 => '{ch}',      0xb5 => '{cj}',       0xb6 => '{cl}',      0xb7 => '{cy}',
-	   0xb8 => '{cu}',      0xb9 => '{co}',       0xba => '{s@}',      0xbb => '{cf}',
-	   0xbc => '{cc}',      0xbd => '{cx}',       0xbe => '{cv}',      0xbf => '{cb}',
+	   0xb0 => '{CA}',      0xb1 => '{CE}',       0xb2 => '{CR}',      0xb3 => '{CW}',
+	   0xb4 => '{CH}',      0xb5 => '{CJ}',       0xb6 => '{CL}',      0xb7 => '{CY}',
+	   0xb8 => '{CU}',      0xb9 => '{CO}',       0xba => '{S@}',      0xbb => '{CF}',
+	   0xbc => '{CC}',      0xbd => '{CX}',       0xbe => '{CV}',      0xbf => '{CB}',
 
-	   0xc0 => '{s*}',      0xc1 => 'A',          0xc2 => 'B',         0xc3 => 'C',
-	   0xc4 => 'D',         0xc5 => 'E',          0xc6 => 'F',         0xc7 => 'G',
-	   0xc8 => 'H',         0xc9 => 'I',          0xca => 'J',         0xcb => 'K',
-	   0xcc => 'L',         0xcd => 'M',          0xce => 'N',         0xcf => 'O',
+	   0xc0 => '{S*}',      0xc1 => 'a',          0xc2 => 'b',         0xc3 => 'c',
+	   0xc4 => 'd',         0xc5 => 'e',          0xc6 => 'f',         0xc7 => 'g',
+	   0xc8 => 'h',         0xc9 => 'i',          0xca => 'j',         0xcb => 'k',
+	   0xcc => 'l',         0xcd => 'm',          0xce => 'n',         0xcf => 'o',
 
-	   0xd0 => 'P',         0xd1 => 'Q',          0xd2 => 'R',         0xd3 => 'S',
-	   0xd4 => 'T',         0xd5 => 'U',          0xd6 => 'V',         0xd7 => 'W',
-	   0xd8 => 'X',         0xd9 => 'Y',          0xda => 'Z',         0xdb => '{s+}',
-	   0xdc => '{c-}',      0xdd => '{s-}',       0xde => '{xde}',     0xdf => '{c*}',
+	   0xd0 => 'p',         0xd1 => 'q',          0xd2 => 'r',         0xd3 => 's',
+	   0xd4 => 't',         0xd5 => 'u',          0xd6 => 'v',         0xd7 => 'w',
+	   0xd8 => 'x',         0xd9 => 'y',          0xda => 'z',         0xdb => '{S+}',
+	   0xdc => '{C-}',      0xdd => '{S-}',       0xde => '{XDE}',     0xdf => '{C*}',
 
-	   0xe0 => '{xe0}',     0xe1 => '{xe1}',      0xe2 => '{xe2}',     0xe3 => '{xe3}',
-	   0xe4 => '{xe4}',     0xe5 => '{xe5}',      0xe6 => '{xe6}',     0xe7 => '{xe7}',
-	   0xe8 => '{xe8}',     0xe9 => '{xe9}',      0xea => '{xea}',     0xeb => '{xeb}',
-	   0xec => '{xec}',     0xed => '{xed}',      0xee => '{xee}',     0xef => '{xef}',
+	   0xe0 => '{XE0}',     0xe1 => '{XE1}',      0xe2 => '{XE2}',     0xe3 => '{XE3}',
+	   0xe4 => '{XE4}',     0xe5 => '{XE5}',      0xe6 => '{XE6}',     0xe7 => '{XE7}',
+	   0xe8 => '{XE8}',     0xe9 => '{XE9}',      0xea => '{XEA}',     0xeb => '{XEB}',
+	   0xec => '{XEC}',     0xed => '{XED}',      0xee => '{XEE}',     0xef => '{XEF}',
 
-	   0xf0 => '{xf0}',     0xf1 => '{xf1}',      0xf2 => '{xf2}',     0xf3 => '{xf3}',
-	   0xf4 => '{xf4}',     0xf5 => '{xf5}',      0xf6 => '{xf6}',     0xf7 => '{xf7}',
-	   0xf8 => '{xf8}',     0xf9 => '{xf9}',      0xfa => '{xfa}',     0xfb => '{xfb}',
-	   0xfc => '{xfc}',     0xfd => '{xfd}',      0xfe => '{xfe}',     0xff => '{pi}' );
+	   0xf0 => '{XF0}',     0xf1 => '{XF1}',      0xf2 => '{XF2}',     0xf3 => '{XF3}',
+	   0xf4 => '{XF4}',     0xf5 => '{XF5}',      0xf6 => '{XF6}',     0xf7 => '{XF7}',
+	   0xf8 => '{XF8}',     0xf9 => '{XF9}',      0xfa => '{XFA}',     0xfb => '{XFB}',
+	   0xfc => '{XFC}',     0xfd => '{XFD}',      0xfe => '{XFE}',     0xff => '{PI}' );
 
 
 #------------------------------------------------------------------------
@@ -185,7 +185,7 @@ sub command_check {
 	for ($i = 0; $i < length($line); ++$i) {
 	    $sum += unpack 'C', substr($line, $i, 1);
 	}
-	printf "%5d  %3d\n", $number, $sum % 256, $line;
+	printf "%5d  %3d\n", $number, $sum % 256;
     }
 }
 
@@ -268,7 +268,7 @@ sub command_to_b64 {
 
 		# pi character : print curly
 		} elsif ($code == 0xff) {
-		    print OUT "{pi}";
+		    print OUT "{PI}";
 
 		# token : print token
 		} elsif ($code >= 0x80) {
@@ -351,7 +351,7 @@ sub command_to_prg {
 		    if (substr($rest, $i, length($token)) eq $token) {
 			$buffer .= pack('C', $rtoken{$token});
 			$i      += length($token) - 1;
-			$quote   = 2 if ($token eq 'rem') || ($token eq 'data');
+			$quote   = 2 if ($token eq 'REM') || ($token eq 'DATA');
 			next loop;
 		    }
 		}

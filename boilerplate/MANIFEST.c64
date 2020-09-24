@@ -1,0 +1,13 @@
+This file describes the purpose of the individual files found in this
+distribution.  Depending on the particular game, some of these files
+may not be present.
+
+MANIFEST          This file.
+README.txt        Documentation copied from the source material.
+game.bas          BASIC source code in "Basic 64" format, which
+                    supports PETSCII controls through codes like {BLU}.
+game.prg          Tokenized Commodore 64 BASIC file.
+games.nfo         Info file for the Vintage BASIC Games Project.
+metadata.txt      Table of Internet Archive metadata that should be set.
+
+Some games may have additional BASIC source files.

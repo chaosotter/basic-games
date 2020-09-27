@@ -1,0 +1,28 @@
+{
+    "name": "Stargazer",
+    "shortName": "stargazer",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"Clark Kidd",
+	"Kathy H. Kidd"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Commodore 64 Games for Kids",
+	"publisher": "Compute! Publications",
+	"date": "1984",
+	"url": "https://archive.org/details/Compute_s_64_Games_for_Kids/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "stargazer.c64"
+    }
+}

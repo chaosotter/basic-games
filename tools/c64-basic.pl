@@ -90,7 +90,7 @@
 
 	   0xa0 => '{SSPACE}',  0xa1 => '{CK}',       0xa2 => '{CI}',      0xa3 => '{CT}',
 	   0xa4 => '{C@}',      0xa5 => '{CG}',       0xa6 => '{C+}',      0xa7 => '{CM}',
-	   0xa8 => '{S#}',      0xa9 => '{C#}',       0xaa => '{CN}',      0xab => '{CQ}',
+	   0xa8 => '{C#}',      0xa9 => '{S#}',       0xaa => '{CN}',      0xab => '{CQ}',
 	   0xac => '{CD}',      0xad => '{CZ}',       0xae => '{CS}',      0xaf => '{CP}',
 
 	   0xb0 => '{CA}',      0xb1 => '{CE}',       0xb2 => '{CR}',      0xb3 => '{CW}',
@@ -177,7 +177,7 @@ sub command_check {
 	$line =~ s/{([^}]+)}/&sub_curly($1)/ge;
 
 	# replace the lowercase letters and spaces
-	$line =~ tr/a-z/A-Z/;
+	$line =~ tr/a-z/\xc1-\xda/;
 	$line =~ s/ //g;
 
 	# find the sum

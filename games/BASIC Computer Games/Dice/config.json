@@ -1,6 +1,6 @@
 {
     "name": "Dice",
-    "shortName": "dice",
+    "shortName": "dicecc",
     "platform": {
 	"system": "IBM PC"
     },
@@ -25,6 +25,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "dice.qb64"
+	"id": "dicecc.qb64"
     }
 }

@@ -1,0 +1,27 @@
+{
+    "name": "Songbook",
+    "shortName": "songbook",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Sara Nolan"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-12",
+	"url": "https://archive.org/details/198212Rainbow/page/n9/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "songbook.coco"
+    }
+}

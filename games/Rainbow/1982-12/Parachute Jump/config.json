@@ -1,0 +1,28 @@
+{
+    "name": "Parachute Jump",
+    "shortName": "parajump",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"J. E. Bennett",
+	"C. E. Laidlaw"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-12",
+	"url": "https://archive.org/details/198212Rainbow/page/n75/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "parajump.coco"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Sir Randolf of the Moors",
+    "shortName": "sirrand",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Gregory Clark"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-01",
+	"url": "https://archive.org/details/198301Rainbow/page/n25/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "sirrand.coco"
+    }
+}

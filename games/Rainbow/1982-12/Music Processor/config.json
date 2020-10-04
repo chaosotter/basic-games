@@ -1,0 +1,27 @@
+{
+    "name": "Music Processor",
+    "shortName": "musicpro",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Larry Konecky"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-12",
+	"url": "https://archive.org/details/198212Rainbow/page/n65/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "musicpro.coco"
+    }
+}

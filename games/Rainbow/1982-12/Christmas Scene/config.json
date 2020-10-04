@@ -1,0 +1,27 @@
+{
+    "name": "Christmas Scene",
+    "shortName": "xmascene",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Peter Stumpf"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1982-12",
+	"url": "https://archive.org/details/198212Rainbow/page/n33/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "xmascene.coco"
+    }
+}

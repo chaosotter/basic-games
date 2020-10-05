@@ -1,0 +1,27 @@
+{
+    "name": "Mathpal",
+    "shortName": "mathpal",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Dave Hooper"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-01",
+	"url": "https://archive.org/details/198301Rainbow/page/n109/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "mathpal.coco"
+    }
+}

@@ -26,6 +26,7 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
+* Compute!'s First Book of Commodore 64 Games
 * Tim Hartnell's Second Giant Book of Computer Games
 
 ### Magazines

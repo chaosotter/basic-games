@@ -1,0 +1,27 @@
+{
+    "name": "Ghosthunter",
+    "shortName": "ghosthunt",
+    "platform": {
+	"system": "IBM PC"
+    },
+    "authors": [
+	"Martin Richardson"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Tim Hartnell's Second Giant Book of Computer Games",
+	"publisher": "Ballantine Books",
+	"date": "1985",
+	"url": "https://archive.org/details/second-giant-book-of-computer-games"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "ghosthunt.qb64"
+    }
+}

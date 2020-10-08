@@ -20,3 +20,9 @@ def Prepare(game, dest):
         subprocess.run(['cp',
                         os.path.join('..', 'boilerplate', name),
                         os.path.join(dest, target)])
+
+    if 'c64disk.zip' in game._files:
+        subprocess.run(['unzip',
+                        os.path.join(game._path, 'c64disk.zip'),
+                        'c64disk.d64',
+                        '-d', dest])

@@ -1,0 +1,28 @@
+{
+    "name": "Hawkmen of Dindrin",
+    "shortName": "hawkmen",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"Esteban V. Aguilar, Jr.",
+	"Charles Brannon"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Compute!'s First Book of Commodore 64 Games",
+	"publisher": "Compute! Publications",
+	"date": "1983",
+	"url": "https://archive.org/details/COMPUTES_First_Book_of_64_Games_1983_COMPUTE_Publications/page/n1/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "hawkmen.c64"
+    }
+}

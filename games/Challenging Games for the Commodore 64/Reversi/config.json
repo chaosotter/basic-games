@@ -1,0 +1,27 @@
+{
+    "name": "Reversi",
+    "shortName": "reversi",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"William A. Roberts"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Challenging Games for the Commodore 64",
+	"publisher": "Interface Publications"
+	"date": "1983",
+	"url": "https://archive.org/details/Challenging_Games_for_the_Commodore_64_by_William_A_Roberts/page/n1/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "reversi.c64"
+    }
+}

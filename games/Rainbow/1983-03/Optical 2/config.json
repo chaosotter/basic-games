@@ -1,0 +1,27 @@
+{
+    "name": "Optical 2",
+    "shortName": "optical2",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Norman Latner"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-03",
+	"url": "https://archive.org/details/198303Rainbow/page/n27/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "optical2.coco"
+    }
+}

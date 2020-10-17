@@ -1,0 +1,28 @@
+{
+    "name": "Horse Racing",
+    "shortName": "horserace",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Rob Becker",
+	"Courtney Noe"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-04",
+	"url": "https://archive.org/details/198304Rainbow/page/n27/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "horserace.coco"
+    }
+}

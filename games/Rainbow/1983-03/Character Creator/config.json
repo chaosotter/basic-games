@@ -1,0 +1,27 @@
+{
+    "name": "Character Creator",
+    "shortName": "character",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Bill Nolan"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-03",
+	"url": "https://archive.org/details/198303Rainbow/page/n203/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "character.coco"
+    }
+}

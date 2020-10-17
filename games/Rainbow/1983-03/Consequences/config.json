@@ -1,0 +1,28 @@
+{
+    "name": "Consequences",
+    "shortName": "conseq",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"T. Delbourgo",
+	"R. Delbourgo"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-03",
+	"url": "https://archive.org/details/198303Rainbow/page/n109/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "conseq.coco"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Elements",
+    "shortName": "elements",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Steve Blyn"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-03",
+	"url": "https://archive.org/details/198303Rainbow/page/n151/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "elements.coco"
+    }
+}

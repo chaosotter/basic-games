@@ -1,0 +1,27 @@
+{
+    "name": "Play This Tune",
+    "shortName": "playtune",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Larry Konecky"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-04",
+	"url": "https://archive.org/details/198304Rainbow/page/n219/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "playtune.coco"
+    }
+}

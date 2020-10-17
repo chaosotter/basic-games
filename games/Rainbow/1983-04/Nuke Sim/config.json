@@ -1,0 +1,28 @@
+{
+    "name": "Nuke Sim",
+    "shortName": "nukesim",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Chris Latham",
+	"John Erickson"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-04",
+	"url": "https://archive.org/details/198304Rainbow/page/n113/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "nukesim.coco"
+    }
+}

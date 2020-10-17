@@ -1,0 +1,27 @@
+{
+    "name": "Outpost Five",
+    "shortName": "outpost5",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Laurence D. Preble"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-02",
+	"url": "https://archive.org/details/198302Rainbow/page/n33/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "outpost5.coco"
+    }
+}

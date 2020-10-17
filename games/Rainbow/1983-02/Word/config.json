@@ -1,0 +1,27 @@
+{
+    "name": "Word",
+    "shortName": "word",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"R. Bartly Betts"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-02",
+	"url": "https://archive.org/details/198302Rainbow/page/n47/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "word.coco"
+    }
+}

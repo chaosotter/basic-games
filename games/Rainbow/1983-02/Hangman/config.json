@@ -1,0 +1,27 @@
+{
+    "name": "Hangman",
+    "shortName": "hangman",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Douglas C. L'Hommedieu"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-02",
+	"url": "https://archive.org/details/198302Rainbow/page/n39/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "hangman.coco"
+    }
+}

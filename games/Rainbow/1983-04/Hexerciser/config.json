@@ -1,0 +1,27 @@
+{
+    "name": "Hexerciser",
+    "shortName": "hexer",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Jim Schmidt"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-04",
+	"url": "https://archive.org/details/198304Rainbow/page/n179/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "hexer.coco"
+    }
+}

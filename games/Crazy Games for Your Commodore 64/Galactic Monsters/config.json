@@ -1,0 +1,28 @@
+{
+    "name": "Galactic Monsters",
+    "shortName": "galactic",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"Hal Renko",
+	"Sam Edwards"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Crazy Games for Your Commodore 64",
+	"publisher": "Addison-Wesley",
+	"date": "1984",
+	"url": "https://archive.org/details/crazy-games-for-your-commodore-64/page/n2/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "galactic.c64"
+    }
+}

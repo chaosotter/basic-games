@@ -8,6 +8,7 @@ efforts within the collection.
 ### Books
 
 * A to Z Book of Computer Games
+* Challenging Games for the Commodore 64
 * Color Computer Playground
 * Commodore 64 Games for Kids
 * Compute!'s First Book of Commodore 64 Games
@@ -19,7 +20,7 @@ efforts within the collection.
 
 * Color Computer Magazine (through May 1984)
 * People's Computer Company Newsletter (through Nov. 1973)
-* Rainbow Magazine (through Nov. 1982)
+* Rainbow Magazine (through Jan. 1983)
 
 ## Source materials in progress
 
@@ -27,11 +28,10 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
-* Challenging Games for the Commodore 64
 * Tim Hartnell's Second Giant Book of Computer Games
 
 ### Magazines
 
 * Color Computer Magazine (all issues after May 1984)
 * People's Computer Company Newsletter (all issues after Nov. 1973)
-* Rainbow Magazine (all issues after Nov. 1982)
+* Rainbow Magazine (all issues after Jan. 1983)

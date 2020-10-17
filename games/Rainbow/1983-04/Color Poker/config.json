@@ -1,0 +1,27 @@
+{
+    "name": "Color Poker",
+    "shortName": "colorpoke",
+    "platform": {
+	"system": "Coco"
+    },
+    "authors": [
+	"Joseph Kohn"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "Rainbow Magazine",
+	"publisher": "Falsoft",
+	"date": "1983-04",
+	"url": "https://archive.org/details/198304Rainbow/page/n163/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "colorpoke.coco"
+    }
+}

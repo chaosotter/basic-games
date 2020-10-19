@@ -12,6 +12,7 @@ efforts within the collection.
 * Color Computer Playground
 * Commodore 64 Games for Kids
 * Compute!'s First Book of Commodore 64 Games
+* Crazy Games For Your Commodore 64
 * Creepy Computer Games
 * More BASIC Computer Games
 * Tim Hartnell's Giant Book of Computer Games
@@ -28,7 +29,7 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
-* Crazy Games For Your Commodore 64
+* TI/99-4A Game Programs
 * Tim Hartnell's Second Giant Book of Computer Games
 
 ### Magazines

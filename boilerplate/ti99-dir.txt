@@ -1,0 +1,26 @@
+This game is for the TI-99/4A, which is not emulated directly on the
+Internet Archive.  Below are directions for using this game with JS99
+(which runs in your browser) and Classic99 (which is a Windows
+application):
+
+TO USE JS99:
+
+  1. Save the file "ti99.dsk" from this item.
+  2. Go to https://js99er.net/#/
+  3. Click on "Load Disk" (at the bottom of the screen).
+  4. Select the "ti99.dsk" file.
+  5. Enter TI Extended BASIC (option 2 on the TI start screen).
+  6. Enter "OLD DSK1.GAME".
+  7. Enter "RUN".
+
+TO USE CLASSIC99:
+
+  1. Install Classic99 from http://www.harmlesslion.com/software/Classic99
+  2. Enable TI Extended BASIC (under Cartridge > Apps).
+  3. Save the file "game.tifiles" to the "DSK1" directory.
+  4. Enter TI Extended BASIC (option 2 on the TI start screen).
+  5. Enter "OLD DSK1.GAME.TIFILES".
+  6. Enter "RUN".
+
+------------------------------------------------------------------------------
+

@@ -4,6 +4,7 @@ import subprocess
 import c64
 import coco
 import ibmpc
+import ti99
 
 class Game(object):
     """A single game in the library."""
@@ -60,6 +61,8 @@ class Game(object):
             coco.Prepare(self, dest)
         elif self.Platform() == 'C64':
             c64.Prepare(self, dest)
+        elif self.Platform() == 'TI99':
+            ti99.Prepare(self, dest)
 
         def Attr(file, key, value):
             file.write("%-20s  %s\n" % (key, value))

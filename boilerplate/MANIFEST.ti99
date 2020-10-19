@@ -1,0 +1,14 @@
+This file describes the purpose of the individual files found in this
+distribution.  Depending on the particular game, some of these files
+may not be present.
+
+MANIFEST          This file.
+README.txt        Documentation copied from the source material.
+game.bas          TI BASIC source code in text format.
+game.xb           TI Extended BASIC source code in text format.
+game.tifiles      TI BASIC code in TIFILES format.
+ti99.dsk          TI disk image in V9T9 format.
+games.nfo         Info file for the Vintage BASIC Games Project.
+metadata.txt      Table of Internet Archive metadata that should be set.
+
+Some games may have additional BASIC source files.

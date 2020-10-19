@@ -1,0 +1,27 @@
+{
+    "name": "Tic-Tac-Toe",
+    "shortName": "tictactoe",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Frederick Holtz"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "TI-99/4A Game Programs",
+	"publisher": "TAB Books",
+	"date": "1983",
+	"url": "https://archive.org/details/tibook_ti994a-game-programs/page/n1/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "tictactoe.ti99"
+    }
+}

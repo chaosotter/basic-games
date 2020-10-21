@@ -1,0 +1,30 @@
+{
+    "name": "Dice",
+    "shortName": "dice",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"C. Regina"
+    ],
+    "editors": [
+	"C. Regina"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Compute!'s First Book of TI Games",
+	"publisher": "Compute! Publications",
+	"date": "1983",
+	"url": "https://archive.org/details/COMPUTEs_First_Book_of_TI_Games_1983_COMPUTE_Publications/page/n1/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "dice.c64"
+    }
+}

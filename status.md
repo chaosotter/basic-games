@@ -15,6 +15,7 @@ efforts within the collection.
 * Crazy Games For Your Commodore 64
 * Creepy Computer Games
 * More BASIC Computer Games
+* TI/99-4A Game Programs
 * Tim Hartnell's Giant Book of Computer Games
 
 ### Magazines
@@ -29,7 +30,7 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
-* TI/99-4A Game Programs
+* Compute!'s First Book of TI Games
 * Tim Hartnell's Second Giant Book of Computer Games
 
 ### Magazines

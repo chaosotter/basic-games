@@ -1,3 +1,6 @@
+[Note: This game requires TI BASIC and will not run in TI Extended
+Basic, which allows fewer characters to be redefined.]
+
 MAKE A FACE
 
   by C. Regena

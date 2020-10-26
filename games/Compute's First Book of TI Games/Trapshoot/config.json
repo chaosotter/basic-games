@@ -1,6 +1,6 @@
 {
     "name": "Trapshoot",
-    "shortName": "Trapshoot",
+    "shortName": "trapshoot",
     "platform": {
 	"system": "TI99"
     },
@@ -25,6 +25,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "Trapshoot.ti99"
+	"id": "trapshoot.ti99"
     }
 }

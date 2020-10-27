@@ -1,0 +1,27 @@
+{
+    "name": "Tiny Math 1",
+    "shortName": "tinymath1",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"W. K. Balthrop"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "99'er Magazine",
+	"publisher": "Gary M. Kaplan",
+	"date": "1981-05",
+	"url": "https://archive.org/details/99er8105/page/n71/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "tinymath1.ti99"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Anti-Aircraft Gun",
+    "shortName": "antiair",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Mark Moseley"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "99'er Magazine",
+	"publisher": "Gary M. Kaplan",
+	"date": "1981-05",
+	"url": "https://archive.org/details/99er8105/page/n44/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "antiair.ti99"
+    }
+}

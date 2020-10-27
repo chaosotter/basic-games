@@ -12,6 +12,7 @@ efforts within the collection.
 * Color Computer Playground
 * Commodore 64 Games for Kids
 * Compute!'s First Book of Commodore 64 Games
+* Compute!'s First Book of TI Games
 * Crazy Games For Your Commodore 64
 * Creepy Computer Games
 * More BASIC Computer Games
@@ -30,11 +31,11 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
-* Compute!'s First Book of TI Games
 * Tim Hartnell's Second Giant Book of Computer Games
 
 ### Magazines
 
+* 99'er Magazine
 * Color Computer Magazine (all issues after May 1984)
 * People's Computer Company Newsletter (all issues after Nov. 1973)
 * Rainbow Magazine (all issues after Apr. 1983)

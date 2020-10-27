@@ -1,0 +1,27 @@
+{
+    "name": "Enemy Attack",
+    "shortName": "enemyatt",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Charles Ehninger"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "99'er Magazine",
+	"publisher": "Gary M. Kaplan",
+	"date": "1982-01",
+	"url": "https://archive.org/details/99er8105/page/n39/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "enemyatt.ti99"
+    }
+}

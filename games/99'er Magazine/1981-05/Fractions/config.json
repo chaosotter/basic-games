@@ -1,0 +1,27 @@
+{
+    "name": "Fractions",
+    "shortName": "fractions",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"C. Regena"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "99'er Magazine",
+	"publisher": "Gary M. Kaplan",
+	"date": "1981-05",
+	"url": "https://archive.org/details/99er8105/page/n87/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "fractions.ti99"
+    }
+}

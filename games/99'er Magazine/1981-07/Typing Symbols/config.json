@@ -1,0 +1,27 @@
+{
+    "name": "Typing Symbols",
+    "shortName": "typesym",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"C. Regena"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "99'er Magazine",
+	"publisher": "Gary M. Kaplan",
+	"date": "1981-07",
+	"url": "https://archive.org/details/99er8107/page/n61/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "typesym.ti99"
+    }
+}

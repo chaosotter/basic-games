@@ -1,0 +1,27 @@
+{
+    "name": "Sprite Chase",
+    "shortName": "sprchase",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Ron Binkowski"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "99'er Magazine",
+	"publisher": "Gary M. Kaplan",
+	"date": "1981-07",
+	"url": "https://archive.org/details/99er8107/page/n29/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "sprchase.ti99"
+    }
+}

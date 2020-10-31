@@ -1,6 +1,6 @@
-[Note: This program does not run in TI Extended BASIC because of the
-character range it attempts to redefine, and it is too large to run in
-TI BASIC on a disk system.]
+[Note: This program has been adapted from the original to run in TI
+Extended BASIC.  Some compromises had to be made to compensate for the
+smaller range of redefinable characters.]
 
 
 HARRIED HOUSEWIFE

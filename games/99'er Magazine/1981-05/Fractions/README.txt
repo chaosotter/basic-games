@@ -1,6 +1,10 @@
 [Note: This program does not run in TI Extended BASIC because of the
 character range it attempts to redefine, and it is too large to run in
-TI BASIC on a disk system.]
+TI BASIC on a disk system.
+
+The original game is in the file "original.bas"; "game.bas" contains
+an optimized smaller version.  Even so, it may be necessary to claim
+more memory by running "CALL FILES(0)" and "NEW" before loading.]
 
 FRACTIONS
 

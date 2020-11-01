@@ -1,0 +1,27 @@
+{
+    "name": "Typing for Accuracy",
+    "shortName": "type4acc",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"C. Regena"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "magazine",
+	"title": "99'er Magazine",
+	"publisher": "Gary M. Kaplan",
+	"date": "1981-09",
+	"url": "https://archive.org/details/99erV13/page/n80/mode/1up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "type4acc.ti99"
+    }
+}

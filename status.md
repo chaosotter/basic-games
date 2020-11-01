@@ -17,10 +17,12 @@ efforts within the collection.
 * Creepy Computer Games
 * More BASIC Computer Games
 * TI/99-4A Game Programs
+* TI/99-4A: 51 Fun and Educational Programs
 * Tim Hartnell's Giant Book of Computer Games
 
 ### Magazines
 
+* 99'er Magazine (through Sep./Oct. 1981)
 * Color Computer Magazine (through May 1984)
 * People's Computer Company Newsletter (through Nov. 1973)
 * Rainbow Magazine (through Apr. 1983)
@@ -35,7 +37,7 @@ efforts within the collection.
 
 ### Magazines
 
-* 99'er Magazine
+* 99'er Magazine (all issues after Sep./Oct. 1981)
 * Color Computer Magazine (all issues after May 1984)
 * People's Computer Company Newsletter (all issues after Nov. 1973)
 * Rainbow Magazine (all issues after Apr. 1983)

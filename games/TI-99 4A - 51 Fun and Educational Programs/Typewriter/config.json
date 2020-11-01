@@ -1,0 +1,27 @@
+{
+    "name": "Typewriter",
+    "shortName": "typewrite",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Gil M. Schechter"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "TI-99/4A: 51 Fun and Educational Programs",
+	"publisher": "Howard W. Sams & Co.",
+	"date": "1983",
+	"url": "https://archive.org/details/tibook_ti994a-51-fun-and-educational-programs"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "typewrite.ti99"
+    }
+}

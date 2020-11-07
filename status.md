@@ -34,6 +34,7 @@ efforts within the collection.
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
 * Tim Hartnell's Second Giant Book of Computer Games
+* Zappers: Having Fun Programming and Playing 23 Games for the TI-99/4A
 
 ### Magazines
 

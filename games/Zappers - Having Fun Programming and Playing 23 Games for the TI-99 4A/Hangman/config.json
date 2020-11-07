@@ -1,6 +1,6 @@
 {
     "name": "Hangman",
-    "shortName": "hangman",
+    "shortName": "hangman2",
     "platform": {
 	"system": "TI99"
     },
@@ -23,6 +23,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "hangman.ti99"
+	"id": "hangman2.ti99"
     }
 }

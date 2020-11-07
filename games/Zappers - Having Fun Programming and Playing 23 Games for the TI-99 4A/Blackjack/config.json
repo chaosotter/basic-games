@@ -1,6 +1,6 @@
 {
     "name": "Blackjack",
-    "shortName": "blackjack",
+    "shortName": "blackjack2",
     "platform": {
 	"system": "TI99"
     },
@@ -23,6 +23,6 @@
     },
     "ia": {
 	"standard": "legacy",
-	"id": "blackjack.ti99"
+	"id": "blackjack2.ti99"
     }
 }

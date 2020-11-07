@@ -1,0 +1,28 @@
+{
+    "name": "Hangman",
+    "shortName": "hangman",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Henry Mullish",
+	"Dov Kruger"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Zappers: Having Fun Programming and Playing 23 Games for the TI-99/4A"
+	"publisher": "Simon & Schuster",
+	"date": "1984",
+	"url": "https://archive.org/details/tibook_zappers"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "hangman.ti99"
+    }
+}

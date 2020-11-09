@@ -16,9 +16,10 @@ efforts within the collection.
 * Crazy Games For Your Commodore 64
 * Creepy Computer Games
 * More BASIC Computer Games
-* TI/99-4A Game Programs
-* TI/99-4A: 51 Fun and Educational Programs
+* TI-99/4A Game Programs
+* TI-99/4A: 51 Fun and Educational Programs
 * Tim Hartnell's Giant Book of Computer Games
+* Zappers: Having Fun Programming and Playing 23 Games for the TI-99/4A
 
 ### Magazines
 
@@ -33,8 +34,8 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
+* Games for Your TI-99/4A
 * Tim Hartnell's Second Giant Book of Computer Games
-* Zappers: Having Fun Programming and Playing 23 Games for the TI-99/4A
 
 ### Magazines
 

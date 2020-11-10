@@ -1,0 +1,27 @@
+{
+    "name": "Simon",
+    "shortName": "simon",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Andrew Nelson"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Games for Your TI-99/4A",
+	"publisher": "Virgin Books",
+	"date": "1984",
+	"url": "https://archive.org/details/tibook_games-for-your-ti994a"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "simon.ti99"
+    }
+}

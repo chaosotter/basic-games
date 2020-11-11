@@ -1,0 +1,27 @@
+{
+    "name": "Mystery Melody",
+    "shortName": "mystmel",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Texas Instruments"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "1980",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "mystmel.ti99"
+    }
+}

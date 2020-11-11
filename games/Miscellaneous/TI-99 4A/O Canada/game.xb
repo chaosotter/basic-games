@@ -1,0 +1,43 @@
+100 REM  O CANADA * TI X/BASIC * BY BILL KNECHT * Ver8502
+110 CALL CLEAR :: CALL SCREEN(2) :: FOR I=1 TO 8 :: CALL COLOR(I,16,2) :: NEXT I :: ROW=4 :: CLM=13 :: A$="O CANADA!" :: GOSUB 150 :: ROW=7 :: CLM=3 :: A$="THE CANADIAN NATIONAL ANTHEM" :: GOSUB 150
+120 ROW=11 :: CLM=3 :: A$="ADOPTED BY HOUSE OF COMMONS" :: GOSUB 150 :: ROW=12 :: CLM=4 :: A$="JUNE 27, 1980, ONE HUNDRED" :: GOSUB 150
+130 ROW=13 :: CLM=5 :: A$="YEARS AFTER IT WAS FIRST" :: GOSUB 150 :: ROW=14 :: CLM=14 :: A$="SUNG." :: GOSUB 150
+140 ROW=18 :: CLM=5 :: A$="PROGRAM BY BILL KNECHT" :: GOSUB 150 :: ROW=20 :: A$="(WHO WAS BORN & RAISED" :: GOSUB 150 :: ROW=21 :: CLM=4 :: A$="IN PASADENA, TEXAS, USA)" :: GOSUB 150 :: GOTO 160
+150 FOR I=1 TO LEN(A$) :: CALL HCHAR(ROW,CLM-1+I,ASC(SEG$(A$,I,1))) :: NEXT I :: RETURN
+160 CALL CHAR(97,"FFFFFFFFFFFFFFFF00E0380E0300000000030E38E0000000") :: FOR I=104 TO 130 :: READ F$ :: CALL CHAR(I,F$) :: NEXT I
+170 DATA "FFFFFFFFFFFFFFFF","00008080C0C0E0F8","F8F8F8F8FEFEFEFE","0000000000001CFC"
+180 DATA "FCFCF8F8F8F8E0E0","E0E0E0FEFFFFFFFF","00000000C0C0FEFF","F0F0C","FFFFFFFFFEFEFCFC"
+190 DATA "F8F8F0F0808","00000080C0E0C08","FFFCFCF","FF8F83818080808","FFF1C18101010101","FF3F3F0F"
+200 DATA "0000000103070301","1F1F0F0F0101","FFFFFFFF7F7F3F3F","0F0F03"
+210 DATA "0000000003037FFF","07070777FFFFFFFF","3F3F1F1F1F1F0707"
+220 DATA "000000000000303E","1F1F1F1F7F7F7F7F","000001010303071F"
+230 DATA "01010101010101","8080808080808"
+240 CALL CHAR(136,"7E7E7E7E7E7E7E7E3C7EFFFFFFFF7E3C") :: CALL COLOR(9,16,1,14,11,2) :: FOR I=10 TO 13 :: CALL COLOR(I,9,16) :: NEXT I
+250 N=450 :: LLB=116.54 :: LC=130.81 :: LD=146.83 :: LE=155.56 :: LF=174.61 :: LG=196 :: LA=207.65 :: LB=233.08 :: LBB=246.94
+260 C=261.63 :: D=293.66 :: E=311.13 :: F=349.23 :: G=392 :: A=415.3 :: AA=440 :: B=466.16 :: HC=523.25 :: HD=587.33 :: HE=622.25 :: R=40000 :: GOTO 280
+270 PRINT
+280 !@P-
+290 V=5 :: CALL CLEAR :: PRINT " ‰":" ˆ" :: DU=N*2 :: X=G :: Y=E :: Z=LB :: GOSUB 500 :: PRINT " ˆbhhhhhhhaaaaaaaaaahhhhhhh":" ˆ hhhhhhhaaaaaaaaaahhhhhhh" :: DU=N*1.5 :: X=B :: Y=F :: Z=LD :: GOSUB 500
+300 PRINT " ˆ hhhhhhhaaaaaaaaaahhhhhhh":" ˆ hhhhhhhaaaaaaaaaahhhhhhh" :: DU=N/2 :: GOSUB 500 :: DU=N :: X=E :: Y=R :: Z=LC :: GOSUB 500 :: PRINT " ˆ hhhhhhhaaaaaaaaaahhhhhhh" :: Y=D :: Z=LB :: GOSUB 500
+310 PRINT " ˆ hhhhhhhaaaa€iaaaahhhhhhh" :: Y=C :: Z=LA :: GOSUB 500 :: PRINT " ˆ hhhhhhhaaa~jkaaahhhhhhh" :: Y=LB :: Z=LG :: GOSUB 500 :: PRINT " ˆ hhhhhhhaaa}hhlaaahhhhhhh" :: DU=N*2 :: X=A :: Y=F :: Z=LF :: GOSUB 500
+320 PRINT " ˆ hhhhhhhaa{|hhmnaahhhhhhh":" ˆ hhhhhhhazyhhhhpoahhhhhhh" :: DU=N*1.5 :: X=HE :: Z=LE :: GOSUB 500 :: PRINT " ˆ hhhhhhhaaxhhhhqaahhhhhhh":" ˆ hhhhhhhaawhhhhraahhhhhhh"
+330 DU=N/2 :: X=B :: Z=LD :: GOSUB 500 :: DU=N :: X=F :: Y=LB :: GOSUB 500 :: PRINT " ˆ hhhhhhhaaavutsaaahhhhhhh" :: Y=C :: Z=LC :: GOSUB 500 :: PRINT " ˆ hhhhhhhaaaa‚aaaahhhhhhh":" ˆ hhhhhhhaaaaaaaaaahhhhhhh"
+340 Y=D :: Z=LLB :: GOSUB 500 :: PRINT " ˆ hhhhhhhaaaaaaaaaahhhhhhh":" ˆ hhhhhhhaaaaaaaaaahhhhhhh" :: Z=LB :: GOSUB 500 :: PRINT " ˆchhhhhhhaaaaaaaaaahhhhhhh":" ˆ":" ˆ":" ˆ" :: GOSUB 470
+350 DISPLAY AT(24,1):" ˆ         O CANADA" :: V=2 :: DU=N*2 :: X=G :: Y=E :: Z=LE :: GOSUB 500 :: DU=N*1.5 :: X=B :: Y=D :: Z=LLB :: GOSUB 500 :: DU=N/2 :: GOSUB 500 :: DU=N*3 :: X=E :: Y=C :: Z=LC :: GOSUB 500
+360 DU=N :: X=F :: Y=D :: Z=LLB :: GOSUB 500 :: X=G :: Y=E :: Z=LE :: GOSUB 500 :: X=A :: Z=LF :: GOSUB 500 :: X=B :: Z=LG :: GOSUB 500 :: X=HC :: Z=LA :: GOSUB 500 :: DU=N*2 :: X=F :: Z=LB :: GOSUB 500 :: DU=N :: X=F :: Y=D :: GOSUB 500 :: X,Y=R :: GOSUB 500
+370 DU=N*2 :: X=G :: Y=E :: Z=LE :: GOSUB 500 :: DU=N*1.5 :: X=AA :: Y=F :: Z=LC :: GOSUB 500 :: DU=N/2 :: GOSUB 500 :: DU=X*3 :: X=B :: Z=LD :: GOSUB 500 :: DU=N :: X=HC :: Y=G :: Z=LE :: GOSUB 500 :: X=HD :: Y=F :: Z=LF :: GOSUB 500 :: GOSUB 500
+380 X=HC :: Y=AA :: Z=LF :: GOSUB 500 :: GOSUB 500 :: DU=N*3 :: X=B :: Y=F :: Z=LB :: GOSUB 500 :: GOSUB 400 :: DU=N*.75 :: X=A :: Y=E :: Z=LF :: GOSUB 500 :: DU=N/4 :: X=B :: Z=LG :: GOSUB 500 :: DU=N :: X=HC :: Z=LA :: GOSUB 500 :: X=B :: Z=LG :: GOSUB 500 :: X=A :: Z=LA :: GOSUB 500
+390 X=G :: Z=220 :: GOSUB 500 :: X=F :: Y=D :: Z=LB :: GOSUB 500 :: DU=N*.75 :: Z=LLB :: GOSUB 500 :: DU=N/4 :: GOSUB 500 :: DU=N :: GOSUB 500 :: GOSUB 400 :: GOTO 420
+400 DU=N*.75 :: X=F :: Y=D :: Z=LB :: GOSUB 500 :: DU=N/4 :: X=G :: Y=F :: Z=LG :: GOSUB 500 :: DU=N*1.5 :: X=A :: Y=D :: Z=LF :: GOSUB 500 :: DU=N/2 :: X=G :: Z=LG :: GOSUB 500 :: DU=N :: X=F :: Z=LA :: GOSUB 500 :: DU=N*.75 :: X=G :: Z=LB :: GOSUB 500
+410 DU=N/4 :: X=A :: Z=LA :: GOSUB 500 :: DU=N*1.5 :: X=B :: Y=E :: Z=LG :: GOSUB 500 :: DU=N/2 :: X=A :: Z=LE :: GOSUB 500 :: DU=N :: X=G :: GOSUB 500 :: RETURN
+420 DU=N :: X=G :: Y=277 :: Z=165 :: GOSUB 500 :: X=F :: Y=D :: Z=LF :: GOSUB 500 :: X=B :: Y=F :: GOSUB 500 :: DU=N/2 :: Y=R :: GOSUB 500 :: X=AA :: GOSUB 500 :: X=G :: Y=F :: GOSUB 500 :: X=AA :: GOSUB 500 :: DU=N*4 :: X=B :: Y=F :: Z=LB :: GOSUB 500
+430 DU=N*2 :: X=G :: Y=E :: Z=LE :: GOSUB 500 :: DU=N*1.5 :: X=B :: Y=F :: Z=LD :: GOSUB 500 :: DU=N/2 :: GOSUB 500 :: DU=N*2 :: X=E :: Y=LG :: Z=LC :: GOSUB 500 :: DU=N :: Y=C :: Z=R :: GOSUB 500 :: Y=LB :: GOSUB 500 :: DU=N*2 :: X=A :: Y=F :: Z=LF :: GOSUB 500
+440 DU=N*1.5 :: X=HC :: Z=LE :: GOSUB 500 :: DU=N/2 :: GOSUB 500 :: DU=N :: X=A :: Y=LB :: Z=LD :: GOSUB 500 :: Y=C :: Z=LC :: GOSUB 500 :: X=D :: Y=LB :: Z=LLB :: GOSUB 500 :: Z=LD :: GOSUB 500 :: DU=N*2 :: X=B :: Y=E :: GOSUB 500
+450 DU=N*1.5 :: X=494 :: Y=277 :: GOSUB 500 :: DU=N/2 :: GOSUB 500 :: DU=N :: X=HC :: Y=C :: GOSUB 500 :: X=A :: Z=LF :: GOSUB 500 :: X=G :: Y=E :: Z=LB :: GOSUB 500 :: X=F :: Y=C :: GOSUB 500 :: DU=N*2 :: X=E :: Z=LG :: GOSUB 500 :: X=F :: Z=LF :: GOSUB 500
+460 DU=N*3 :: X=G :: Y=LBB :: Z=LG :: GOSUB 500 :: DU=N :: Y=R :: GOSUB 500 :: GOSUB 470 :: GOTO 510
+470 DU=N*2 :: X=B :: Y=E :: Z=LG :: GOSUB 500 :: DU=N*1.5 :: X=HE :: Z=LBB :: GOSUB 500 :: DU=N/2 :: GOSUB 500 :: DU=N :: X=HC :: Z=C :: GOSUB 500 :: X=A :: Y=F :: GOSUB 500 :: X=G :: Y=E :: Z=LB :: GOSUB 500 :: X=F :: Y=C :: Z=LA :: GOSUB 500
+480 DU=N*2 :: X=B :: Y=E :: Z=LG :: GOSUB 500 :: X=D :: Y=LB :: Z=LA :: GOSUB 500 :: DU=N*4 :: X=E :: Z=LE :: GOSUB 500 :: RETURN
+490 !@P+
+500 CALL SOUND(DU,X,V,Y,(V+6),Z,(V+8)) :: RETURN
+510 DISPLAY AT(24,3):"P PLAY AGAIN SPACEBAR MENU" :: CALL KEY(0,K,S) :: IF S=0 THEN 510
+520 IF K=80 THEN 290 ELSE DISPLAY AT(24,3):"       LOADING MENU" :: RUN "DSK1.LOAD"

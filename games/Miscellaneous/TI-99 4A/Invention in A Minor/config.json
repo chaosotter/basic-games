@@ -1,0 +1,27 @@
+{
+    "name": "Invention in A Minor",
+    "shortName": "invaminor"
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Andy Jagusiak"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "invaminor.ti99"
+    }
+}

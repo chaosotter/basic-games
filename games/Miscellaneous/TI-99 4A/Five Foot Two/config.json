@@ -1,0 +1,27 @@
+{
+    "name": "Five Foot Two",
+    "shortName": "5foot2"
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Edwin McFall"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "1984-04-18",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "5foot2.ti99"
+    }
+}

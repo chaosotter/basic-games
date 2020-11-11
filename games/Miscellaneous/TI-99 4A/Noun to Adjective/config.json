@@ -1,0 +1,27 @@
+{
+    "name": "Noun to Adjective"
+    "shortName": "nounadj",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Tigercub Software"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "nounadj.ti99"
+    }
+}

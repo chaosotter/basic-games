@@ -1,0 +1,28 @@
+{
+    "name": "Bach Mini-Concert",
+    "shortName": "bachmini"
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Leon Tietz",
+	"Curt Garcia"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "1981-01-26",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "bachmini.ti99"
+    }
+}

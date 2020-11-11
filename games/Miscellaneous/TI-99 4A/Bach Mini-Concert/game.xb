@@ -1,0 +1,90 @@
+90 !@P+
+100 REM  LEON TIETZ  1/26/81 EX. BASIC BY CURT GARCIA
+110 A5=0 :: READ A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,AA,AB,AC,AD,AE,AF,AG,AH,AI,AJ,AK,AL
+120 DATA 110,117,123,131,139,147,156,165,175,185,196,208,220,233,247,262,277,294,311,330,349,370,392,415,440,466
+121 !@P-
+130 DATA 494,523,554,587,622,659,698,740,784,831,880,932
+140 DISPLAY AT(9,6)ERASE ALL:"BACH MINI-CONCERT:"
+150 A$="MINUET IN G MINOR" :: @=122 :: GOSUB 860 :: AN=6 :: AO=4 :: GOSUB 870
+160 FOR AP=@ TO 2 :: GOSUB 310 :: CALL S([,AD,N) :: CALL S([,AD,M) :: CALL T(],AE,N,K) :: CALL T([,AG,N,K) :: CALL T([,AE,N,K) :: CALL S([,AD,M)
+170 CALL S([,AB,M) :: CALL S(],AD,N) :: CALL S([,AE,N) :: CALL S([,AD,N) :: CALL S([,AB,K) :: CALL S([,Z,K) :: CALL S(],AB,M) :: CALL S([,AD,J)
+180 CALL S([,AB,J) :: CALL S([,Z,K) :: CALL S([,AB,K) :: CALL S(],Y,F) :: CALL S([,Y,R) :: CALL S([,Y,P) :: CALL S([,Y,N) :: CALL S([,Y,M)
+190 GOSUB 310 :: CALL S([,AD,O) :: CALL S([,AD,M) :: CALL T(],AG,R,F) :: CALL T([,AI,R,F) :: CALL T([,AG,R,F) :: CALL T([,AE,R,K)
+200 CALL T([,AD,R,K) :: CALL S(],AE,P) :: CALL S([,AG,M) :: CALL S([,AE,M) :: CALL S([,AD,I) :: CALL S([,AB,I) :: CALL S(],AD,N) :: CALL S(],AI,G)
+210 CALL T(],AB,M,I) :: CALL T(3*],Z,U,R) :: NEXT AP :: AN=4 :: AO=2 :: GOSUB 870
+220 FOR AP=1 TO 2 :: CALL S(],AD,N) :: CALL S([,Z,N) :: CALL S([,AB,N) :: CALL S([,AD,N) :: CALL S([,AF,N) :: CALL S(],AG,M) :: CALL S(],AI,K)
+230 CALL S(],AK,I) :: CALL S(],AL,K) :: CALL S([,AI,H) :: CALL S([,AK,H) :: CALL S([,AL,D) :: CALL S([,AI,D) :: CALL S(],AK,I) :: CALL S([,AI,I)
+240 CALL S([,AK,I) :: CALL U(],AG) :: CALL S([,U,M) :: CALL S([,W,M) :: CALL S([,Y,K) :: CALL S([,Z,K) :: CALL S([,AB,I) :: CALL S([,AD,I)
+250 CALL S(],AE,K) :: CALL S(],AD,I) :: CALL S(],AB,G) :: CALL S(],AG,F) :: CALL S(],Z,G) :: CALL S(],Y,I) :: CALL S(],Z,B) :: CALL S(],Z,R)
+260 CALL S(],Z,P) :: CALL T(],W,R,O) :: CALL T([,AD,R,O) :: CALL T([,AB,R,O) :: CALL T(],AD,R,O) :: CALL S(],W,P) :: CALL S([,AE,P)
+270 CALL S([,AD,P) :: CALL S(],AE,P) :: CALL S([,W,N) :: CALL S([,AD,N) :: CALL S([,V,M) :: CALL S([,AB,M) :: CALL S([,W,K) :: CALL S([,Z,K)
+280 CALL S(],Y,R) :: CALL S([,Y,M) :: CALL S([,Y,K) :: CALL S([,Y,J) :: CALL S([,Y,H) :: CALL S([,R,F) :: CALL S([,T,F) :: CALL S([,V,F)
+290 CALL S([,W,F) :: CALL U([,Y) :: CALL U([,Z) :: CALL S(],AB,G) :: CALL S(],Z,F) :: CALL S(],Y,D) :: CALL S([,Z,B) :: CALL S(@,AB,B)
+300 CALL S(1.5*@,AD,B) :: CALL S(],W,D) :: CALL S(],V,F) :: CALL T(3*],W,R,N) :: NEXT AP :: GOTO 330
+310 CALL S(],AL,K) :: CALL S(],AK,K) :: CALL S(],AI,K) :: CALL S(],AK,I) :: CALL S(],AD,I) :: CALL S(],AD,I) :: CALL S(],AI,G)
+320 CALL S([,W,G) :: CALL S([,Y,G) :: CALL S([,446,G) :: CALL S([,AB,G) :: CALL S(],AD,F) :: CALL S([,AD,R) :: CALL S([,AD,P) :: RETURN
+330 AO=1 :: @=140 :: A$="   MUSETTE IN D   " :: GOSUB 860 :: GOSUB 870 :: FOR AP=1 TO 2 :: AN=6 :: GOSUB 410 :: GOSUB 410
+340 AN=3 :: GOSUB 870 :: GOSUB 420 :: GOSUB 430 :: AN=6 :: GOSUB 870 :: GOSUB 410 :: GOSUB 410 :: AN=3 :: GOSUB 870 :: GOSUB 420
+350 GOSUB 440 :: NEXT AP :: FOR AP=1 TO 2 :: AN,AO=3 :: GOSUB 870 :: GOSUB 450 :: GOSUB 450 :: GOSUB 460 :: GOSUB 470 :: GOSUB 460
+360 GOSUB 460 :: GOSUB 480 :: AN=8 :: AO=7 :: FOR A5=1 TO 2 :: AN=AN-1 :: AO=AO-1 :: GOSUB 870 :: CALL S([,AF,H) :: CALL S([,AE,H)
+370 CALL S([,T,H) :: CALL S(],AD,H) :: CALL S([,AC,H) :: CALL S([,AK,H) :: CALL S([,AJ,H) :: NEXT A5 :: AN=5 :: AO=2 :: GOSUB 870
+380 GOSUB 490 :: AN=4 :: AO=1 :: GOSUB 870 :: GOSUB 490 :: GOSUB 500 :: AN=2 :: GOSUB 870 :: GOSUB 510 :: GOSUB 520 :: AN=10 :: AO=6
+390 GOSUB 870 :: GOSUB 410 :: GOSUB 410 :: AN=5 :: AO=3 :: GOSUB 870 :: GOSUB 420 :: GOSUB 430 :: AN=8 :: AO=4 :: GOSUB 870
+400 GOSUB 410 :: GOSUB 410 :: AN=7 :: AO=5 :: GOSUB 870 :: GOSUB 420 :: AN=5 :: AO=3 :: GOSUB 870 :: GOSUB 440 :: NEXT AP :: GOTO 530
+410 CALL S(],AK,F) :: CALL S(@,AI,F) :: CALL S(@,AH,F) :: CALL S(@,AF,F) :: CALL S(1.4*@,AD,F) :: RETURN
+420 CALL S(@,V,J) :: CALL S(@,W,K) :: CALL S([,Y,M) :: CALL S([,W,K) :: CALL S([,V,J) :: RETURN
+430 CALL S([,T,H) :: CALL S([,Y,M) :: CALL S([,V,J) :: CALL S([,R,F) :: RETURN
+440 CALL S([,T,H) :: CALL S([,Y,M) :: CALL S(1.5*],R,F) :: RETURN
+450 CALL S(@,AC,A) :: CALL S(@,AD,A) :: CALL S(@,AF,M) :: RETURN
+460 CALL S([,AK,A) :: CALL S([,AF,M) :: RETURN
+470 CALL S([,AF,A) :: CALL S([,AF,M) :: RETURN
+480 CALL S(@,AD,A) :: CALL S(@,AC,A) :: CALL S(@,AA,M) :: CALL S(@,Y,M) :: CALL S([,AA,H) :: CALL S([,T,H) :: RETURN
+490 CALL S(@,AF,H) :: CALL S(@,AE,H) :: CALL S(@,AC,H) :: CALL S(@,AE,H) :: RETURN
+500 CALL S([,AF,H) :: CALL S([,X,H) :: CALL S([,Y,E) :: CALL S([,AD,F) :: RETURN
+510 CALL S(@,AC,H) :: CALL S(@,AD,H) :: CALL S([,AF,H) :: CALL S([,Y,A) :: CALL S([,R,F) :: RETURN
+520 CALL S(@,Q,E) :: CALL S(@,R,F) :: CALL S([,T,H) :: CALL S(],M,A) :: RETURN
+530 @=140 :: A$="LITTLE PRELUDE IN F" :: GOSUB 860 :: AN=4 :: AO=6 :: GOSUB 870 :: CALL S(@,M,I) :: CALL T(@,AB,M,I) :: CALL T(@,Y,P,I)
+540 CALL T(@,AB,P,I) :: CALL T(@,U,M,I) :: CALL T(@,AB,M,I) :: CALL T(@,Y,P,I) :: CALL T(@,AB,P,I) :: CALL U(@,U) :: CALL U(@,AD)
+550 CALL T(@,Z,R,I) :: CALL T(@,AD,R,I) :: CALL T(@,U,N,I) :: CALL T(@,AD,N,I) :: CALL T(@,Z,R,I) :: CALL T(@,AD,R,I) :: CALL U(@,W)
+560 CALL U(@,AF) :: CALL T(@,Z,K,I) :: CALL T(@,AF,K,I) :: CALL T(@,W,N,I) :: CALL T(@,AF,N,I) :: CALL T(@,Z,K,I) :: CALL T(@,AF,K,I)
+570 CALL T(@,AG,M,I) :: CALL T(@,AB,M,I) :: CALL T(@,Y,M,I) :: CALL T(@,AB,M,I) :: CALL U(@,U) :: CALL U(@,P) :: CALL U(@,M) :: CALL U(@,P)
+580 CALL U(@,I) :: CALL U(@,P) :: CALL V(@,AG,AB,M) :: CALL V(@,AG,AB,P) :: CALL V(@,AG,Y,I) :: CALL V(@,AG,Y,P) :: CALL V(@,AG,AB,M)
+590 CALL V(@,AG,AB,P) :: CALL U(@,I) :: CALL U(@,V) :: CALL V(@,AG,AD,N) :: CALL V(@,AG,AD,R) :: CALL V(@,AG,Z,I) :: CALL V(@,AG,Z,R)
+600 CALL V(@,AG,AD,N) :: CALL V(@,AG,AD,R) :: CALL U(@,K) :: CALL U(@,T) :: CALL V(@,AI,AF,N) :: CALL V(@,AI,AF,T) :: CALL V(@,AI,AF,K)
+610 CALL V(@,AL,AF,T) :: CALL V(@,AI,AF,N) :: CALL V(@,AI,AF,T) :: CALL V(@,AK,AB,U) :: AN=4 :: AO=2 :: GOSUB 870 :: CALL U(@,P)
+620 CALL U(@,M) :: CALL U(@,P) :: CALL U(@,I) :: CALL U(@,D) :: CALL U(@,A) :: CALL U(@,D) :: CALL U(@,I) :: CALL S(@,AK,I) :: CALL S(@,AG,K)
+630 CALL S(@,AK,K) :: CALL S(@,AB,A) :: CALL S(@,AK,A) :: CALL S(@,AG,B) :: CALL S(@,AK,B) :: CALL S(@,AB,D) :: CALL S(@,AI,D) :: CALL S(@,AG,F)
+640 CALL S(@,AI,F) :: CALL S(@,AB,H) :: CALL S(@,AI,H) :: CALL S(@,AF,D) :: CALL S(@,AI,D) :: CALL S(@,Y,F) :: CALL S(@,AG,F) :: CALL S(@,AF,H)
+650 CALL S(@,AG,H) :: CALL S(@,Y,I) :: CALL S(@,AG,I) :: CALL S(@,AD,K) :: CALL S(@,AG,K) :: CALL S(@,Y,M) :: CALL S(@,AF,M) :: CALL S(@,AD,N)
+660 CALL S(@,AF,N) :: CALL S(@,Y,P) :: CALL S(@,AF,P) :: CALL S(@,AB,M) :: CALL S(@,AF,M) :: CALL S(@,U,N) :: CALL S(@,AD,N) :: CALL S(@,AB,M)
+670 CALL S(@,AD,M) :: CALL S(@,W,K) :: CALL S(@,AD,K) :: CALL S(@,Z,I) :: CALL S(@,AD,I) :: CALL S(@,W,H) :: CALL S(@,AB,H) :: CALL S(@,Z,D)
+680 CALL S(@,AB,D) :: CALL S(@,U,I) :: CALL S(@,AB,I) :: CALL S(@,Y,H) :: CALL S(@,AB,H) :: CALL S(@,U,F) :: CALL S(@,Z,F) :: CALL S(@,Y,K)
+690 CALL S(@,Z,K) :: CALL S(@,P,H) :: CALL S(@,Z,H) :: CALL S(@,W,D) :: CALL S(@,Z,D) :: CALL S(@,P,I) :: CALL S(@,Y,D) :: CALL S(@,U,A)
+700 CALL S(@,Y,D) :: CALL S(@,P,I) :: CALL S(@,Y,A) :: CALL S(@,U,D) :: CALL S(@,Y,I) :: CALL S(@,R,B) :: CALL S(@,Y,B) :: CALL S(@,U,N)
+710 CALL S(@,Y,N) :: CALL U(@,R) :: CALL U(@,U) :: CALL S(@,Y,M) :: CALL S(@,AB,M) :: CALL S(@,R,K) :: CALL S(@,Z,F) :: CALL S(@,W,B)
+720 CALL S(@,Z,F) :: CALL S(@,R,K) :: CALL S(@,Z,B) :: CALL S(@,W,F) :: CALL S(@,Z,K) :: CALL S(@,T,D) :: CALL S(@,Z,D) :: CALL S(@,W,P)
+730 CALL S(@,Z,P) :: CALL U(@,T) :: CALL U(@,W) :: CALL S(@,Z,N) :: CALL S(@,AD,N) :: CALL S(@,U,M) :: CALL S(@,AB,M) :: CALL S(@,Y,D)
+740 CALL S(@,AB,D) :: CALL S(@,AG,M) :: CALL S(@,AB,M) :: CALL S(@,Y,D) :: CALL S(@,U,D) :: CALL U(@,K) :: CALL S(@,Z,K) :: CALL S(@,W,D)
+750 CALL S(@,Z,D) :: CALL S(@,AF,K) :: CALL S(@,Z,K) :: CALL S(@,W,D) :: CALL S(@,T,D) :: CALL U(@,I) :: CALL S(@,Y,I) :: CALL S(@,U,D)
+760 CALL S(@,Y,D) :: CALL S(@,AD,I) :: CALL S(@,Y,I) :: CALL S(@,U,D) :: CALL S(@,R,D) :: CALL U(@,H) :: CALL S(@,W,H) :: CALL S(@,T,D)
+770 CALL S(@,W,D) :: CALL S(@,AB,H) :: CALL S(@,W,H) :: CALL S(@,T,D) :: CALL S(@,P,D) :: CALL U(@,F) :: CALL S(@,U,F) :: CALL S(@,R,D)
+780 CALL S(@,U,D) :: CALL S(@,W,B) :: CALL S(@,Y,B) :: CALL S(@,Z,K) :: CALL S(@,R,K) :: CALL S(@,W,H) :: CALL S(@,Y,H) :: CALL S(@,Z,D)
+790 CALL S(@,T,D) :: CALL S(@,U,M) :: CALL S(@,W,M) :: CALL S(@,Y,I) :: CALL S(@,P,I) :: CALL S(@,R,N) :: CALL S(@,U,N) :: CALL S(@,Y,N)
+800 CALL S(@,AB,N) :: CALL U(@,Z) :: CALL U(@,Y) :: CALL U(@,W) :: CALL U(@,Z) :: CALL U(@,AD) :: CALL U(@,AG) :: CALL U(@,AF) :: CALL U(@,AD)
+810 CALL U(@,AB) :: CALL U(@,AF) :: CALL U(@,AI) :: CALL U(@,AL) :: CALL T(@,AL,AF,AB) :: CALL U(]*2,AL) :: CALL T([,AK,AG,AB) :: CALL S(@,Z,F)
+820 CALL T(@,AI,AF,F) :: CALL S(@,Y,B) :: CALL T(@,AG,AD,B) :: CALL S(@,W,D) :: CALL T(@,AG,AB,D) :: CALL S(@,W,D) :: CALL T(@,AF,Z,D)
+830 CALL T(]*4,AG,AB,Y) :: GOTO 150
+835 !@P+
+840 RANDOMIZE :: @=INT(RND*40+@) :: [=@*2 :: ]=[*2 :: RETURN
+850 FOR AP=1 TO 999 :: NEXT AP :: RETURN
+860 GOSUB 850 :: DISPLAY AT(15,1):RPT$(" ",(28-LEN(A$))/2)&A$ :: GOSUB 850 :: GOTO 840
+870 CALL S(0,AN,AO) :: CALL T(0,AN,AO,0) :: CALL U(0,AN) :: CALL V(0,AN,AO,0) :: RETURN
+880 SUB S(A,B,C) :: IF A=0 THEN D=B :: E=C :: SUBEXIT
+890 CALL SOUND(A,B,D,C,E) :: SUBEND
+900 SUB T(A,B,C,D) :: IF A=0 THEN E=B :: F=C :: SUBEXIT
+910 CALL SOUND(A,B,E,C,F,D,F) :: SUBEND
+920 SUB U(A,B) :: IF A=0 THEN C=B :: SUBEXIT
+930 CALL SOUND(A,B,C) :: SUBEND
+940 SUB V(A,B,C,D) :: IF A=0 THEN E=B :: F=C :: SUBEXIT
+950 CALL SOUND(A,B,E,C,E,D,F) :: SUBEND
+960 !@P

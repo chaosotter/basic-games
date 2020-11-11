@@ -1,0 +1,27 @@
+{
+    "name": "Noteworthy",
+    "shortName": "noteworth",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"R. Trueman"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "noteworth.ti99"
+    }
+}

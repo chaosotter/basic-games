@@ -1,0 +1,27 @@
+{
+    "name": "Solitaire",
+    "shortName": "solitaire",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Don Crossman"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "99'er",
+	"date": "1983",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "solitaire.ti99"
+    }
+}

@@ -1,0 +1,43 @@
+100 DIM M$(100)
+110 GOTO 150
+120 S,J,M$(),A$,Z$,K,W$(),X,Y,ADV$,A,Q$
+130 CALL CLEAR :: CALL COLOR :: CALL SCREEN :: CALL CHAR :: CALL KEY :: CALL ADVERB :: CALL SOUND
+140 !@P-
+150 CALL CLEAR :: FOR S=0 TO 12 :: CALL COLOR(S,2,8) :: NEXT S :: CALL SCREEN(5) :: DISPLAY AT(3,2):"ADJECTIVE TO ADVERB  V.1.3"
+160 CALL CHAR(64,"3C4299A1A199423C") :: DISPLAY AT(5,6):"@ Tigercub Software":;:" For free distribution with  no charge or copying fee."
+170 FOR J=1 TO 100 :: READ M$(J) :: A$=A$&CHR$(J) :: NEXT J :: Z$=A$ :: CALL KEY(3,K,S)
+180 W$(1)=" If adjective ends in Y,     change the Y to ILY." :: W$(2)=" If adjective ends in C,    add ALLY."
+190 W$(3)=" If adjective ends in LL,   just add Y."
+200 W$(4)=" If adjective ends in LE,   preceded by a consonant,    drop the E and add Y."
+210 W$(5)=" If the word ends in E      preceded by a consonant,    preceded by a vowel, just   add LY."
+220 W$(6)=" This word is an exception  to the rule - the adverb is WHOLLY."
+230 W$(7)=" If the adjective does not  end in C,E,LL or Y, always  just add LY."
+240 W$(8)=" This is an exception to the rule. The preferred adverb  form is DRYLY."
+250 W$(9)=" If the adjective ends in E  preceded by a vowel, drop   the E and add LY."
+260 W$(10)=" If the adjective ends in E preceded by a consonant     other than L, add LY."
+270 RANDOMIZE :: X=INT(RND*LEN(Z$)+1) :: Y=ASC(SEG$(Z$,X,1)) :: Z$=SEG$(Z$,1,X-1)&SEG$(Z$,X+1,255) :: IF LEN(Z$)=0 THEN Z$=A$
+280 CALL ADVERB(M$(Y),ADV$,A)
+290 DISPLAY AT(12,1):" Type the adverb form of -" :: DISPLAY AT(15,1):M$(Y) :: DISPLAY AT(18,10):"" :: ACCEPT AT(15,15)BEEP:Q$
+300 IF Q$=ADV$ THEN DISPLAY AT(18,10):"CORRECT!" :: GOTO 240
+310 CALL SOUND(100,110,5,-4,5) :: DISPLAY AT(20,1):W$(A):"":"" :: GOTO 290
+320 !@P+
+330 DATA DUE,COOL,SOLE,STOIC,FRANTIC,COMIC,ABLE,FULL,POOR,HANDY,SORE,SOCIAL,PENAL,SLOW,HIGH,LOW
+340 !@P-
+350 DATA FRISKY,PLAYFUL,HEALTHY,ROUGH,BUSY,SILLY,SICK,SMART,SORE,FAIR,ANGRY,BARE,TIRED,WISHFUL,ACTUAL
+360 DATA HASTY,LONE,HECTIC,OFFICIAL,MAGIC,MAGICAL,MATHEMATIC,LOGIC,TRAGIC,PATHETIC,TRAUMATIC
+370 DATA DRAMATIC,AUTOMATIC,AROMATIC,EQUAL,SERIAL,BASIC,USUAL,FAVORABLE,UNSTABLE,LEGIBLE
+380 DATA HECTIC,LIVE,WARY,VISIBLE,TERRIBLE,HORRIBLE,VIVID,FANCY,EASY,VILE,WICKED,BLOODY,SHODDY
+390 DATA NOBLE,HAPPY,LEGAL,MERRY,JOLLY,CRAZY,CASUAL,CAREFUL,FOOLISH,FAMOUS,GAY,GUILTY
+400 DATA HOPEFUL,HATEFUL,TIMID,BRAVE,BEAUTIFUL,DRY,NICE,LARGE,PAINFUL,SINFUL,SORROWFUL,SIMPLE,WILLFUL
+410 DATA MENTAL,MORAL,PALE,WHOLE,HUNGRY,FINAL,FORMAL,TRUE,AMPLE,DOUBLE
+420 !@P+
+430 SUB ADVERB(M$,ADV$,A) :: L=LEN(M$) :: E$=SEG$(M$,L,1) :: F$=SEG$(M$,L-1,2) :: G$=SEG$(M$,L-1,1) :: P$=SEG$(M$,1,L-1) :: H$=SEG$(M$,L-2,1)
+435 IF ASC(SEG$(M$,1,1))<97 THEN A$="ALLY" :: I$="ILY" :: L$="LY" :: Y$="Y" :: V$="AEIOU" ELSE A$="ally" :: I$="ily" :: L$="ly" :: Y$="y" :: 
+440 IF M$="WHOLE" THEN ADV$="WHOLLY" :: A=6 :: SUBEXIT
+450 IF M$="DRY" THEN ADV$="DRYLY" :: A=8 :: SUBEXIT ELSE IF F$="LL" OR F$="ll" THEN ADV$=M$&Y$ :: A=3 :: SUBEXIT
+470 IF E$="C" OR E$="c" THEN ADV$=M$&A$ :: A=2 :: SUBEXIT ELSE IF E$="Y" OR E$="y" THEN ADV$=P$&I$ :: A=1 :: SUBEXIT
+480 IF E$<>"E" AND E$<>"e" THEN 530
+490 IF G$="L" OR G$="l" THEN IF POS(V$,H$,1)<>0 THEN ADV$=M$&L$ :: A=5 :: SUBEXIT ELSE ADV$=P$&Y$ :: A=4 :: SUBEXIT
+500 IF POS(V$,G$,1)<>0 THEN ADV$=P$&L$ :: A=9 :: SUBEXIT
+520 IF POS(V$,SEG$(M$,L-2,1),1)=0 THEN ADV$=M$&L$ :: A=10 :: SUBEXIT ELSE ADV$=M$&L$ :: A=5 :: SUBEXIT
+530 ADV$=M$&L$ :: A=7 :: SUBEND

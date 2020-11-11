@@ -1,0 +1,48 @@
+10 GOTO 100!CROSSWORD HELPER programmed by Jim Peterson Oct. 1987, just for the fun of figuring out how to do it!
+11 SET,K,S,L$,C$,V$,L,J,P$(),Q$,P,T,Z$,Z,A,W$,B,C,D,E,F,G,H,I
+30 CALL CLEAR :: CALL COLOR :: CALL SCREEN :: CALL KEY
+40 !@P-
+100 CALL CLEAR
+110 DISPLAY AT(3,7):"CROSSWORD HELPER":;:" Will find all possible com-":"binations of letters in any":"word of 1 to 9 letters, and"
+120 DISPLAY AT(8,1):"within any limitations that":"you choose.":;:" It is quite useless, due to":"the vast number of possible":"combinations!"
+130 DISPLAY AT(23,8):"press any key" :: DISPLAY AT(23,8):" press any key" :: CALL KEY(5,K,S) :: IF S=0 THEN 130
+140 ON WARNING NEXT
+150 L$="ABCDEFGHIJKLMNOPQRSTUVWXYZ" :: C$="BCDFGHJKLMNPQRSTVWXYZ" :: V$="AEIOU"
+160 DISPLAY AT(3,1)ERASE ALL:"How many letters in word?" :: ACCEPT AT(3,27)BEEP VALIDATE(DIGIT)SIZE(1):L :: IF L=0 THEN 160
+170 FOR J=1 TO L :: P$(J)=L$ :: NEXT J
+180 DISPLAY AT(5,1):"Any known letters? (Y/N)" :: ACCEPT AT(5,26)BEEP VALIDATE("YN"):Q$ :: IF Q$="N" THEN 220
+190 DISPLAY AT(7,1):"At position?" :: ACCEPT AT(7,14)BEEP VALIDATE(DIGIT):P :: IF P>L THEN 190
+200 IF P=0 THEN 220 ELSE DISPLAY AT(9,1):"Letter?" :: ACCEPT AT(9,9)BEEP VALIDATE(UALPHA)SIZE(1):P$(P)
+210 DISPLAY AT(7,1):"And? (0 if none)" :: ACCEPT AT(7,18)BEEP VALIDATE(DIGIT):P :: IF P>L THEN 210 ELSE 200
+220 DISPLAY AT(11,1):"Any positions limited to    vowels? (Y/N)" :: ACCEPT AT(12,15)BEEP VALIDATE("YN")SIZE(1):Q$ :: IF Q$="N" THEN 250
+230 DISPLAY AT(14,1):"Position?" :: ACCEPT AT(14,11)BEEP VALIDATE(DIGIT):P :: IF P=0 THEN 250 ELSE IF P>L THEN 230 ELSE P$(P)=V$
+240 DISPLAY AT(14,1):"" :: DISPLAY AT(14,1):"And? (0 if none)" :: ACCEPT AT(14,18)BEEP VALIDATE(DIGIT):P :: IF P=0 THEN 250 ELSE IF P>L THEN 240 ELSE P$(P)=V$ :: GOTO 240
+250 DISPLAY AT(16,1):"Any positions limited to    consonants? (Y/N)" :: ACCEPT AT(17,19)BEEP VALIDATE("YN")SIZE(1):Q$ :: IF Q$="N" THEN 280
+260 DISPLAY AT(19,1):"Position?" :: ACCEPT AT(19,11)BEEP VALIDATE(DIGIT):P :: IF P=0 THEN 280 ELSE IF P>L THEN 260 ELSE P$(P)=C$
+270 DISPLAY AT(19,1):"And? (0 if none)" :: ACCEPT AT(19,18)BEEP VALIDATE(DIGIT):P :: IF P=0 THEN 280 ELSE IF P>L THEN 270 ELSE P$(P)=C$ :: GOTO 270
+280 DISPLAY AT(21,1):"Any other positions limited? (Y/N)" :: ACCEPT AT(22,8)BEEP VALIDATE("YN")SIZE(1):Q$ :: IF Q$="N" THEN 320
+290 DISPLAY AT(24,1):"Position?" :: ACCEPT AT(24,11)BEEP VALIDATE(DIGIT):P :: IF P=0 THEN 320 ELSE IF P>L THEN 290
+300 DISPLAY AT(21,1):"Acceptable letters?":;:;:;: :: ACCEPT AT(22,1)VALIDATE(UALPHA):P$(P) :: DISPLAY AT(24,1):"And position? (0 if none)"
+310 ACCEPT AT(24,26)BEEP VALIDATE(DIGIT)SIZE(1):P :: IF P=0 THEN 320 ELSE IF P>L THEN 310 ELSE 300
+320 T=LEN(P$(1)) :: FOR J=2 TO L :: T=T*LEN(P$(J)) :: NEXT J
+330 DISPLAY AT(12,2)ERASE ALL:"There are";T;"possible":"combinations."
+340 DISPLAY AT(15,1):"Continue?" :: ACCEPT AT(15,11)BEEP VALIDATE("YN"):Q$ :: IF Q$="N" THEN 150
+350 DISPLAY AT(18,1):"Output to printer? (Y/N)" :: ACCEPT AT(18,26)BEEP VALIDATE("YN"):Q$ :: IF Q$="N" THEN 370
+360 DISPLAY AT(20,1):"Printer? PIO" :: ACCEPT AT(20,10)SIZE(-18):Z$ :: OPEN #1:Z$ :: Z=1
+370 FOR A=1 TO LEN(P$(1)) :: W$=SEG$(P$(1),A,1) :: IF L=1 THEN PRINT #Z:W$&" "; :: W$="" :: GOTO 530
+380 FOR B=1 TO LEN(P$(2)) :: W$=W$&SEG$(P$(2),B,1) :: IF L=2 THEN PRINT #Z:W$&" "; :: W$=SEG$(W$,1,1) :: GOTO 520
+390 FOR C=1 TO LEN(P$(3)) :: W$=W$&SEG$(P$(3),C,1) :: IF L=3 THEN PRINT #Z:W$&" "; :: W$=SEG$(W$,1,2) :: GOTO 510
+400 FOR D=1 TO LEN(P$(4)) :: W$=W$&SEG$(P$(4),D,1) :: IF L=4 THEN PRINT #Z:W$&" "; :: W$=SEG$(W$,1,3) :: GOTO 500
+410 FOR E=1 TO LEN(P$(5)) :: W$=W$&SEG$(P$(5),E,1) :: IF L=5 THEN PRINT #Z:W$&" "; :: W$=SEG$(W$,1,4) :: GOTO 490
+420 FOR F=1 TO LEN(P$(6)) :: W$=W$&SEG$(P$(6),F,1) :: IF L=6 THEN PRINT #Z:W$&" "; :: W$=SEG$(W$,1,5) :: GOTO 480
+430 FOR G=1 TO LEN(P$(7)) :: W$=W$&SEG$(P$(7),G,1) :: IF L=7 THEN PRINT #Z:W$&" "; :: W$=SEG$(W$,1,6) :: GOTO 470
+440 FOR H=1 TO LEN(P$(8)) :: W$=W$&SEG$(P$(8),H,1) :: IF L=8 THEN PRINT #Z:W$&" "; :: W$=SEG$(W$,1,7) :: GOTO 460
+450 FOR I=1 TO LEN(P$(9)) :: W$=W$&SEG$(P$(9),I,1) :: PRINT #Z:W$&" "; :: W$=SEG$(W$,1,8) :: NEXT I :: W$=SEG$(W$,1,7)
+460 NEXT H :: W$=SEG$(W$,1,6)
+470 NEXT G :: W$=SEG$(W$,1,5)
+480 NEXT F :: W$=SEG$(W$,1,4)
+490 NEXT E :: W$=SEG$(W$,1,3)
+500 NEXT D :: W$=SEG$(W$,1,2)
+510 NEXT C :: W$=SEG$(W$,1,1)
+520 NEXT B
+530 NEXT A

@@ -1,0 +1,49 @@
+2 DIM M$(100)
+10 GOTO 100
+11 S,K,A$(),J,M$(),Y$,Z$,Z,X,ING$,A,AN$
+30 CALL CLEAR :: CALL COLOR :: CALL SCREEN :: CALL CHAR :: CALL KEY :: CALL ING :: CALL HCHAR
+40 !@P-
+100 CALL CLEAR :: FOR S=0 TO 12 :: CALL COLOR(S,2,8) :: NEXT S :: CALL SCREEN(5) :: DISPLAY AT(3,4):"LEARNING TO ""ING"" IT"
+110 CALL CHAR(64,"3C429A1A19423C") :: DISPLAY AT(5,1):"@ Tigercub Software 1987 forfree distribution - no priceor copying fee to be charged"
+120 CALL KEY(3,K,S)
+130 A$(1)="No, if the word does not end in B, D, G, M, N, P, R or T you always just add ING"
+140 A$(2)="No,if the last letter is not E and the next-to-last     letter is not a vowel, just add ING"
+150 A$(3)="No, if the word has two     vowels just before the last letter, just add ING"
+160 A$(4)="No, if a word ends in B, D, G, M, N, P, R or T with one vowel (but not two vowels!) just before it, you must     double the last letter and add ING"
+170 A$(5)="No, if the word ends in IE, change the IE to Y and add  ING"
+180 A$(6)="No, BE is an exception to   the rules,"
+190 A$(7)="Some dictionaries give EYING but EYEING is better"
+200 A$(8)="No, if a word ends in E (ex-cept BE and words  ending in IE,OE,UE AND YE) you must drop the E and add ING"
+210 A$(9)="No, if the word ends in EE, or OE or UE, just add ING"
+220 FOR J=1 TO 100 :: READ M$(J) :: NEXT J
+230 FOR J=1 TO 100 :: Y$=Y$&CHR$(J) :: NEXT J :: Z$=Y$
+240 DISPLAY AT(3,1):"":"":"":" Type the word with the     correct ING suffix"
+250 RANDOMIZE :: Z=INT(RND*LEN(Z$)+1) :: X=ASC(SEG$(Z$,Z,1)) :: Z$=SEG$(Z$,1,Z-1)&SEG$(Z$,Z+1,255) :: IF LEN(Z$)=0 THEN Z$=Y$
+260 CALL ING(M$(X),ING$,A)
+270 DISPLAY AT(12,1):M$(X) :: ACCEPT AT(12,15):AN$
+280 CALL HCHAR(15,1,32,280) :: DISPLAY AT(10,1):"" :: IF AN$=ING$ THEN DISPLAY AT(10,10):"CORRECT!" :: GOTO 250
+290 DISPLAY AT(15,1):A$(A):"":"The word is ";ING$ :: GOTO 250
+299 !@P+
+300 DATA LODGE,BUY,HOPE,COURT,TITHE,WISH,CUT,DRIVE,SEE,EYE,GO,CRY,TRY,AGREE,ROOT
+301 !@P-
+310 DATA BOIL,COOL,HURT,BUTT,CAGE,BE,ROVE,PITY,SAVE,COOL,RULE,MEASURE,TUNE,RAVE
+320 DATA RUN,BEG,STOP,THINK,ERR,BORE,TEAR,BAR,CARE,BARE,BEAR,LET,HURT,HOOT,HEAT,COME
+330 DATA DREAM,TAKE,FRY,CADDY,FLEE,HOE,SEW,TRIP,HOPE,RIG,DRAG,SUE,KNEE,BOO,BABY,NURSE,CRUISE
+340 DATA LIE,TIE,DIE,BELIE,VIE,DODGE,LIVE,DRIVE,LOVE,LEAVE,HUM,HOP,BEG,BEGIN,BOMB,BOB
+350 DATA ADD,AID,BAT,BOAT,PRAY,LAY,QUOTE,SNORE,STARE,HIRE,FIRE,LINE,CRY,SAY
+360 DATA BOOGIE,RAGE,RATTLE,GRATE,LEAVE,STRIVE,DRAW,WRITE
+369 !@P+
+370 SUB ING(M$,ING$,A) :: E$=SEG$(M$,LEN(M$),1) :: F$=SEG$(M$,LEN(M$)-1,1) :: A$="ING" :: C$="BDEGMNPRT" :: V$="AEIOU"
+374 GOTO 380
+375 C$,E$,ING$,M$,A$,A,V$,F$
+378 !@P-
+380 IF POS(C$,E$,1)=0 THEN ING$=M$&A$ :: A=1 :: SUBEXIT
+390 IF E$="E" THEN 420
+400 IF POS(V$,F$,1)=0 THEN ING$=M$&A$ :: A=2 :: SUBEXIT
+410 IF POS(V$,SEG$(M$,LEN(M$)-2,1),1)<>0 THEN ING$=M$&A$ :: A=3 :: SUBEXIT ELSE ING$=M$&E$&A$ :: A=4 :: SUBEXIT
+420 IF F$="I" THEN ING$=SEG$(M$,1,LEN(M$)-2)&"YING" :: A=5 :: SUBEXIT ELSE IF F$="E" OR F$="O" OR F$="U" THEN ING$=M$&A$ :: A=9 :: SUBEXIT
+430 IF M$="BE" THEN ING$="BEING" :: A=6 :: SUBEXIT
+440 IF M$="EYE" THEN ING$="EYEING" :: A=7 :: SUBEXIT
+450 ING$=SEG$(M$,1,LEN(M$)-1)&A$ :: A=8
+455 !@P+
+460 SUBEND

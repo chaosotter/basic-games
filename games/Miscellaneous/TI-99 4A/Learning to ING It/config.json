@@ -1,0 +1,27 @@
+{
+    "name": "Learning to ING It",
+    "shortName": "learning",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Tigercub Software"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "1987",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "learning.ti99"
+    }
+}

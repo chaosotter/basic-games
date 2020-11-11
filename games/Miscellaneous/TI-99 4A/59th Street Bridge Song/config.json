@@ -1,0 +1,27 @@
+{
+    "name": "59th Street Bridge Song",
+    "shortName": "59bridge"
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"A. DeCicco"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "1983-04",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "59bridge.ti99"
+    }
+}

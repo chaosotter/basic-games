@@ -1,0 +1,27 @@
+{
+    "name": "Deep Purple",
+    "shortName": "deeppurp",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"B. Bader"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Various",
+	"date": "1983-05",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "deeppurp.ti99"
+    }
+}

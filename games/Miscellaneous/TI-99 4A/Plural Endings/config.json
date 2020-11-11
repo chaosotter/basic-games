@@ -1,0 +1,27 @@
+{
+    "name": "Plural Endings"
+    "shortName": "pluralend",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Jim Peterson"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Tigercub Software",
+	"date": "1987-11-20",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "pluralend.ti99"
+    }
+}

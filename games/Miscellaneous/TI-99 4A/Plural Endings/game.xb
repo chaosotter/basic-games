@@ -1,0 +1,93 @@
+100 DIM K$(17) :: DIM B$(185) :: DIM C$(18,2)
+110 GOTO 150
+120 SET,CH,K,S,K$(),J,B$(),C$(J,1),Z$,Y$,X$,Q,X,Y,W$,PL$,A,Q$
+130 CALL CLEAR :: CALL COLOR :: CALL SCREEN :: CALL CHAR :: CALL KEY :: CALL PLURAL :: CALL SOUND
+140 !@P-
+150 CALL CLEAR :: FOR SET=0 TO 14 :: CALL COLOR(SET,2,8) :: NEXT SET :: CALL SCREEN(5) :: FOR CH=127 TO 129 :: CALL CHAR(CH,"0") :: NEXT CH
+160 CALL CHAR(64,"3C4299A1A199423C") :: DISPLAY AT(3,2):"PLURAL ENDINGS Version 1.1" :: GOSUB 250
+170 DISPLAY AT(5,1):"@ Tigercub Software for free distribution. No price or  copying fee may be charged."!written by Jim Peterson 20 Nov. 87
+180 DISPLAY AT(12,1):"DO YOU WANT TO:":" (1)TAKE A TEST":" (2)FIND PLURALS":"":"  TYPE 1 OR 2"
+190 ACCEPT AT(16,15)VALIDATE("12"):Q :: IF Q=1 THEN DISPLAY AT(12,1):"":"":"":"":"" :: GOTO 240
+200 DISPLAY AT(3,1)ERASE ALL:"This program has been pro-  grammed with all the rules  for forming plurals, but    there are quite a few irreg-"
+210 DISPLAY AT(7,1):"ular plural forms in Englishso the answer it gives may  not always be right."
+220 DISPLAY AT(15,1):"Your word?" :: ACCEPT AT(15,12)VALIDATE(UALPHA):W$ :: CALL PLURAL(W$,PL$,A)
+230 DISPLAY AT(17,1):"The regular plural form is";PL$ :: DISPLAY AT(20,1):"     I"&SEG$(K$(A),6,255)&RPT$(" ",28) :: GOTO 220
+240 DISPLAY AT(12,8):"GETTING READY...." :: GOTO 440
+250 CALL KEY(5,K,S)
+260 K$(1)="No, if the word does not end in E,F,H,N,S,X,Y or Z just add S"
+270 K$(2)="No, if the word ends in IFE, change it to IVES (FIFE is   an exception!)"
+280 K$(3)="No, if a word ends in E but not FE, just add S"
+290 K$(4)="No, if a word ends in F,    (except EF or FF) change it to VES"
+300 K$(5)="No, if a word ends in CH or SH, add ES"
+310 K$(6)="No, if a word ends in H but not CH or SH, just add S"
+320 K$(7)="No, if a word ends in S, X  or Z, add ES"
+330 K$(8)="No, if a word ends in AY,   EY, OY or UY, just add S"
+340 K$(9)="No, if a word ends in Y not preceded by a vowel, change the Y to IES"
+350 K$(10)="No, if a word ends in N but not in MAN, just add S"
+360 K$(11)="No, if a word ends in MAN,  change it to MEN"
+370 K$(12)="No, if a word of Latin      origin ends in US, change   it to I"
+380 K$(13)="No, the plural of this word is the same as the singular"
+390 K$(14)="No, some words ending in UM change the UM to A"
+400 K$(15)="No,if a word ends in EF or  FF, just add S"
+410 K$(17)="No, many kinds of fish have the plural the same as the  singular"
+420 RETURN
+430 !@P+
+440 DATA CAT,DOG,COW,MONKEY,PARROT,WHALE,PLATE,CUP,FORK,SPOON,DISH,WATCH,HOOK,PEA,APPLE
+450 !@P-
+460 DATA CUFF,CLIFF,SKIFF,RUFF,CLEF,CHEF,CHIEF,DONKEY,COMIC
+470 DATA LIMB,HAND,SOLO,SEA,CLOUD,ROAD,BOY,GIRL,CORNCOB,ARC,TREE,PIG,TANK,BALL,DRUM,GUN,HARP,CAR,BOOT,SHOE
+480 DATA MOTH,SLOTH,MYTH,LATH,DEATH
+490 !in the next line, key in CTRL B before each word
+500 DATA ‚CARP,‚MACKEREL,‚SUNFISH,‚PIKE,‚SALMON
+510 DATA SAW,WINDOW,HOUSE,BAY,GUY,TOY,GOAT,CAN,AUTO,TRUCK,BRA
+520 DATA WIFE,LIFE,KNIFE,LOAF,CALF,HALF,SCARF,ELF,LEAF,WOLF,PELF,SELF,WHARF,HOOF
+530 DATA GAS,MISS,KISS,LASS,TRUSS,BOSS,GLASS,CLASS,IRIS
+540 DATA LATCH,WITCH,BATCH,ROACH,LEECH,PEACH,ARCH,BRANCH,BIRCH,MULCH,BROOCH,POUCH
+550 DATA SASH,CRASH,FLASH,VARNISH,WISH,FETISH,RADISH,BUSH,RUSH
+560 DATA BAY,BOY,DAY,RAY,TRAY,HIGHWAY,GUY,ALLOY,BUOY,KEY,MONKEY,TURKEY
+570 !in the next line, key FCTN V before each word
+580 DATA RADIUS,FUNGUS,CACTUS,GLADIOLUS,OCTOPUS
+590 DATA MAN,WOMAN,FIREMAN,POLICEMAN,FOREMAN,CHAIRMAN,POSTMAN,CHARWOMAN,MIDWIFE
+600 DATA LADY,CANDY,BUDDY,BABY,ORGY,DOILY,PONY,PUPPY,STORY,POSY,PARTY,COVY
+610 DATA TALLY,ARMY,NAVY,FOLLY,PANSY,ARRAY
+620 DATA BOX,FOX,TAX,WAX,SEX
+630 DATA SPA,GURU,POTATO,TOMATO,ZEBRA,SKI,OPERA,CIRCUS,PLUS,MINUS,BUS
+640 !in the next line, key CTRL , before each word
+650 DATA €PANTS,€SCISSORS,€SQUID,€DEER,€SHEEP,€SWINE,€MOOSE,€BISON,€GROUSE,€SERIES,€STAIRS
+660 !in the next line, key CTRL A before each word
+670 DATA DATUM,MEDIUM,CURRICULUM,PLANETARIUM,SOLARIUM
+680 DATA I,WE,HE,THEY,SHE,THEY,THIS,THESE,THAT,THOSE,CHILD,CHILDREN,TOOTH,TEETH
+690 DATA MOUSE,MICE,LOUSE,LICE,GOOSE,GEESE,OX,OXEN,FOOT,FEET,CRISIS,CRISES,APPENDIX,APPENDICES
+700 DATA ROOF,ROOFS,FIFE,FIFES,PROOF,PROOFS,THIEF,THIEVES
+710 FOR J=1 TO 185 :: READ B$(J) :: NEXT J
+720 RESTORE 680 :: FOR J=1 TO 18 :: READ C$(J,1),C$(J,2) :: NEXT J
+730 FOR J=1 TO 185 :: Z$=Z$&CHR$(J) :: NEXT J :: Y$=Z$ :: X$=SEG$(Z$,1,18) :: DISPLAY AT(12,1):""
+740 RANDOMIZE :: Q=INT(203*RND+1) :: IF Q<186 THEN 770
+750 X=INT(RND*LEN(X$))+1 :: Y=ASC(SEG$(X$,X,1)) :: X$=SEG$(X$,1,X-1)&SEG$(X$,X+1,255) :: IF LEN(X$)=0 THEN X$=SEG$(Z$,1,18)
+760 W$=C$(Y,1) :: PL$=C$(Y,2) :: A=16 :: K$(16)="No, this word has an        irregular plural form. It is "&PL$ :: GOTO 790
+770 RANDOMIZE :: X=INT(RND*LEN(Y$))+1 :: Y=ASC(SEG$(Y$,X,1)) :: Y$=SEG$(Y$,1,X-1)&SEG$(Y$,X+1,255) :: IF LEN(Y$)=0 THEN Y$=Z$
+780 W$=B$(Y) :: CALL PLURAL(W$,PL$,A)
+790 DISPLAY AT(12,14-LEN(W$)/2):W$ :: DISPLAY AT(15,1):"Type the plural form" :: DISPLAY AT(18,1):"" :: ACCEPT AT(18,14-LEN(W$)/2):Q$
+800 IF Q$=PL$ THEN CALL SOUND(50,523,5) :: DISPLAY AT(20,1):"":"":"" :: DISPLAY AT(20,11):"CORRECT!" :: DISPLAY AT(12,1):"" :: GOTO 740
+810 CALL SOUND(200,110,5,-4,5) :: DISPLAY AT(20,1):"":"":"" :: DISPLAY AT(20,1):K$(A) :: GOTO 790
+820 PRINT K$(A) :: GOTO 780
+830 !@P+
+840 SUB PLURAL(W$,PL$,A)
+850 GOTO 880
+860 Y$,W$,PL$,A
+870 !@P-
+880 Y$=SEG$(W$,LEN(W$)-1,2) :: IF ASC(W$)=127 THEN PL$=SEG$(W$,2,LEN(W$)-3)&"I" :: A=12 :: SUBEXIT
+890 IF ASC(W$)=128 THEN PL$=SEG$(W$,2,255) :: A=13 :: SUBEXIT
+900 IF ASC(W$)=129 THEN PL$=SEG$(W$,2,LEN(W$)-3)&"A" :: A=14 :: SUBEXIT
+910 IF ASC(W$)=130 THEN PL$=SEG$(W$,2,255) :: A=17 :: SUBEXIT
+920 ON POS("EFHSXYZN",SEG$(W$,LEN(W$),1),1)+1 GOTO 930,940,960,970,980,980,990,980,1000
+930 PL$=W$&"S" :: A=1 :: SUBEXIT
+940 IF SEG$(W$,LEN(W$)-2,3)="IFE" THEN PL$=SEG$(W$,1,LEN(W$)-2)&"VES" :: A=2 :: SUBEXIT
+950 PL$=W$&"S" :: A=3 :: SUBEXIT
+960 IF Y$="EF" OR Y$="FF" THEN PL$=W$&"S" :: A=15 :: SUBEXIT ELSE PL$=SEG$(W$,1,LEN(W$)-1)&"VES" :: A=4 :: SUBEXIT
+970 IF(Y$="CH")+(Y$="SH")THEN PL$=W$&"ES" :: A=5 :: SUBEXIT ELSE A=6 :: GOTO 950
+980 PL$=W$&"ES" :: A=7 :: SUBEXIT
+990 IF(Y$="AY")+(Y$="EY")+(Y$="OY")+(Y$="UY")THEN PL$=W$&"S" :: A=8 :: SUBEXIT ELSE PL$=SEG$(W$,1,LEN(W$)-1)&"IES" :: A=9 :: SUBEXIT
+1000 IF SEG$(W$,LEN(W$)-2,3)<>"MAN" THEN A=10 :: GOTO 930 ELSE PL$=SEG$(W$,1,LEN(W$)-3)&"MEN" :: A=11 :: SUBEXIT
+1010 !@P+
+1020 SUBEND

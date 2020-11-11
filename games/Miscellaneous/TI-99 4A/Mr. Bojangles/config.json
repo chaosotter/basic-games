@@ -1,0 +1,27 @@
+{
+    "name": "Mr. Bojangles",
+    "shortName": "mrbojang"
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Bill Knecht"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "1985-02-21",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "mrbojang.ti99"
+    }
+}

@@ -1,6 +1,6 @@
 {
     "name": "Bach Mini-Concert",
-    "shortName": "bachmini"
+    "shortName": "bachmini",
     "platform": {
 	"system": "TI99"
     },

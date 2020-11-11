@@ -1,11 +1,11 @@
 {
-    "name": "Advanced Composer",
-    "shortName": "advcompos",
+    "name": "Columbia, the Gem of the Ocean",
+    "shortName": "columbia",
     "platform": {
 	"system": "TI99"
     },
     "authors": [
-	"Texas Instruments"
+	"Jim Peterson"
     ],
     "contributors": [
 	{
@@ -15,13 +15,13 @@
     ],
     "origin": {
 	"type": "misc",
-	"title": "Miscellaneous Disk Images",
+	"title": "Disk Image 0040.dsk",
 	"publisher": "Various",
-	"date": "1980",
+	"date": "Unknown",
 	"url": "N/A"
     },
     "ia": {
 	"standard": "legacy",
-	"id": "advcompos.ti99"
+	"id": "columbia.ti99"
     }
 }

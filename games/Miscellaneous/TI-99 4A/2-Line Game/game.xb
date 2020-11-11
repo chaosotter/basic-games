@@ -1,0 +1,4 @@
+1 DISPLAY AT(12,9)ERASE ALL:"2-LINE GAME":"      by Jim Peterson":" - use S&D keys to paint the white line on the highway" :: FOR D=1 TO 1000 :: NEXT D
+2 !if it is too easy, changethe 6 in A$=RPT$(CHR$(143),6) to 5 and the 5 in C>T+5 to 4
+100 CALL CLEAR :: A$=RPT$(CHR$(143),6) :: CALL COLOR(14,2,2,2,16,16) :: CALL SCREEN(4) :: T=11 :: C=14 :: CALL HCHAR(22,C+2,42) :: RANDOMIZE
+110 T=T+INT(3*RND-1)+(T=21)-(T=1) :: PRINT TAB(T);A$ :: CALL KEY(3,K,S) :: C=C+(K=83)-(K=68) :: CALL HCHAR(22,C+2,42) :: IF C<T OR C>T+5 THEN STOP ELSE 110

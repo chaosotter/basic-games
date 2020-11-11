@@ -1,0 +1,27 @@
+{
+    "name": "Little Drummer Boy",
+    "shortName": "litdrum",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"F. Smith"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Various",
+	"date": "1983-04",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "litdrum.ti99"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Carolina Moon",
+    "shortName": "carolina"
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Earl Dodd",
+	"Jim Peterson"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "carolina.ti99"
+    }
+}

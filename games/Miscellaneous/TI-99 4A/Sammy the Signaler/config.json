@@ -1,0 +1,28 @@
+{
+    "name": "Sammy the Signaler",
+    "shortName": "sammysig",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Unknown",
+	"Jim Peterson"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "sammysig.ti99"
+    }
+}

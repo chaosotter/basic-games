@@ -1,0 +1,27 @@
+{
+    "name": "Battle Hymn of the Republic",
+    "shortName": "bathymn"
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Earl Dodd"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "1984-01",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "bathymn.ti99"
+    }
+}

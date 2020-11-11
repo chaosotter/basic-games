@@ -1,0 +1,27 @@
+{
+    "name": "Deliver the Cake",
+    "shortName": "delicake",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Furman Smith"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Recreational Computing",
+	"date": "1981-07",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "delicake.ti99"
+    }
+}

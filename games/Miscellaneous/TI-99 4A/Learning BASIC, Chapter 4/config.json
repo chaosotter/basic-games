@@ -1,0 +1,27 @@
+{
+    "name": "Learning BASIC, Chapter 4",
+    "shortName": "learnbas4",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Unknown"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Miscellaneous Disk Images",
+	"publisher": "Various",
+	"date": "",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "learnbas4.ti99"
+    }
+}

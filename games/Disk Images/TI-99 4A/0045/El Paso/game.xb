@@ -1,0 +1,53 @@
+2 DIM N(36)
+10 GOTO 100
+11 J,M$,X,F,N(),T,A,B,D,Q
+30 CALL CLEAR :: CALL SCREEN :: CALL SOUND :: CALL COLOR :: CALL PEEK
+40 !@P-
+100 CALL CLEAR :: CALL SCREEN(11)!    programmed by               Jim Peterson                3 Dec. 1987
+109 FOR T=1 TO 12 :: CALL COLOR(T,2,11) :: NEXT T
+110 DISPLAY AT(1,10):"EL PASO";"":"Words/music by   Arranged by":"Marty Robbins    Tigercub"
+119 !@P+
+120 DATA Out in the West Texas town,"of El Paso,",I fell in love with a,Mexican girl.
+121 !@P-
+130 DATA Night-time would find me in,"Rosa's cantina,",Music would play and,Felena would whirl
+140 DATA Blacker than night were the,"eyes of Felena,",Wicked and evil while,casting a spell.
+150 DATA My love was deep for this,"Mexican maiden,",I was in love but in vain,I could tell.
+160 FOR J=1 TO 16 :: READ M$ :: DISPLAY AT(J+6,2):M$ :: NEXT J
+170 X=1 :: F=220 :: FOR J=1 TO 36 :: N(J)=F*1.059463094^(J-1) :: NEXT J :: N(0)=30000 :: FOR X=1 TO 2
+180 GOSUB 410 :: GOSUB 410 :: GOSUB 410 :: GOSUB 410
+190 T=4 :: A=4 :: B=9 :: GOSUB 500 :: A=21 :: GOSUB 500 :: B=21 :: GOSUB 500 :: T=4 :: B=33 :: GOSUB 500 :: T=4 :: B=21 :: GOSUB 500
+200 A=23 :: GOSUB 500! ONE NIGHT A WILD YOUNG
+210 A=26 :: B=14 :: GOSUB 500 :: A=25 :: GOSUB 500 :: A=23 :: GOSUB 500 :: T=2 :: A=21 :: B=9 :: GOSUB 500 :: T=4 :: A=16 :: GOSUB 500
+220 !COWBOY CAME IN
+230 A=16 :: B=16 :: GOSUB 500 :: A=21 :: B=9 :: GOSUB 500 :: A=25 :: GOSUB 500 :: A=26 :: GOSUB 500 :: A=25 :: GOSUB 500 :: A=26 :: GOSUB 500
+240 !WILD AS THE WILD TEXAS
+250 T=2 :: A=28 :: B=4 :: GOSUB 500 :: T=4 :: GOSUB 500 :: A=32 :: GOSUB 500 :: A=30 :: GOSUB 500 :: A=28 :: GOSUB 500
+260 ! WIND - -
+270 T=2 :: A=26 :: GOSUB 500 :: T=4 :: B=11 :: GOSUB 500 :: T=2 :: B=4 :: GOSUB 500 :: T=4 :: GOSUB 500
+280 ! - -
+290 A=16 :: GOSUB 500 :: A=20 :: GOSUB 500 :: A=23 :: GOSUB 500 :: A=28 :: GOSUB 500 :: B=28 :: GOSUB 500 :: A=25 :: B=4 :: GOSUB 500
+300 ! DASHING AND DARING A
+310 A=28 :: GOSUB 500 :: A=26 :: GOSUB 500 :: A=23 :: GOSUB 500 :: A=20 :: GOSUB 500 :: A=16 :: GOSUB 500 :: B=16 :: GOSUB 500
+320 !DRINK HE WAS SHARING WITH
+330 B=4 :: GOSUB 500 :: A=20 :: GOSUB 500 :: A=23 :: GOSUB 500 :: A=26 :: GOSUB 500 :: A=25 :: GOSUB 500 :: A=23 :: GOSUB 500
+340 ! WICKED FELENA, THE
+350 A=26 :: GOSUB 500 :: A=25 :: GOSUB 500 :: A=23 :: GOSUB 500 :: T=2 :: A=21 :: B=9 :: GOSUB 500 :: T=4 :: GOSUB 500
+360 !GIRL THAT I LOVED
+370 GOSUB 500 :: A=20 :: GOSUB 500 :: A=21 :: GOSUB 500 :: T=2 :: A=23 :: B=11 :: GOSUB 500 :: T=4 :: GOSUB 500
+380 ! SO IN AN-
+390 T=2 :: A=21 :: GOSUB 500 :: T=4 :: A=18 :: GOSUB 500! -GER I
+400 GOSUB 410 :: GOSUB 410 :: NEXT X :: GOTO 14999
+410 T=4 :: A=16 :: B=4 :: GOSUB 500 :: A=16 :: B=16 :: GOSUB 500 :: A=20 :: GOSUB 500 :: A=23 :: B=4 :: GOSUB 500 :: A=20 :: GOSUB 500 :: A=16 :: GOSUB 500
+420 !OUT IN THE WILD TEXAS
+430 A=18 :: B=6 :: GOSUB 500 :: B=18 :: GOSUB 500 :: A=21 :: B=6 :: GOSUB 500 :: A=25 :: B=18 :: GOSUB 500 :: T=2 :: A=21 :: GOSUB 500
+440 ! TOWN OF EL PASO
+450 T=4 :: A,B=11 :: GOSUB 500 :: A=15 :: GOSUB 500 :: A=18 :: GOSUB 500 :: A=21 :: GOSUB 500 :: A=20 :: GOSUB 500 :: A=18 :: GOSUB 500
+460 ! I FELL IN LOVE WITH A
+470 A=21 :: GOSUB 500 :: A=20 :: GOSUB 500 :: A=18 :: GOSUB 500 :: T=2 :: A=16 :: B=4 :: GOSUB 500 :: T=4 :: B=9 :: GOSUB 500
+480 T=2 :: B=4 :: GOSUB 500 :: T=4 :: GOSUB 500 :: RETURN
+490 !MEXICAN GIRL
+500 FOR J=1 TO 4/T :: CALL SOUND(-999,N(A),5,N(A)*1.005,5,N(B)/1.585,9) :: GOSUB 520 :: CALL SOUND(-999,N(A),5,N(A)*1.005,5,N(B)/1.334,9)
+510 GOSUB 520 :: CALL SOUND(-999,N(A),5,N(A)*1.005,5,N(B)/2,9) :: GOSUB 520 :: NEXT J :: RETURN
+520 FOR D=1 TO 5 :: NEXT D :: RETURN
+14999 FOR J=9 TO 30 STEP 2 :: CALL SOUND(-99,N(A),J,N(B),J) :: NEXT J
+15000 CALL PEEK(12288,Q) :: IF Q=1 THEN RUN "DSK1.FRANKIE&J" ELSE IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN 170 ELSE CALL CLEAR :: STOP

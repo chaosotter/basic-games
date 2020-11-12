@@ -1,0 +1,39 @@
+2 DIM N(36)
+10 GOTO 100
+11 SET,M$,M2$,X$,F,J,N(),T,R,A,B,C,D,V,Q
+30 CALL CLEAR :: CALL COLOR :: CALL SCREEN :: CALL CHAR :: CALL SOUND :: CALL PEEK :: CALL CHARSET
+40 !@P-
+100 CALL CLEAR :: CALL CHARSET :: CALL COLOR(1,11,12) :: FOR SET=2 TO 14 :: CALL COLOR(SET,2,11) :: NEXT SET :: CALL SCREEN(12) :: CALL CHAR(32,RPT$("A5",8),33,RPT$("5A",8),64,"0")
+110 M$=RPT$(" !",14) :: M2$=RPT$("! ",14) :: X$=RPT$(M$&M2$,4) :: DISPLAY AT(1,1):X$:X$:X$
+120 DISPLAY AT(2,8):"TARNISHED GOLD":"":" words/music by Jim Peterson"
+130 F=147 :: FOR J=1 TO 36 :: N(J)=F*1.059463094^(J-1) :: NEXT J :: N(1)=110 :: N(0)=30000
+140 FOR T=1 TO 4 :: R=6 :: DISPLAY AT(6,1):X$:X$:SEG$(X$,1,112) :: GOSUB 320
+150 GOSUB 270
+160 A=23 :: B=20 :: C=18 :: GOSUB 290 :: A=16 :: B=13 :: C=8 :: GOSUB 290 :: A=20 :: GOSUB 290 :: A,B,C=0 :: GOSUB 300 :: GOSUB 320
+170 A=23 :: B=20 :: C=18 :: GOSUB 310 :: GOSUB 310 :: GOSUB 290
+180 A=21 :: B=16 :: C=13 :: GOSUB 300 :: A=20 :: B=16 :: C=13 :: GOSUB 300 :: A=18 :: B=11 :: C=8 :: GOSUB 290
+190 A=20 :: GOSUB 300 :: A=21 :: GOSUB 300 :: A=20 :: B=16 :: C=13 :: GOSUB 290 :: A,B,C=0 :: GOSUB 300 :: GOSUB 320
+200 GOSUB 270 :: A=23 :: B=18 :: C=15 :: GOSUB 290 :: A=22 :: GOSUB 300 :: A=23 :: GOSUB 300 :: A=25 :: B=20 :: C=16 :: GOSUB 290
+210 A,B,C=0 :: GOSUB 300 :: GOSUB 320
+220 A=21 :: B=16 :: C=13 :: GOSUB 300 :: A=20 :: GOSUB 290 :: A=16 :: B=13 :: C=8 :: GOSUB 300 :: GOSUB 300 :: A=15 :: GOSUB 290 :: A=16 :: GOSUB 290
+230 A=13 :: B=8 :: C=4 :: GOSUB 290 :: A,B,C=0 :: GOSUB 300 :: GOSUB 320
+240 A=20 :: B=16 :: C=13 :: GOSUB 300 :: GOSUB 300 :: GOSUB 290 :: A=18 :: GOSUB 300 :: A=16 :: B=13 :: C=8 :: GOSUB 300
+250 A=15 :: GOSUB 290 :: A=16 :: GOSUB 300 :: A=15 :: GOSUB 300 :: A=13 :: B=8 :: C=4 :: GOSUB 290 :: GOSUB 290
+260 A,B,C=0 :: GOSUB 290 :: GOSUB 300 :: NEXT T :: FOR D=1 TO 1000 :: NEXT D :: GOTO 15000
+270 A=16 :: B=13 :: C=8 :: GOSUB 300 :: A=20 :: B=16 :: C=13 :: GOSUB 290 :: A=19 :: C=7 :: GOSUB 300 :: A=20 :: C=13 :: GOSUB 300 :: A=21 :: GOSUB 290
+280 A=20 :: GOSUB 300 :: A=21 :: GOSUB 300 :: RETURN
+290 FOR V=5 TO 23 STEP 2 :: CALL SOUND(-999,N(A),V,N(B),V,N(C),V) :: NEXT V :: RETURN
+300 FOR V=5 TO 23 STEP 4 :: CALL SOUND(-999,N(A),V,N(B),V,N(C),V) :: NEXT V :: RETURN
+310 FOR V=5 TO 23 STEP 8 :: CALL SOUND(-999,N(A),V,N(B),V,N(C),V) :: NEXT V :: RETURN
+320 READ M$ :: DISPLAY AT(R,1):M$ :: R=R+4 :: RETURN
+329 !@P+
+330 DATA " I once loved a girl in the  summertime",'Til the days and our love   grew cold," Her heart and her soul and  her long flowing hair"
+331 !@P-
+340 DATA " Were all of tarnished gold."," And I wish, Lord, that I    could forget her."
+350 DATA " She had wanted love so very much"," That she gave too much in   return"," To too many men and too     many times,"
+360 DATA " For the love that her love  might earn."," But they found it easy to   forget her."," I fell in love with her     heart and soul"
+370 DATA " And her hair of tarnished   gold"," But I could not forget all  the men she had known"," And the stories of her that they told."
+380 DATA " So I made up my mind to     forget her."," Now she spends her time in  the winter nights"," In a house where love is    sold"
+390 DATA " And the love that once she  so freely gave"," Is bartered for tarnished   gold."," And I wish, Lord, that I    could forget her."
+15000 CALL PEEK(12288,Q) :: IF Q=1 THEN 15010 ELSE IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN RESTORE 330 :: GOTO 140 ELSE STOP
+15010 CALL CLEAR :: CALL CHARSET :: RUN "DSK1.TILL/WALTZ"

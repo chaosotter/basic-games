@@ -1,0 +1,44 @@
+2 DIM N(25)
+10 GOTO 100
+11 SET,D,F,J,N(),L,T,A,B,Q
+30 CALL CLEAR :: CALL SCREEN :: CALL COLOR :: CALL P :: CALL PEEK
+40 !@P-
+100 CALL CLEAR :: CALL SCREEN(16) :: FOR SET=1 TO 14 :: CALL COLOR(SET,5,16) :: NEXT SET
+110 DISPLAY AT(5,6):"ROOM FULL OF ROSES":"":"":"Words & Music    Arranged by":"by Tim Spencer     Tigercub"
+120 !  programmed by               Jim Peterson                 2 Dec. 1987
+130 FOR D=1 TO 500 :: NEXT D
+140 DISPLAY AT(1,2):"If I sent a rose to you":" For ev'ry time you made me":" blue":" You'd have a room full of":" roses,"
+150 DISPLAY AT(6,2):"If I sent a rose of white":" For every time I cried all":" night,":" You'd have a room full of":" roses,"
+160 DISPLAY AT(11,2):"And if you took the petals":" And you tore them all apart":" You'd be tearing at the":" roses"
+170 DISPLAY AT(15,2):"Just the way you tore my":" heart.":" If some day you're feeling":" blue,":" And you could send some":" roses too,"
+180 DISPLAY AT(21,2):"Well, I don't want a room":" full of roses":" I just want my arms full of":" you."
+190 F=220 :: FOR J=1 TO 24 :: N(J)=F*1.059463094^(J-1) :: NEXT J :: N(25)=30000
+200 L=4 :: FOR J=1 TO 2 :: GOSUB 210 :: GOTO 240
+210 T=L/4 :: A=N(13) :: B=N(9) :: CALL P(T,A,B) :: A=N(12) :: CALL P(T,A,B) :: A=N(13) :: CALL P(T,A,B) :: A=N(14) :: CALL P(T,A,B)
+220 A=N(13) :: CALL P(T,A,B) :: A=N(9) :: CALL P(T,A,B) :: A=N(4) :: CALL P(T,A,B) :: CALL P(T,A,B) :: A=N(16) :: CALL P(T,A,B) :: A=N(15) :: CALL P(T,A,B)
+230 A=N(16) :: CALL P(T,A,B) :: A=N(18) :: CALL P(T,A,B) :: A=N(16) :: CALL P(T,A,B) :: A=N(9) :: CALL P(T,A,B) :: T=L/2 :: A=N(13) :: CALL P(T,A,B) :: RETURN
+240 A=N(4) :: CALL P(T,A,B) :: T=L/4 :: A=N(9) :: CALL P(T,A,B) :: A=N(13) :: CALL P(T,A,B) :: T=L/2 :: A=N(18) :: CALL P(T,A,B) :: T=L/4 :: A=N(16) :: CALL P(T,A,B)
+250 A=N(13) :: B=N(10) :: CALL P(T,A,B) :: T=L/2 :: A=N(14) :: B=N(11) :: CALL P(T,A,B) :: T=L*1 :: A=N(16) :: B=N(4) :: CALL P(T,A,B)
+260 T=L/2 :: B=N(11) :: CALL P(T,A,B) :: T=L/4 :: A=N(11) :: B=N(4) :: CALL P(T,A,B) :: A=N(10) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B)
+270 A=N(13) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B) :: A=N(8) :: CALL P(T,A,B) :: A=N(4) :: CALL P(T,A,B) :: B=N(16) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B)
+280 A=N(10) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B) :: A=N(13) :: B=N(10) :: CALL P(T,A,B) :: A=N(16) :: B=N(2) :: CALL P(T,A,B) :: A=N(14) :: CALL P(T,A,B)
+290 T=L/2 :: A=N(11) :: B=N(4) :: CALL P(T,A,B) :: A=N(4) :: CALL P(T,A,B) :: T=L/4 :: A=N(8) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B)
+300 T=L/2 :: A=N(18) :: CALL P(T,A,B) :: T=L/4 :: A=N(16) :: CALL P(T,A,B) :: A=N(15) :: CALL P(T,A,B) :: T=L/2 :: A=N(16) :: B=N(9) :: CALL P(T,A,B)
+310 A=N(13) :: CALL P(T,A,B) :: T=L/4*3 :: CALL P(T,A,B) :: T=L/4 :: A=N(9) :: CALL P(T,A,B) :: A=N(6) :: B=N(2) :: CALL P(T,A,B) :: B=N(14) :: CALL P(T,A,B)
+320 A=N(5) :: CALL P(T,A,B) :: A=N(6) :: B=N(2) :: CALL P(T,A,B) :: A=N(16) :: CALL P(T,A,B) :: T=L/2 :: A=N(14) :: CALL P(T,A,B) :: T=L/4 :: A=N(16) :: CALL P(T,A,B)
+330 A=N(14) :: B=N(9) :: CALL P(T,A,B) :: A=N(13) :: CALL P(T,A,B) :: CALL P(T,A,B) :: A=N(12) :: CALL P(T,A,B) :: T=L/2 :: A=N(13) :: CALL P(T,A,B)
+340 T=L/4 :: CALL P(T,A,B) :: A=N(14) :: CALL P(T,A,B) :: A=N(15) :: B=N(11) :: CALL P(T,A,B) :: A=N(13) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B)
+350 A=N(10) :: CALL P(T,A,B) :: A=N(9) :: CALL P(T,A,B) :: T=L/2 :: A=N(6) :: CALL P(T,A,B) :: T=L/4 :: CALL P(T,A,B) :: A=N(8) :: B=N(4) :: CALL P(T,A,B)
+360 B=N(16) :: CALL P(T,A,B) :: A=N(9) :: B=N(11) :: CALL P(T,A,B) :: A=N(10) :: CALL P(T,A,B) :: T=L :: A=N(11) :: B=N(4) :: CALL P(T,A,B) :: GOSUB 210
+370 T=L/4 :: A=N(9) :: CALL P(T,A,B) :: A=N(4) :: CALL P(T,A,B) :: A=N(9) :: CALL P(T,A,B) :: A=N(13) :: CALL P(T,A,B) :: T=L/2 :: A=N(18) :: CALL P(T,A,B)
+380 T=L/4 :: A=N(16) :: CALL P(T,A,B) :: A=N(13) :: CALL P(T,A,B) :: T=L/2 :: A=N(14) :: B=N(11) :: CALL P(T,A,B) :: A=N(16) :: B=N(4) :: CALL P(T,A,B)
+390 B=N(16) :: CALL P(T,A,B) :: B=N(4) :: CALL P(T,A,B) :: T=L/4 :: A,B=N(11) :: CALL P(T,A,B) :: A=N(13) :: CALL P(T,A,B) :: A=N(16) :: CALL P(T,A,B)
+400 A=N(14) :: CALL P(T,A,B) :: T=L/2 :: A=N(13) :: B=N(9) :: CALL P(T,A,B) :: T=L/4 :: A,B=N(4) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B)
+410 T=L/2 :: A,B=N(9) :: CALL P(T,A,B) :: B=N(6) :: CALL P(T,A,B) :: B=N(11) :: CALL P(T,A,B) :: T=L/4 :: B=N(14) :: CALL P(T,A,B) :: B=N(4) :: CALL P(T,A,B)
+420 NEXT J :: FOR J=9 TO 30 :: CALL SOUND(-99,A,J,B,J) :: NEXT J
+425 CALL PEEK(12288,Q) :: IF Q=1 THEN RUN "DSK1.SAN_ANGELO" ELSE IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN 200 ELSE CALL CLEAR :: S
+429 !@P+
+430 SUB P(T,A,B) :: FOR J=1 TO T :: CALL SOUND(-999,A,5,A*1.005,5,B/1.585,9) :: GOSUB 450 :: CALL SOUND(-999,A,5,A*1.005,5,B/1.334,9)
+440 GOSUB 450 :: CALL SOUND(-999,A,5,A*1.005,5,B/2,9) :: GOSUB 450 :: NEXT J :: SUBEXIT
+450 FOR X=1 TO 25 :: NEXT X :: RETURN
+460 SUBEND

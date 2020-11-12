@@ -1,0 +1,27 @@
+100 CALL CLEAR :: CALL SCREEN(5) :: FOR I=4 TO 12 :: CALL COLOR(I,16,1) :: NEXT I :: CALL CHAR(57,RPT$("F",16))
+110 DISPLAY AT(10,7):"ETERNAL  FATHER" :: DISPLAY AT(13,8):"programmed by":"        bill knecht"
+120 CALL HCHAR(8,4,57,24) :: CALL VCHAR(8,4,57,9) :: CALL VCHAR(8,28,57,9) :: CALL HCHAR(16,4,57,24)
+130 LLA=110 :: LLB=123.47 :: LC=130.81 :: LD=146.83 :: LE=164.81 :: LF=174.61 :: LG=196 :: LA=220 :: LB=246.94 :: C=261.63 :: D=293.66
+140 E=329.63 :: F=349.23 :: G=392 :: A=440 :: B=493.88 :: HC=523.25 :: HD=587.33 :: R=40000 :: T=1
+150 GOSUB 170 :: GOSUB 170 :: GOTO 330
+160 !@P-
+170 X=C :: Y=R :: Z=LE :: N=4 :: GOSUB 360
+180 X=E :: Y=C :: Z=LC :: N=6 :: GOSUB 360 :: Z=LG :: N=2 :: GOSUB 360 :: X=G :: Z=C :: N=4 :: GOSUB 360
+190 Z=LG :: N=2 :: GOSUB 360 :: Z=LD :: GOSUB 360 :: X=A :: Y=F :: Z=LF :: GOSUB 360 :: Z=LG :: GOSUB 360 :: Z=LA :: GOSUB 360 :: Z=LB
+200 GOSUB 360 :: X=G :: Y=E :: Z=C :: N=4 :: GOSUB 360 :: Y=R :: Z=LB :: GOSUB 360 :: X=HC :: Y=G :: Z=C :: GOSUB 360 :: X=HD :: Y=369.99
+210 Z=LD :: GOSUB 360 :: X=B :: Y=G :: Z=LG :: GOSUB 360 :: X=G :: Y=E :: Z=LLB :: N=2 :: GOSUB 360 :: Z=LC :: GOSUB 360 :: Y=D :: Z=LD
+220 N=4 :: GOSUB 360 :: X=369.99 :: GOSUB 360 :: X=G :: Z=LG :: GOSUB 360 :: X=D :: Y=LB :: GOSUB 360 :: X=F :: Y=D :: Z=LLB :: N=6
+230 GOSUB 360 :: Y=LB :: N=2 :: GOSUB 360 :: X=E :: Y=C :: Z=LC :: N=4 :: GOSUB 360 :: Z=LE :: GOSUB 360 :: X=G :: Y=E :: Z=138.59 :: N=6
+240 GOSUB 360 :: Y=277.18 :: N=2 :: GOSUB 360 :: X=369.99 :: Y=D :: Z=LD :: N=4 :: GOSUB 360 :: X=B :: Y=369.99 :: Z=155.56 :: GOSUB 360
+250 X=G :: Y=E :: Z=LE :: GOSUB 360
+260 X=369.99 :: Y=311.13 :: Z=LF :: N=2 :: GOSUB 360 :: Y=E :: GOSUB 360 :: X=E :: Y=LB :: Z=LG :: N=4 :: GOSUB 360
+270 X=A :: Y=R :: Z=LA :: N=2 :: GOSUB 360 :: Y=369.99 :: GOSUB 360 :: X=G :: Y=E :: Z=LD :: N=4 :: GOSUB 360 :: X=369.99 :: Y=311.13
+280 GOSUB 360 :: X=E :: Y=LG :: Z=LE :: GOSUB 360 :: Y=LB :: Z=LG :: GOSUB 360 :: Y=233.08 :: Z=LC :: N=6 :: GOSUB 360
+290 Y=R :: N=2 :: GOSUB 360 :: X=F :: Y=LA :: Z=LF :: N=4 :: GOSUB 360 :: Y=C :: GOSUB 360 :: X=369.99 :: Z=LD :: N=6 :: GOSUB 360
+300 Y=D :: N=2 :: GOSUB 360 :: X=G :: Y=LB :: Z=LG :: N=4 :: GOSUB 360 :: Y=F :: Z=LLB :: GOSUB 360 :: Y=E :: Z=LC :: GOSUB 360
+310 X=A :: Y=D :: Z=185 :: GOSUB 360 :: X=G :: Y=E :: Z=LC :: GOSUB 360 :: X=E :: Y=C :: Z=LG :: GOSUB 360
+320 X=D :: Y=LB :: Z=LF :: N=6 :: GOSUB 360 :: X=C :: Y=LG :: Z=LC :: N=2 :: GOSUB 360 :: Y=LE :: N=4 :: GOSUB 360 :: RETURN
+330 X=F :: Y=C :: Z=LA :: N=16 :: GOSUB 360 :: X=E :: Z=LC :: GOSUB 360
+340 !@P+
+350 CALL SOUND(-99,X,30) :: FOR I=1 TO 200 :: NEXT I :: CALL INIT :: CALL LOAD(-31961,149) :: END
+360 FOR I=1 TO N :: CALL SOUND(-99,X,2,Y,6,Z,10) :: CALL SOUND(-99,1.01*X,2,1.01*Y,6,1.01*Z,10) :: NEXT I :: RETURN

@@ -1,0 +1,60 @@
+2 DIM N(48)
+10 GOTO 100
+11 F,J,N(),X,W,T,A,B,M$,SET,Q
+30 CALL CLEAR :: CALL SCREEN :: CALL SOUND :: CALL COLOR :: CALL PEEK
+40 !@P-
+100 CALL CLEAR :: FOR SET=1 TO 14 :: CALL COLOR(SET,2,16) :: NEXT SET :: CALL SCREEN(5)
+110 DISPLAY AT(2,9):"DEVIL WOMAN":"":"Words/music by   Arranged by":"Marty Robbins    Tigercub"! programmed by  Jim Peterson 3 Dec. 1987
+120 GOSUB 610
+129 !@P+
+130 DATA "I told Mary about us, told","her about our great sin,","Mary cried and forgave me,","Mary took me back again."
+131 !@P-
+140 DATA She said if I wanted my,freedom I could be free,"evermore,",but I don't want to be and,I don't want to see Mary,cry any more.
+150 DATA "Devil woman, Devil woman,","let go of me,","Devil woman, let me be","just leave me alone,",I want to go home.,,
+160 DATA Mary is waiting and weeping,alone in our shack by the,"sea,","Even after I hurt her,","Mary's still in love with","me,"
+170 DATA "Devil woman, it's over",trapped no more by your,"charms,","I don't want to stay,","I want to get away,","woman, let go of my arms."
+180 DATA "Devil woman, Devil woman,","let go of me,","Devil woman, let me be","just leave me alone,",I want to go home.
+190 DATA "Devil woman, you're evil","like the dark coral reef,",Like the winds that bring,"high tides,","you bring sorrow and grief,"
+200 DATA You made me ashamed to face,"Mary,",barely had the strength to,"tell,","Skies are not so black,","Mary took me back,"
+210 DATA Mary has broken your spell.
+220 DATA "Devil woman, Devil woman,","let go of me,","Devil woman, let me be","just leave me alone,",I want to go home.
+230 DATA "Running along by the","seashore,",running as fast as I can.,"Even the sea gulls are happy,","Glad I'm coming home again,"
+240 DATA Never again will I ever,cause another tear to fall.,Down the beach I see,"what belongs to me,",the one I want most of all.
+250 DATA "Devil woman, Devil woman,","let go of me,","Devil woman, let me be","just leave me alone,",I want to go home.,,,
+260 F=110 :: FOR J=1 TO 48 :: N(J)=F*1.059463094^(J-1) :: NEXT J :: N(0)=30000 :: X=1.9
+270 FOR W=1 TO 4 :: GOSUB 280 :: GOTO 310
+280 T=1 :: A=22 :: B=18 :: GOSUB 600 :: B=6 :: GOSUB 600 :: T=2 :: B=13 :: GOSUB 600 :: T=1 :: B=1 :: GOSUB 600
+290 A=20 :: B=6 :: GOSUB 600 :: T=2 :: A=18 :: GOSUB 600
+300 A=22 :: B=10 :: GOSUB 600 :: T=6 :: B=18 :: GOSUB 600 :: RETURN
+310 T=1 :: A=22 :: B=1 :: GOSUB 600 :: B=6 :: GOSUB 600 :: B=10 :: GOSUB 600 :: B=13 :: GOSUB 600 :: B=18 :: GOSUB 600 :: A=20 :: B=1 :: GOSUB 600
+320 T=2 :: A=22 :: B=1 :: GOSUB 600 :: T=8 :: A=23 :: B=13 :: GOSUB 600
+330 T=1 :: B=1 :: GOSUB 600 :: B=5 :: GOSUB 600 :: T=2 :: B=8 :: GOSUB 600 :: T=1 :: B=13 :: GOSUB 600 :: A=22 :: B=1 :: GOSUB 600 :: T=2 :: A=20 :: B=5 :: GOSUB 600
+340 A=23 :: GOSUB 600 :: T=6 :: B=17 :: GOSUB 600
+350 T=1 :: B=1 :: GOSUB 600 :: B=5 :: GOSUB 600 :: B=8 :: GOSUB 600 :: B=13 :: GOSUB 600 :: T=2 :: A=25 :: B=8 :: GOSUB 600
+360 A=23 :: B=5 :: GOSUB 600
+370 T=7 :: A=22 :: B=6 :: GOSUB 600 :: T=1 :: B=18 :: GOSUB 600
+380 GOSUB 280 :: T=1 :: A=22 :: B=6 :: GOSUB 600 :: B=10 :: GOSUB 600 :: B=13 :: GOSUB 600 :: T=2 :: B=18 :: GOSUB 600
+390 T=1 :: A=23 :: B=6 :: GOSUB 600 :: T=2 :: A=25 :: B=10 :: GOSUB 600
+400 T=7 :: A=23 :: B=15 :: GOSUB 600 :: T=1 :: A=18 :: B=11 :: GOSUB 600
+410 T=1 :: A,B=0 :: GOSUB 600 :: A=27 :: B=11 :: GOSUB 600 :: A=26 :: B=3 :: GOSUB 600 :: A=27 :: GOSUB 600
+420 A=25 :: GOSUB 600 :: A=23 :: GOSUB 600 :: B=3 :: GOSUB 600
+430 A,B=0 :: GOSUB 600 :: T=2 :: A=25 :: B=18 :: GOSUB 600 :: T=1 :: A=24 :: GOSUB 600 :: A=25 :: GOSUB 600 :: A=23 :: GOSUB 600
+440 A=22 :: GOSUB 600
+450 T=2 :: A=20 :: B=13 :: GOSUB 600 :: T=1 :: B=5 :: GOSUB 600 :: T=2 :: A=23 :: GOSUB 600 :: T=1 :: A=22 :: GOSUB 600
+460 T=2 :: A=20 :: GOSUB 600
+470 T=6 :: A=18 :: B=1 :: GOSUB 600 :: T=1 :: A=25 :: B=8 :: GOSUB 600 :: A=22 :: GOSUB 600
+480 A=25 :: B=5 :: GOSUB 600 :: A=23 :: GOSUB 600 :: T=6 :: B=13 :: GOSUB 600
+490 T=2 :: GOSUB 600 :: T=1 :: B=1 :: GOSUB 600 :: A=25 :: GOSUB 600 :: A=27 :: GOSUB 600 :: A=29 :: GOSUB 600 :: A=34 :: GOSUB 600 :: A=32 :: GOSUB 600
+500 T=2 :: B=18 :: GOSUB 600 :: T=1 :: A=30 :: B=10 :: GOSUB 600 :: T=7 :: A=22 :: GOSUB 600
+510 T=1 :: A=25 :: GOSUB 600 :: A=22 :: GOSUB 600 :: A=25 :: GOSUB 600 :: T=3 :: A=22 :: GOSUB 600
+520 T=2 :: A=25 :: B=5 :: GOSUB 600 :: T=1 :: A=23 :: GOSUB 600 :: B=13 :: GOSUB 600 :: T=3 :: B=20 :: GOSUB 600
+530 T=1 :: A=20 :: B=1 :: GOSUB 600
+540 A=25 :: B=8 :: GOSUB 600 :: B=17 :: GOSUB 600 :: B=20 :: GOSUB 600 :: A=23 :: GOSUB 600 :: T=2 :: B=1 :: GOSUB 600
+550 A=17 :: B=8 :: GOSUB 600
+560 T=1 :: A=20 :: B=6 :: GOSUB 600 :: A=18 :: GOSUB 600 :: B=1 :: GOSUB 600 :: B=6 :: GOSUB 600 :: B=10 :: GOSUB 600
+570 T=8 :: B=1 :: GOSUB 600 :: ON ERROR 580 :: GOSUB 610 :: NEXT W :: GOTO 590
+580 RETURN 590
+590 CALL CLEAR :: FOR J=9 TO 30 :: CALL SOUND(-99,N(A),J,N(A)*1.005,J,N(B),J) :: NEXT J :: GOTO 15000
+600 FOR J=1 TO X*T :: CALL SOUND(-999,N(A),5,N(A)*1.005,5,N(B),9) :: NEXT J :: RETURN
+610 FOR J=1 TO 17 :: READ M$ :: DISPLAY AT(J+6,1):M$ :: NEXT J :: RETURN
+15000 CALL PEEK(12288,Q) :: IF Q=1 THEN RUN "DSK1.DIXIE" ELSE IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN RESTORE 130 :: GOTO 100 ELSE CALL CLEAR :: STOP

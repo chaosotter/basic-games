@@ -1,6 +1,6 @@
 HORNPIPE
 
-This is a rendition of Daniel Purcell "Hornpipe".
+This is a rendition of Daniel Purcell's "Hornpipe".
 
 This game was found in a collection of old TI disk images.
 

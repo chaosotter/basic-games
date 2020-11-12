@@ -1,0 +1,27 @@
+{
+    "name": "Mozart Symphony #40",
+    "shortName": "mozart40",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Phil West"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "mozart40.ti99"
+    }
+}

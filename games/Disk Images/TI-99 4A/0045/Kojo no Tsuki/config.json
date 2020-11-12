@@ -1,0 +1,27 @@
+{
+    "name": "Kojo no Tsuki",
+    "shortName": "kojotsuki",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Jim Peterson"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0045.dsk",
+	"publisher": "Various",
+	"date": "1983-08",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "kojotsuki.ti99"
+    }
+}

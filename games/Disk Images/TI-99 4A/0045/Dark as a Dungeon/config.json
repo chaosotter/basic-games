@@ -1,0 +1,27 @@
+{
+    "name": "Dark as a Dungeon",
+    "shortName": "darkdung",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Tigercub Software"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0045.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "darkdung.ti99"
+    }
+}

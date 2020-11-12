@@ -1,0 +1,28 @@
+{
+    "name": "Sarabande",
+    "shortName": "sarabande",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Greg Cagle",
+	"Kim Cagle"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Various",
+	"date": "1983-01-20",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "sarabande.ti99"
+    }
+}

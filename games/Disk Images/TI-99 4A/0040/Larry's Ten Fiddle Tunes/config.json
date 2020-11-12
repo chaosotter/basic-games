@@ -1,0 +1,27 @@
+{
+    "name": "Larry's Ten Fiddle Tunes",
+    "shortName": "larryfid",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Larry Schott"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Home Computer Magazine",
+	"date": "1984",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "larryfid.ti99"
+    }
+}

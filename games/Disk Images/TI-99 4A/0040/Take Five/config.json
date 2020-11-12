@@ -1,0 +1,27 @@
+{
+    "name": "Take Five",
+    "shortName": "takefive",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Stephen Foster"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "takefive.ti99"
+    }
+}

@@ -1,0 +1,43 @@
+2 DIM N(36)
+10 GOTO 100
+11 T,R,SET,E$,F,J,N(),M$,A,B,D,Q
+30 CALL CLEAR :: CALL COLOR :: CALL SCREEN :: CALL SOUND :: CALL PEEK
+40 !@P-
+100 T=-999 :: CALL CLEAR :: R=8 :: FOR SET=1 TO 14 :: CALL COLOR(SET,2,15) :: NEXT SET :: CALL SCREEN(2) :: E$=RPT$(" ",254)
+110 DISPLAY AT(2,8):"WISHING STAR":"":"Words/music by Jim Peterson"
+120 F=185 :: FOR J=1 TO 36 :: N(J)=F*1.059463094^(J-1) :: NEXT J :: N(1)=110 :: N(0)=30000
+125 FOR J=1 TO 6 :: FOR R=8 TO 17 STEP 3
+130 READ M$ :: DISPLAY AT(R,1):M$:"" :: NEXT R
+140 GOSUB 210 :: A=20+(J=3) :: B=16 :: GOSUB 230 :: A=23 :: GOSUB 270
+150 A=20+(J=3) :: GOSUB 230 :: A=18 :: B=11 :: GOSUB 230 :: GOSUB 310 :: GOSUB 210
+160 A=23 :: B=11 :: GOSUB 230 :: A=21 :: GOSUB 270 :: A=18 :: GOSUB 230 :: IF J=6 THEN 180 :: A=16 :: B=16 :: GOSUB 230
+170 NEXT J :: FOR D=1 TO 200 :: NEXT D :: STOP
+180 A=20+(J=3) :: B=16 :: GOSUB 230 :: GOSUB 310
+190 READ M$ :: DISPLAY AT(20,1):M$ :: A=23 :: B=11 :: GOSUB 230 :: A=21 :: GOSUB 270 :: A=18 :: GOSUB 230 :: A=28 :: GOSUB 230 :: GOSUB 230
+200 FOR D=1 TO 500 :: NEXT D :: CALL SOUND(1,30000,30) :: GOTO 15000
+210 A=20+(J=3) :: B=16 :: GOSUB 230 :: A=23 :: GOSUB 230
+220 A=21 :: B=9 :: GOSUB 230 :: A=25+(J=3) :: GOSUB 230 :: RETURN
+230 CALL SOUND(T,N(A-(J=2)*5+(J=4)*5),5,N(B-(J=2)*5+(J=4)*5)+(J=3)/1.585,9,N(B-(J=2)*5+(J=4)*5)*3.75,30,-4,9)
+240 GOSUB 340
+250 CALL SOUND(T,N(A-(J=2)*5+(J=4)*5),5,N(B-(J=2)*5+(J=4)*5)/1.334,9,N(B-(J=2)*5+(J=4)*5)*3.75,30,-4,30)
+260 GOSUB 340
+270 CALL SOUND(T,N(A-(J=2)*5+(J=4)*5),5,N(B-(J=2)*5+(J=4)*5)/2,9,N(B-(J=2)*5+(J=4)*5)*3.75,30,-4,30)
+280 GOSUB 340
+290 CALL SOUND(T,N(A-(J=2)*5+(J=4)*5),5,N(B-(J=2)*5+(J=4)*5+(J=3))/1.585,9,N(B-(J=2)*5+(J=4)*5)*3.75,30,-4,30)
+300 GOSUB 340
+310 CALL SOUND(T,N(A-(J=2)*5+(J=4)*5),5,N(A-(J=2)*5+(J=4)*5)*1.01,5,N(B-(J=2)*5+(J=4)*5)/1.334,9)
+320 GOSUB 340
+330 CALL SOUND(T,N(A-(J=2)*5+(J=4)*5),5,N(A-(J=2)*5+(J=4)*5)*1.01,5,N(B-(J=2)*5+(J=4)*5)/2,9)
+340 FOR D=1 TO 20 :: NEXT D :: RETURN
+350 RETURN
+359 !@P+
+360 DATA "Star light, star bright",First star I see tonight,"I wish I may, I wish I might",Have the wish I wish tonight
+361 !@P-
+370 DATA "Star bright, first star I   see",How I wish she'd wish for me,The way I wish for her      tonight,"I wish she may, I wish she  might."
+380 DATA "Star bright, wishing star",Listen to my old guitar,Hear the song I sing to you,How I wish she'd hear it too
+390 DATA "Star bright, star light",We wished upon you one fair night,But the love we wished wouldgo so far,Has burned and died like a  falling star
+400 DATA "Star bright, star of love",Shining in the sky above,"Where, oh where has our lovegone",Faded away like a star at   dawn
+410 DATA "Star bright, evening star","Away, alone, so cold, so far",You do not hear my wish to  you,"You do not care our love is through,"
+420 DATA You do not care our love is through.
+430 READ M$ :: DISPLAY AT(R,1):M$ :: R=R+3 :: RETURN
+15000 CALL PEEK(12288,Q) :: IF Q=1 THEN RUN "DSK1.ANYTIME" ELSE IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN RESTORE 360 :: GOTO 125 ELSE CALL CLEAR :: STOP

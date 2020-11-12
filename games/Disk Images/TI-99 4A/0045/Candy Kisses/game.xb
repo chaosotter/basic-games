@@ -1,0 +1,36 @@
+2 DIM N(24)
+10 GOTO 100
+11 S,J,M$,F,N(),L,T,A,B,Q
+30 CALL CLEAR :: CALL SCREEN :: CALL COLOR :: CALL P :: CALL PEEK :: CALL CHARSET
+40 !@P-
+100 CALL CLEAR :: CALL SCREEN(14) :: FOR S=1 TO 14 :: CALL COLOR(S,16,14) :: NEXT S
+110 DISPLAY AT(1,8):"CANDY KISSES":"":"Words & music by    Arranged":"George Morgan          by                       Tigercub"
+119 !@P+
+120 DATA Candy kisses,wrapped in paper,mean more to you,than any of mine.,Candy kisses,"wrapped in paper,",you'd rather have them
+121 !@P-
+130 DATA any old time.,You don't mean it,when you whisper,those sweet love words,in my ear.,Candy kisses,wrapped in paper
+140 DATA mean more to you,"than mine do, dear."
+150 FOR J=1 TO 16 :: READ M$ :: DISPLAY AT(J+7,14-LEN(M$)/2):M$ :: NEXT J
+160 F=220 :: FOR J=1 TO 24 :: N(J)=F*1.059463094^(J-1) :: NEXT J :: N(0)=30000
+170 L=4 :: FOR J=1 TO 2 :: GOSUB 280 :: CALL P(T,A,B) :: T=L/4 :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B) :: A,B=N(9) :: CALL P(T,A,B) :: A=N(7) :: CALL P(T,A,B)
+180 T=L :: A=N(9) :: B=N(2) :: CALL P(T,A,B) :: T=L/2 :: CALL P(T,A,B) :: GOSUB 280 :: T=L/2 :: A=N(11) :: CALL P(T,A,B) :: T=L/4 :: CALL P(T,A,B)
+190 A=N(7) :: CALL P(T,A,B) :: A=N(6) :: B=N(2) :: CALL P(T,A,B) :: A=N(9) :: CALL P(T,A,B) :: T=L :: A,B=N(7) :: CALL P(T,A,B) :: T=L/2 :: B=N(19)
+200 T=L/4 :: A=N(9) :: B=N(2) :: CALL P(T,A,B) :: A=N(11) :: CALL P(T,A,B) :: T=L/2 :: A,B=N(12) :: CALL P(T,A,B)
+210 B=N(12) :: CALL P(T,B,A) :: B=N(12) :: CALL P(T,B,A)
+220 T=L/4 :: A=N(16) :: CALL P(T,A,B) :: A=N(19) :: CALL P(T,A,B) :: T=L/2 :: A=N(16) :: B=N(7) :: CALL P(T,A,B) :: A=N(14) :: CALL P(T,A,B)
+230 B=N(7) :: CALL P(T,A,B) :: T=L/2 :: A=N(11) :: CALL P(T,A,B) :: A=N(10) :: CALL P(T,A,B) :: T=L/2 :: A,B=N(9) :: CALL P(T,A,B) :: B=N(21) :: CALL P(T,A,B)
+240 B=N(9) :: CALL P(T,A,B) :: T=L/4 :: A=N(13) :: CALL P(T,A,B) :: A=N(16) :: CALL P(T,A,B) :: T=L :: A=N(14) :: B=N(2) :: CALL P(T,A,B)
+250 T=L/2 :: B=N(14) :: CALL P(T,A,B) :: GOSUB 280 :: T=L/2 :: CALL P(T,A,B) :: T=L/4 :: CALL P(T,A,B) :: A=N(7) :: CALL P(T,A,B)
+260 A=N(6) :: B=N(2) :: CALL P(T,A,B) :: A=N(9) :: CALL P(T,A,B) :: T=L/2 :: A,B=N(7) :: CALL P(T,A,B) :: B=N(12) :: CALL P(T,A,B) :: B=N(7) :: CALL P(T,A,B)
+270 NEXT J
+271 CALL PEEK(12288,Q) :: IF Q=1 THEN 272 :: IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN 170 ELSE CALL CLEAR :: STOP
+272 FOR J=5 TO 30 :: CALL SOUND(-99,A,J) :: NEXT J :: CALL CLEAR :: CALL CHARSET :: CALL SCREEN(8) :: RUN "DSK1.COLUMBIA"
+280 T=L/4 :: A=N(11) :: B=N(2) :: CALL P(T,A,B) :: A=N(14) :: CALL P(T,A,B) :: A=N(11) :: B=N(7) :: CALL P(T,A,B) :: T=L/4*3 :: A=N(7) :: CALL P(T,A,B)
+290 T=L/2 :: B=N(19) :: CALL P(T,A,B) :: T=L/4 :: A=N(16) :: B=N(7) :: CALL P(T,A,B) :: A=N(19) :: CALL P(T,A,B) :: T=L/2 :: A=N(16) :: B=N(12) :: CALL P(T,A,B)
+300 A=N(12) :: CALL P(T,A,B) :: T=L/4 :: CALL P(T,A,B) :: A=N(19) :: CALL P(T,A,B) :: CALL P(T,A,B) :: A=N(16) :: CALL P(T,A,B)
+310 T=L/2 :: A=N(14) :: B=N(7) :: CALL P(T,A,B) :: RETURN
+319 !@P+
+320 SUB P(T,A,B) :: FOR J=1 TO T :: CALL SOUND(-999,A,5,A*1.005,5,B/1.585,9) :: GOSUB 340 :: CALL SOUND(-999,A,5,A*1.005,5,B/1.334,9)
+330 GOSUB 340 :: CALL SOUND(-999,A,5,A*1.005,5,B/2,9) :: GOSUB 340 :: NEXT J :: SUBEXIT
+340 FOR X=1 TO 15 :: NEXT X :: RETURN
+350 SUBEND

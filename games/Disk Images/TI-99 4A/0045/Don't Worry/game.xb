@@ -1,0 +1,36 @@
+2 DIM N(48)
+10 GOTO 100
+11 S,F,J,N(),R,T,A,B,Q
+30 CALL CLEAR :: CALL SCREEN :: CALL COLOR :: CALL SOUND :: CALL PEEK
+40 !@P-
+100 CALL CLEAR :: CALL SCREEN(5) :: FOR S=1 TO 14 :: CALL COLOR(S,5,16) :: NEXT S
+110 DISPLAY AT(2,9):"DON'T WORRY":"":"Words/music by   Arranged by":"Marty Robbins       Tigercub"! programmed by Jim Peterson 12 Dec. 87
+120 DISPLAY AT(7,2):"Don't worry 'bout me":" It's all over now,":" Though I may be blue,":" I'll manage somehow."
+130 DISPLAY AT(11,2):"Love cannot be explained,":" It can't be controlled,":" One day it's warm,":" Next day it's cold."
+140 DISPLAY AT(15,2):"Don't pity me":" 'Cause I'm feeling blue,":" Don't be ashamed,":" It might happen to you."
+150 DISPLAY AT(19,2):"Oh, oh, oh, oh, oh, love,":" Kiss me one time, then go,":" Love, I'll understand,":" Don't worry 'bout me."
+160 F=110 :: FOR J=1 TO 48 :: N(J)=F*1.059463094^(J-1) :: NEXT J
+170 FOR R=1 TO 2
+180 T=2 :: A=25 :: B=16 :: GOSUB 390 :: T=1 :: B=9 :: GOSUB 390 :: A=23 :: GOSUB 390 :: A=20 :: GOSUB 390 :: A=18 :: GOSUB 390 :: GOSUB 190 :: GOTO 220
+190 A=16 :: GOSUB 390 :: A=20 :: GOSUB 390 :: T=6 :: A=20 :: GOSUB 390
+200 T=2 :: GOSUB 390 :: T=2 :: A=16 :: B=4 :: GOSUB 390 :: T=1 :: B=11 :: GOSUB 390 :: T=2 :: A=20 :: GOSUB 390 :: T=1 :: A=23 :: GOSUB 390
+210 T=8 :: A=21 :: B=13 :: GOSUB 390 :: RETURN
+220 T=2 :: B=16 :: GOSUB 390 :: B=9 :: GOSUB 390 :: T=1 :: A=25 :: GOSUB 390 :: T=2 :: B=16 :: GOSUB 390 :: T=1 :: A=21 :: GOSUB 390
+230 T=10 :: A=23 :: B=16 :: GOSUB 390 :: T=2 :: A=20 :: GOSUB 390 :: T=1 :: B=4 :: GOSUB 390 :: T=2 :: A=23 :: B=16 :: GOSUB 390 :: T=1 :: A=20 :: GOSUB 390
+240 T=10 :: A=18 :: B=11 :: GOSUB 390 :: T=2 :: A=25 :: GOSUB 390 :: T=1 :: A=23 :: GOSUB 390 :: T=2 :: A=20 :: GOSUB 390:T=1 :: A=18 :: GOSUB 390 :: GOSUB 190
+250 T=4 :: A=21 :: B=13 :: GOSUB 390 :: T=2 :: A=25 :: GOSUB 390 :: T=1 :: A=23 :: GOSUB 390 :: A=25 :: GOSUB 390 :: T=10 :: A=23 :: B=16 :: GOSUB 390
+260 T=2 :: A=18 :: B=11 :: GOSUB 390 :: T=1 :: A=19 :: B=7 :: GOSUB 390 :: A=18 :: B=8 :: GOSUB 390 :: T=12 :: A=16 :: B=11 :: GOSUB 390
+270 T=2 :: A=25 :: B=16 :: GOSUB 390 :: T=1 :: A=26 :: GOSUB 390 :: A=27 :: GOSUB 390 :: T=10 :: A=28 :: B=21 :: GOSUB 390
+280 T=2 :: B=13 :: GOSUB 390 :: T=1 :: A=25 :: GOSUB 390 :: T=2 :: A=21 :: GOSUB 390 :: T=1 :: A=25 :: GOSUB 390 :: T=10 :: A=23 :: B=11 :: GOSUB 390
+290 T=2 :: B=4 :: GOSUB 390 :: T=1 :: B=8 :: GOSUB 390 :: A=21 :: GOSUB 390 :: T=9 :: A=15 :: B=11 :: GOSUB 390
+300 T=2 :: A=23 :: GOSUB 390 :: T=1 :: A=25 :: GOSUB 390 :: A=23 :: GOSUB 390 :: A=20 :: GOSUB 390 :: T=2 :: A=18 :: GOSUB 390
+310 T=1 :: A=16 :: B=8 :: GOSUB 390 :: A=18 :: GOSUB 390 :: T=10 :: A=20 :: GOSUB 390
+320 T=2 :: A=25 :: GOSUB 390 :: T=1 :: A=26 :: GOSUB 390 :: A=27 :: GOSUB 390 :: T=6 :: A=28 :: B=21 :: GOSUB 390
+330 T=1 :: A=25 :: GOSUB 390 :: A=23 :: GOSUB 390 :: A=21 :: GOSUB 390 :: A=23 :: GOSUB 390 :: T=2 :: A=25 :: GOSUB 390 :: T=1 :: A=21 :: GOSUB 390 :: T=2 :: A=23 :: GOSUB 390 :: T=1 :: A=25 :: GOSUB 390
+340 T=6 :: A=23 :: B=16 :: GOSUB 390 :: T=1 :: A=20 :: GOSUB 390 :: A=18 :: GOSUB 390
+350 A=16 :: GOSUB 390 :: A=18 :: GOSUB 390 :: T=2 :: A=20 :: GOSUB 390 :: A=23 :: GOSUB 390 :: T=1 :: B=8 :: GOSUB 390 :: A=21 :: GOSUB 390
+360 T=10 :: A=15 :: B=11 :: GOSUB 390 :: T=2 :: A=25 :: B=15 :: GOSUB 390 :: T=1 :: B=20 :: GOSUB 390 :: T=2 :: A=23 :: GOSUB 390 :: T=1 :: A=20 :: GOSUB 390
+370 T=10 :: A=16 :: B=8 :: GOSUB 390 :: NEXT R
+380 FOR J=7 TO 30 :: CALL SOUND(-99,N(A),J,N(A)*1.02,J) :: NEXT J :: GOTO 15000
+390 FOR J=1 TO T :: CALL SOUND(-99,N(A),5,N(B),11) :: CALL SOUND(-99,N(A)*1.02,7,N(B)*1.02,13) :: NEXT J :: RETURN
+15000 CALL PEEK(12288,Q) :: IF Q=1 THEN CALL SCREEN(8) :: RUN "DSK1.EL_PASO" ELSE IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN 170 ELSE CALL CLEAR :: STOP

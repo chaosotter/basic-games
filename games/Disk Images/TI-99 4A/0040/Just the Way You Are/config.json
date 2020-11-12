@@ -1,0 +1,27 @@
+{
+    "name": "Just the Way You Are",
+    "shortName": "justway",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Sam Moore, Jr."
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Various",
+	"date": "1982-06-23",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "justway.ti99"
+    }
+}

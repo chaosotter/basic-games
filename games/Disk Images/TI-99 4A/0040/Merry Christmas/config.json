@@ -1,0 +1,27 @@
+{
+    "name": "Merry Christmas",
+    "shortName": "meryxmas",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"C. Regena"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Compute! Magazine",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "meryxmas.ti99"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Piranha",
+    "shortName": "piranha",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Howard Uman"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 005f.dsk",
+	"publisher": "Various",
+	"date": "1985",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "piranha.ti99"
+    }
+}

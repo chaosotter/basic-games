@@ -1,0 +1,28 @@
+{
+    "name": "Songs of Texas",
+    "shortName": "songtexas",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Joe Loghry",
+	"Carolyn Loghry"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0040.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "songtexas.ti99"
+    }
+}

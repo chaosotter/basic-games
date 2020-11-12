@@ -1,0 +1,68 @@
+2 DIM M$(41) :: DEF V=.1*T
+10 GOTO 100
+11 J,D,M$(),X,R,T,V,Q
+30 CALL CLEAR :: CALL SCREEN :: CALL COLOR :: CALL VCHAR :: CALL CHAR :: CALL SOUND :: CALL PEEK
+40 !@P-
+100 CALL CLEAR
+110 REM    HOME IN DREAMS programmed by James W. Peterson in memory of my late brother Donald.         
+120 REM  contributed to public domain by Tigercub Software TC-80  156 Collingwood Ave., Columbus Ohio 43213
+130 ! don't try to learn anything from this spaghetti code which resulted from a quck conversion from Basic to XBasic!
+140 CALL SCREEN(12)
+150 FOR J=1 TO 12 :: CALL COLOR(J,2,12)
+160 NEXT J :: CALL VCHAR(1,31,1,96) :: CALL SCREEN(2) :: DISPLAY AT(2,7):"HOME IN DREAMS":"":" Words by         Music by":" Donald W.         James W."
+170 DISPLAY AT(6,1):" Peterson         Peterson"
+180 REM   SCRIPT TEXT  By James W. Peterson  156 Collingwood Ave., Columbus Ohio 43213 12/82 
+190 CALL CHAR(65,"0010102828447C83") :: CALL CHAR(66,"005824243824243B") :: CALL CHAR(67,"001C22222020201F") :: CALL CHAR(68,"00FC2222222224FB")
+200 CALL CHAR(69,"001C22203820629D") :: CALL CHAR(70,"007C12101C101020") :: CALL CHAR(71,"003C4240404E423D") :: CALL CHAR(72,"00C3427E42424281")
+210 CALL CHAR(73,"00423C08083E4A31") :: CALL CHAR(74,"00423C0808484830") :: CALL CHAR(75,"00A2622438282443") :: CALL CHAR(76,"00827C101070906F")
+220 CALL CHAR(77,"00D46A4A4A4A4A89") :: CALL CHAR(78,"004CB22222222221") :: CALL CHAR(79,"003C42424242423D") :: CALL CHAR(80,"004C32223C202027")
+230 CALL CHAR(81,"003C42425A4A463F") :: CALL CHAR(82,"00BC42427C504887")
+240 CALL CHAR(83,"00182418182444BB")
+250 CALL CHAR(84,"003E480808080817") :: CALL CHAR(85,"002222222222221D") :: CALL CHAR(86,"0082444428281211") :: CALL CHAR(87,"0082444454546E45")
+260 CALL CHAR(88,"0000C324181824C3") :: CALL CHAR(89,"00C444443C04140C") :: CALL CHAR(90,"003C42041804827D") :: CALL CHAR(97,"0000001E242424DB")
+270 CALL CHAR(98,"0020202C322222DD") :: CALL CHAR(99,"0000001C222020DF") :: CALL CHAR(100,"0002021A262226D9") :: CALL CHAR(101,"0000001C22221CE7")
+280 CALL CHAR(102,"001C2020382020DF") :: CALL CHAR(103,"0000001E202C24DB") :: CALL CHAR(104,"0020202C322222E3") :: CALL CHAR(105,"00100010101010EF")
+290 CALL CHAR(106,"00040404042424DB") :: CALL CHAR(107,"0020202C32322CE7") :: CALL CHAR(108,"00101010101010EF") :: CALL CHAR(109,"0000002A55554181")
+300 CALL CHAR(110,"000000142A2A2AC9") :: CALL CHAR(111,"0000003F444444B8") :: CALL CHAR(112,"002C32322C2020DF") :: CALL CHAR(113,"0000001C222A24DF")
+310 CALL CHAR(114,"0000003C242424C3") :: CALL CHAR(115,"000004081824649F") :: CALL CHAR(116,"0010107C101010EF") :: CALL CHAR(117,"00000022222222DB")
+320 CALL CHAR(118,"0000002222225589") :: CALL CHAR(119,"00000054545454AB") :: CALL CHAR(120,"000000023C4C5483") :: CALL CHAR(121,"00442810101010EF")
+330 CALL CHAR(122,"0000007C081028EF") :: FOR D=1 TO 500
+340 NEXT D :: M$(1)=" I went home the other day" :: M$(2)=" I should have gone before" :: M$(3)=" For oh, so long I'd been    away"
+350 M$(4)=" Full twenty years and more" :: M$(5)=" I kissed my Mom, shook      hands with Dad," :: M$(6)=" Said 'Hi' to Sis and Bro-   ther"
+360 M$(7)=" Then threw a stick for      Sport to fetch" :: M$(8)=" And off we roamed together" :: M$(9)=" To bring the cattle from    the fields"
+370 M$(10)=" And down the dusty lane," :: M$(11)=" We chased a rabbit in the   brush" :: M$(12)=" We ran home in the rain"
+380 M$(13)=" We found again the swim-    ming hole"
+390 M$(14)=" Far in the woods it's hid-  den" :: M$(15)=" The scene of happy boyhood  hours," :: M$(16)=" Of games and sports forbid- den"
+400 M$(17)=" The church still stands up- on the hill," :: M$(18)=" The graveyard close beside  it" :: M$(19)=" The choir still sings the   same old songs,"
+410 M$(20)=" The preacher in the pulpit" :: M$(21)=" Still times his sermons     with his watch," :: M$(22)=" He knows them all by heart"
+420 M$(23)=" Then hurries to the open    door," :: M$(24)=" Shakes hands as we depart." :: M$(25)=" I saw again the old school- house,"
+430 M$(26)=" And walked the homeward way" :: M$(27)=" With one I loved so very    much," :: M$(28)=" And sought for words to say"
+440 M$(29)=" To ask her if she'd be my   girl," :: M$(30)=" To tell her that I loved    her," :: M$(31)=" Then blurted bashfully the  words,"
+450 M$(32)=" I'd like to be your feller" :: M$(33)=" Then memories came rushing  back," :: M$(34)=" With tears my eyes did fill"
+460 M$(35)=" The mem'ries of my boyhood  pals" :: M$(36)=" Seemed nearer, dearer still" :: M$(37)=" Than when I left the old    homestead"
+470 M$(38)=" So long ago, it seems" :: M$(39)=" Yes, I went back home just  yesterday - " :: M$(40)=" But only in my dreams." :: X=1 :: R=9 :: T=500
+480 FOR J=1 TO 10 :: DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=R+3 :: GOSUB 530 :: DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=R+3 :: GOSUB 560
+490 DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=R+3 :: GOSUB 590 :: DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=9 :: GOSUB 620 :: DISPLAY AT(9,1):RPT$(" ",254):" "
+500 DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=R+3 :: GOSUB 530 :: DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=R+3 :: GOSUB 560
+510 DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=R+3 :: GOSUB 590 :: DISPLAY AT(R,1):M$(X) :: X=X+1 :: R=9 :: IF X>40 THEN 660 :: GOSUB 640 :: DISPLAY AT(9,1):RPT$(" ",254):" "
+520 NEXT J
+530 CALL SOUND(T*.5,440,5,349,7,262,13) :: CALL SOUND(T,440,5,349,7,262,13) :: CALL SOUND(T*.5,523,5,220,7,175,13)
+540 CALL SOUND(T,523,5,349,7,220,13) :: CALL SOUND(T,523,5,440,7,349,13) :: CALL SOUND(T,466,5,349,7,294,13)
+550 CALL SOUND(T*.5,587,5,233,7,175,13) :: RETURN
+560 CALL SOUND(T*1.5,587,5,349,7,233,13) :: CALL SOUND(T*.5,587,5,466,7,349,13) :: CALL SOUND(T*1.5,440,5,349,7,262,13)
+570 CALL SOUND(T*.5,440,5,349,7,131,13) :: CALL SOUND(T*1.5,392,5,330,7,262,13) :: CALL SOUND(T*.5,349,5,262,7,220,13)
+580 CALL SOUND(T*2.5,233,5,175,7,117,13) :: RETURN
+590 CALL SOUND(T*.5,392,5,165,7,131,13) :: CALL SOUND(T*1.5,392,5,196,7,165,13) :: CALL SOUND(T*.5,392,5,262,7,196,13)
+600 CALL SOUND(T*1.5,392,5,330,7,262,13) :: CALL SOUND(T*.5,440,5,349,7,262,13) :: CALL SOUND(T*1.5,466,5,349,7,294,13)
+610 CALL SOUND(T*.5,392,5,330,7,262,13) :: CALL SOUND(T*1.5,392,5,330,7,131,13) :: RETURN
+620 CALL SOUND(T*.5,523,5,196,7,165,13) :: CALL SOUND(T*1.5,523,5,262,7,196,13) :: CALL SOUND(T*.5,523,5,330,7,262,13)
+630 CALL SOUND(T*1.5,523,5,392,7,330,13) :: CALL SOUND(T*.5,466,5,349,7,294,13) :: CALL SOUND(T*2.5,440,5,349,7,262,13) :: RETURN
+640 CALL SOUND(T*.5,523,5,330,7,262,13) :: CALL SOUND(T*1.5,523,5,392,7,330,13) :: CALL SOUND(T*.5,466,5,349,7,294,13)
+650 CALL SOUND(T*1.5,294,5,233,7,175,13) :: CALL SOUND(T*.5,330,5,262,7,196,13) :: CALL SOUND(T*3.5,349,5,262,7,220,13) :: RETURN
+660 T=INT(T+V) :: CALL SOUND(T*.5,523,5,392,7,330,13) :: T=INT(T+V) :: CALL SOUND(T*1.5,523,5,392,7,262,13) :: T=INT(T+V)
+670 CALL SOUND(T*.5,466,5,349,7,294,13) :: T=INT(T+V)
+680 CALL SOUND(T*1.5,294,5,233,7,175,13)
+690 T=INT(T+V) :: CALL SOUND(T*.5,330,5,262,7,196,13) :: CALL SOUND(1000,349,5,262,7,196,13) :: CALL SOUND(1000,349,5,262,7,196,13)
+700 FOR J=7 TO 30 :: CALL SOUND(-99,349,J,262,J)
+710 NEXT J
+15000 CALL PEEK(12288,Q) :: IF Q=1 THEN RUN "DSK1.KOJO" ELSE IF Q=2 THEN RUN "DSK1.QUICKLOAD" ELSE IF Q=3 THEN 100 ELSE CALL CLEAR :: STOP

@@ -1,0 +1,27 @@
+{
+    "name": "My Country, 'Tis of Thee",
+    "shortName": "mycountry",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Unknown"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "mycountry.ti99"
+    }
+}

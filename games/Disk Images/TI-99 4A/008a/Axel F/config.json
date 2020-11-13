@@ -1,0 +1,28 @@
+{
+    "name": "Axel F",
+    "shortName": "axelf",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Robert J. Gagle",
+	"Jim Reiss"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "1985",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "axelf.ti99"
+    }
+}

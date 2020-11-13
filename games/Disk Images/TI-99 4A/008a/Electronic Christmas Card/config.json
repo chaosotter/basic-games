@@ -1,0 +1,28 @@
+{
+    "name": "Electronic Christmas Card",
+    "shortName": "elecxmas",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"C. Regena",
+	"Tim Tesch"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "1986",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "elecxmas.ti99"
+    }
+}

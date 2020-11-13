@@ -1,0 +1,27 @@
+{
+    "name": "If I Fell",
+    "shortName": "ififell",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"S. L. Varga"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "1984-11",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "ififell.ti99"
+    }
+}

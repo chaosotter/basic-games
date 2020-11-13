@@ -1,10 +1,10 @@
-BORN FREE
+DEMONSTRATION MUSIC
 
-This is a rendition of "Born Free".
+This is a program that plays an unknown tune as a demonstration of the
+TI's sound capabilities.
 
 This game was found in a collection of old TI disk images.
 
-The original image name and path was "0040.dsk/BORNFREE".
+The original image name and path was "0040.dsk/DEMO/MUS".
 
-The game is in TI BASIC and credited in 1981 to Richard Lamson, but no
-further information is known.
+The game is in TI BASIC, but no further information is known.

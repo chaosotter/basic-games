@@ -1,11 +1,11 @@
 {
-    "name": "Hornpipe",
-    "shortName": "hornpipe",
+    "name": "Pink Panther",
+    "shortName": "pinkpant",
     "platform": {
 	"system": "TI99"
     },
     "authors": [
-	"F. Smith"
+	"Unknown"
     ],
     "contributors": [
 	{
@@ -17,11 +17,11 @@
 	"type": "misc",
 	"title": "Disk Image 0040.dsk",
 	"publisher": "Various",
-	"date": "1983-04",
+	"date": "Unknown",
 	"url": "N/A"
     },
     "ia": {
 	"standard": "legacy",
-	"id": "hornpipe.ti99"
+	"id": "pinkpant.ti99"
     }
 }

@@ -1,0 +1,28 @@
+{
+    "name": "Godfather Theme",
+    "shortName": "godfather",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"M. Gilbreath",
+	"G. Jurecka"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "godfather.ti99"
+    }
+}

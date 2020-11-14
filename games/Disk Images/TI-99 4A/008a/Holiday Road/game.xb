@@ -1,0 +1,89 @@
+0 ! HOLIDAY ROAD by Bill Knecht 6/86 * Rqd XB,32K
+1 CALL CLEAR :: CALL SCREEN(5) :: FOR I=1 TO 12 :: CALL COLOR(I,2,8) :: NEXT I :: CALL COLOR(2,2,11,12,5,5) :: CALL INIT
+2 CALL CHAR(91,"00000044281010100008081") :: CALL CHAR(42,RPT$("F",16)) :: CALL CHAR(43,RPT$("F",14)) :: CALL CHAR(120,"")
+3 LF=174.61 :: LG=196 :: LA=220 :: LB=233.08 :: C=261.63 :: D=293.66 :: E=329.63 :: F=349.23 :: G=392 :: GS=415.3 :: A=440 :: B=466.16
+4 HC=523.25 :: HD=587.33 :: HE=659.26 :: HF=698.46 :: HG=783.99 :: HA=880 :: HB=932.33 :: R=40000 :: T,TT=0
+5 CALL CHAR(48,"00000000010303071F7FFF7F370100000000000080C0E0ECFEFEFFFFFEECC000")
+6 CALL CHAR(52,"00000000000000011B7F7FFFFF7E1C000000000000387CFEFEFFFFFFFEFC7000")
+7 CALL CHAR(128,"000000000000001F30373F3D0F070000000000001F3060FF0000FFFF80000000")
+8 CALL CHAR(132,"00000000000000000F080042000000000000000000000000FFFF000000000000")
+9 CALL CHAR(136,"00000000FF8484FF0003FFFE0703000000000000C02010F80888F8F8C0800000")
+10 CALL CHAR(140,"0000FF4900000000FFFC0001000000000000800000000000F070000400000000")
+11 DISPLAY AT(2,3):"H O L I D A Y    R O A D": :"   program b[ bill knecht"
+12 DISPLAY AT(22,8):"from the movie":"National Lampoon\s  Vacation"
+13 CALL HCHAR(15,1,42,64) :: CALL HCHAR(17,1,42,2) :: CALL HCHAR(17,31,42,2) :: DISPLAY AT(17,1):RPT$("+***",8) :: CALL HCHAR(18,1,42,96)
+14 CALL MAGNIFY(4) :: CALL SPRITE(#5,48,16,35,50,0,0,#6,52,16,35,82,0,0)
+15 CALL SPRITE(#7,48,16,35,146,0,0,#8,52,16,35,178,0,0)
+16 CALL SPRITE(#1,128,3,100,192,0,0,#2,136,3,100,223,0,0)
+17 CALL SPRITE(#3,132,11,100,190,0,0,#4,140,11,100,221,0,0)
+18 FOR I=5 TO 8 :: CALL MOTION(#I,0,2) :: NEXT I :: FOR I=1 TO 4 :: CALL MOTION(#I,0,-6) :: NEXT I
+19 GOTO 21
+20 GOSUB :: IF :: THEN :: CALL LOAD
+21 !@P-
+22 X=E :: Y=R :: Z=10000 :: N=1 :: GOSUB 86 :: X,Z=F :: GOSUB 86 :: X=HC :: GOSUB 86 :: X=R :: Z=A :: N=2 :: GOSUB 86
+23 X,Z=HC :: Y=F :: GOSUB 86 :: X,Y=R :: Z=A :: N=1 :: GOSUB 86 :: X=E :: GOSUB 86 :: X,Z=F :: GOSUB 86
+24 X=HC :: GOSUB 86 :: X=R :: Z=A :: N=2 :: GOSUB 86 :: X,Z=HC :: Y=F :: GOSUB 86 :: X,Y=R :: Z=HD :: N=1 :: GOSUB 86
+25 X=E :: N=1 :: GOSUB 86 :: X,Z=F :: GOSUB 86 :: X=HC :: GOSUB 86 :: X=R :: Z=A :: N=2 :: GOSUB 86
+26 X,Z=HC :: Y=F :: GOSUB 86 :: X,Y=R :: Z=A :: N=1 :: GOSUB 86 :: X=E :: GOSUB 86 :: X,Z=F :: GOSUB 86
+27 X=HC :: GOSUB 86 :: X=R :: Z=A :: N=2 :: GOSUB 86 :: X,Z=HC :: Y=F :: GOSUB 86 :: X,Y=R :: Z=HD :: N=1 :: GOSUB 86
+28 X=HC :: Y=C :: GOSUB 87
+29 T=T+1 :: X=HC :: Y=C :: Z=F :: N=1 :: GOSUB 87 :: GOSUB 87 :: Z=A :: GOSUB 87 :: GOSUB 87 :: Z=HC :: N=2 :: GOSUB 87
+30 X,Y=R :: Z=A :: N=1 :: GOSUB 87 :: X=HC :: Y=C :: GOSUB 87 :: Z=F :: N=2 :: GOSUB 87X=HD :: Y=D :: Z=A :: N=1 :: GOSUB 87
+31 X=A :: Y=LA :: GOSUB 87 :: Z=HC :: N=2 :: GOSUB 87 :: X=G :: Y=LG :: Z=HD :: N=1 :: GOSUB 87 :: X=F :: Y=LF :: GOSUB 87
+32 Y=HA :: Z=F :: N=2 :: GOSUB 87 :: Y=HG :: Z=A :: GOSUB 87 :: Y=HF :: Z=HC :: GOSUB 87 :: Y=HD :: Z=A :: N=1 :: GOSUB 87
+33 GOSUB 87 :: Y=HC :: Z=F :: N=2 :: GOSUB 87 :: Y=R :: Z=A :: GOSUB 87
+34 Y=F :: Z=HC :: N=1 :: GOSUB 87 :: X=A :: Y=LA :: GOSUB 87 :: Z=HD :: GOSUB 87 :: X=HC :: Y=LF :: GOSUB 87
+35 Y=C :: Z=F :: GOSUB 87 :: GOSUB 87 :: Z=A :: GOSUB 87 :: GOSUB 87 :: Z=HC :: N=2 :: GOSUB 87 :: X,Y=R :: Z=A :: N=1 :: GOSUB 87
+36 X=A :: Y=LA :: GOSUB 87 :: X=HC :: Y=C :: Z=F :: GOSUB 87 :: GOSUB 87 :: X=HD :: Y=D :: Z=A :: GOSUB 87 :: X=A :: Y=LA :: GOSUB 87
+37 Z=A :: N=2 :: GOSUB 87 :: X=G :: Y=LG :: Z=HD :: N=1 :: GOSUB 87 :: X=F :: Y=LF :: GOSUB 87
+38 Y=HA :: Z=F :: N=2 :: GOSUB 87 :: Y=HG :: Z=A :: GOSUB 87 :: Y=HF :: Z=HC :: GOSUB 87 :: Y=HD :: Z=A :: N=1 :: GOSUB 87
+39 GOSUB 87 :: Y=HC :: Z=F :: N=2 :: GOSUB 87 :: Y=R :: Z=G :: GOSUB 87 :: X=A :: Y=LA :: Z=GS :: N=1 :: GOSUB 87 :: GOSUB 87
+40 X=HC :: Y=C :: Z=A :: N=2 :: GOSUB 87 :: X=HD :: Y=D :: Z=B :: GOSUB 87 :: Z=HD :: N=1 :: GOSUB 87 :: Y=HB :: GOSUB 87
+41 Z=F :: GOSUB 87 :: Y=HA :: Z=HD :: N=2 :: GOSUB 87 :: Y=HG :: Z=HC :: GOSUB 87 :: Z=HE :: N=1 :: GOSUB 87 :: Y=HF :: GOSUB 87
+42 Z=HG :: N=2 :: GOSUB 87 :: Y,Z=HE :: GOSUB 87 :: Y=HG :: Z=A :: GOSUB 87Z=HC :: N=1 :: GOSUB 87 :: Y=HF :: GOSUB 87
+43 Z=HE :: N=2 :: GOSUB 87 :: Y=HE :: Z=HC :: GOSUB 87 :: Y=D :: Z=HD :: GOSUB 87 :: X=R :: Z=HC :: GOSUB 87
+44 X=HC :: Y=C :: Z=B :: N=1 :: GOSUB 87 :: GOSUB 87 :: Z=A :: N=2 :: GOSUB 87 :: X=HD :: Y=D :: Z=G :: GOSUB 87
+45 Z=HB :: N=1 :: GOSUB 87 :: Y=HB :: GOSUB 87 :: Z=HD :: GOSUB 87 :: Y=HA :: Z=B :: N=2 :: GOSUB 87 :: Y=HG :: Z=HC :: GOSUB 87
+46 Y=LB :: N=1 :: GOSUB 87 :: Y=HF :: GOSUB 87 :: Z=A :: N=2 :: GOSUB 87 :: Y=HE :: Z=G :: GOSUB 87
+47 IF T<2 THEN 48 ELSE 55
+48 X=HF :: Y=C :: Z=F :: N=1 :: GOSUB 87 :: Y=HC :: GOSUB 87 :: Y=R :: Z=A :: N=2 :: GOSUB 87 :: Y,Z=HC :: GOSUB 87 :: Y=R :: Z=A :: N=1 :: GOSUB 87
+49 Y=E :: GOSUB 87 :: X=R :: Y,Z=F :: GOSUB 87
+50 Y=HC :: GOSUB 87 :: Y=R :: Z=A :: N=2 :: GOSUB 87 :: Y,Z=HC :: GOSUB 87 :: Y=R :: Z=HD :: N=1 :: GOSUB 87
+51 Y=E :: N=1 :: GOSUB 87 :: Y,Z=F :: GOSUB 87 :: Y=HC :: GOSUB 87 :: Y=R :: Z=A :: N=2 :: GOSUB 87
+52 Y,Z=HC :: GOSUB 87 :: Y=R :: Z=A :: N=1 :: GOSUB 87 :: Y=E :: GOSUB 87 :: Y,Z=F :: GOSUB 87
+53 Y=HC :: GOSUB 87 :: Y=R :: Z=A :: N=2 :: GOSUB 87 :: Y,Z=HC :: GOSUB 87 :: Y=R :: Z=HD :: N=1 :: GOSUB 87
+54 GOTO 28
+55 X=HF :: Y=C :: Z=F :: N=1 :: GOSUB 87 :: Y=HC :: GOSUB 87 :: Y=R :: Z=A :: N=2 :: GOSUB 87 :: Y,Z=HC :: GOSUB 87 :: Y=R :: Z=A :: N=1 :: GOSUB 87
+56 Y=E :: GOSUB 87 :: X=R :: Y,Z=F :: GOSUB 87 :: Y=HC :: GOSUB 87 :: Y=R :: Z=G :: N=2 :: GOSUB 87 :: X=HC :: Y=C :: Z=GS :: N=1 :: GOSUB 87 :: GOSUB 87
+57 Z=A :: N=2 :: GOSUB 87 :: X=HD :: Y=D :: Z=B :: GOSUB 87 :: Z=HD :: N=1 :: GOSUB 87 :: Y=HB :: GOSUB 87
+58 Z=HF :: GOSUB 87 :: Y=HA :: Z=HD :: N=2 :: GOSUB 87 :: Y=HG :: Z=HC :: GOSUB 87 :: Z=HE :: N=1 :: GOSUB 87 :: Y=HF :: GOSUB 87
+59 Z=HG :: N=2 :: GOSUB 87 :: Y,Z=HE :: GOSUB 87 :: Y=HG :: Z=A :: GOSUB 87Z=HC :: N=1 :: GOSUB 87 :: Y=HF :: GOSUB 87
+60 Z=HE :: N=2 :: GOSUB 87 :: Y=HE :: Z=HC :: GOSUB 87 :: Y=D :: Z=HD :: GOSUB 87 :: X=R :: Z=HC :: GOSUB 87
+61 X=HC :: Y=C :: Z=B :: N=1 :: GOSUB 87 :: GOSUB 87 :: Z=A :: N=2 :: GOSUB 87 :: X=HD :: Y=D :: Z=G :: GOSUB 87
+62 Z=HB :: N=1 :: GOSUB 87 :: Y=HB :: GOSUB 87 :: Z=HD :: GOSUB 87 :: Y=HA :: Z=B :: N=2 :: GOSUB 87 :: Y=HG :: Z=HC :: GOSUB 87
+63 Y=LB :: N=1 :: GOSUB 87 :: Y=HF :: GOSUB 87 :: Z=A :: N=2 :: GOSUB 87 :: Y=HE :: Z=G :: GOSUB 87 :: TT=TT+1
+64 IF TT>1 THEN 72
+65 X=HF :: Y,Z=F :: N=1 :: GOSUB 87 :: Y=C :: GOSUB 87 :: Y=E :: Z=A :: GOSUB 87 :: Y=C :: GOSUB 87
+66 Y=D :: Z=HC :: GOSUB 87 :: CALL LOAD(-31878,0) :: Y=C :: GOSUB 87 :: Y=D :: Z=F :: N=.5 :: GOSUB 87 :: Y=E :: GOSUB 87 :: Y=D :: GOSUB 87 :: Y=C :: GOSUB 87
+67 X=R :: Y=LF :: Z=F :: N=1 :: GOSUB 87 :: GOSUB 87 :: Y=R :: Z=A :: GOSUB 87 :: Y=LF :: GOSUB 87 :: Z=HC :: N=2 :: GOSUB 87 :: Z=HD :: GOSUB 87
+68 Y,Z=F :: N=1 :: GOSUB 87 :: Y=C :: GOSUB 87 :: Y=E :: Z=A :: GOSUB 87 :: Y=C :: GOSUB 87
+69 Y=D :: Z=HC :: GOSUB 87 :: Y=C :: GOSUB 87 :: Y=D :: Z=F :: N=.5 :: GOSUB 87 :: Y=E :: GOSUB 87 :: Y=D :: GOSUB 87 :: Y=C :: GOSUB 87
+70 X=R :: Y=LF :: Z=F :: N=1 :: GOSUB 87 :: GOSUB 87 :: Y=R :: Z=A :: GOSUB 87 :: Y=LF :: GOSUB 87 :: Z=HC :: N=2 :: GOSUB 87 :: Z=HD :: GOSUB 87
+71 CALL LOAD(-31878,8) :: T=0 :: GOTO 28
+72 X=HF :: GOSUB 73 :: GOSUB 73 :: GOTO 79
+73 Y=C :: Z=F :: N=1 :: GOSUB 87 :: Y=HC :: GOSUB 87 :: Y=R :: Z=A :: N=2 :: GOSUB 87 :: Y=HC :: Z=HC :: GOSUB 87 :: Y=R :: Z=A :: N=1 :: GOSUB 87
+74 Y=E :: GOSUB 87 :: X=R :: Y,Z=F :: GOSUB 87 :: Y=HC :: GOSUB 87 :: Z=A :: N=2 :: GOSUB 87 :: Y,Z=HC :: GOSUB 87
+75 Y=R :: Z=HD :: GOSUB 87 :: X=HA :: Y=A :: Z=F :: GOSUB 87 :: Y=HG :: Z=A :: N=1 :: GOSUB 87 :: X=HF :: Y=F :: GOSUB 87
+76 X=HD :: Y=D :: Z=HC :: GOSUB 87 :: X=HF :: Y=F :: GOSUB 87 :: X=HD :: Y=D :: Z=A :: GOSUB 87 :: X=HC :: Y=C :: GOSUB 87
+77 X,Y=R :: Z=F :: GOSUB 87 :: Y=HC :: GOSUB 87 :: Y=R :: Z=A :: GOSUB 87 :: Y,Z=HC :: GOSUB 87 :: Y=R :: Z=HD :: GOSUB 87
+78 Y=E :: GOSUB 87 :: RETURN
+79 Y=C :: Z=F :: N=1 :: V=3 :: GOSUB 88 :: Y=HC :: GOSUB 88 :: Y=R :: Z=A :: N=2 :: GOSUB 88 :: Y,Z=HC :: V=4 :: GOSUB 88 :: Y=R :: Z=A :: N=1 :: GOSUB 88
+80 Y=E :: V=5 :: GOSUB 88 :: X=R :: Y,Z=F :: GOSUB 88 :: Y=HC :: GOSUB 88 :: Z=A :: V=6 :: N=2 :: GOSUB 88 :: Y,Z=HC :: GOSUB 88
+81 Y=R :: Z=HD :: V=7 :: GOSUB 88 :: X=HA :: Y=A :: Z=F :: GOSUB 88 :: Y=HG :: Z=A :: N=1 :: V=8 :: GOSUB 88 :: X=HF :: Y=F :: GOSUB 88
+82 X=HD :: Y=D :: Z=HC :: V=9 :: GOSUB 88 :: X=HF :: Y=F :: GOSUB 88 :: X=HD :: Y=D :: Z=A :: V=10 :: GOSUB 88 :: X=HC :: Y=C :: GOSUB 88
+83 X,Y=R :: Z=F :: V=11 :: GOSUB 88 :: Y=HC :: GOSUB 88 :: Y=R :: Z=A :: V=12 :: GOSUB 88 :: Y,Z=HC :: GOSUB 88 :: Y=R :: V=13 :: Z=HD :: GOSUB 88
+84 !@P+
+85 CALL DELSPRITE(ALL) :: CALL HCHAR(1,1,120,768) :: CALL CLEAR :: STOP
+86 CALL SOUND(170*N,X,5,Y,6,Z*3.75,30,-4,6) :: RETURN
+87 CALL SOUND(170*N,X,3,Y,5,Z*3.75,30,-4,6) :: RETURN
+88 CALL SOUND(170*N,X,V,Y,(V+2),Z*3.75,30,-4,(V+6)) :: RETURN

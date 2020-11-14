@@ -1,0 +1,27 @@
+{
+    "name": "Holiday Road",
+    "shortName": "holiroad",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Bill Knecht"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "1986-06",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "holiroad.ti99"
+    }
+}

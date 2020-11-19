@@ -1,0 +1,27 @@
+{
+    "name": "Please Please Me",
+    "shortName": "pleaseme",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Bill Knecht"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "1985-06-19",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "pleaseme.ti99"
+    }
+}

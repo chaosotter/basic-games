@@ -1,0 +1,27 @@
+{
+    "name": "Star Trek 2 Theme",
+    "shortName": "st2theme",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Ken Gilliland"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "st2theme.ti99"
+    }
+}

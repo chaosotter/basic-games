@@ -1,0 +1,27 @@
+{
+    "name": "Yardchores",
+    "shortName": "yardchore",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Milo Tsukroff"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0090.dsk",
+	"publisher": "Various",
+	"date": "1986",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "yardchore.ti99"
+    }
+}

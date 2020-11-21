@@ -1,0 +1,27 @@
+{
+    "name": "Whiter Shade of Pale?",
+    "shortName": "whitshade",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Tony Knerr"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "whitshade.ti99"
+    }
+}

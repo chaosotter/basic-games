@@ -1,0 +1,27 @@
+{
+    "name": "3ORBIT?",
+    "shortName": "3orbit",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Milo Tsukroff"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 008a.dsk",
+	"publisher": "Various",
+	"date": "1987-02-18",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "3orbit.ti99"
+    }
+}

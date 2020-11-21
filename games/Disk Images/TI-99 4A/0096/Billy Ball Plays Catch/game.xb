@@ -1,0 +1,107 @@
+100 REM  THIS IS A CLASSIC!    100% YES VOTE RECORDED!     by r.trueman. HOPE YOU LIKE IT.
+110 CALL CHARSET :: CALL CLEAR :: RANDOMIZE :: CALL MAGNIFY(3) :: HI=0
+120 CALL COLOR(12,5,1,11,2,1,9,2,7,10,14,1,2,1,7,3,1,7,5,6,1,6,6,1,7,6,1,8,6,1)
+130 MO=2 :: LO=7 :: WA,LE=1 :: SC=0 :: ME=3
+140 CALL CHAR(58,"000000FF0000FF",136,"002070F4F4FCF8702123272F3F0F070300040E2F2F3F1F0E84C4E4F4FCF0E0C")
+150 CALL CHAR(48,"007E66666666667E000C1C0C0C0C0C0C007E66067E60667E007E66060E06667E",56,"007E667E6666667E",57,"007E66667E060606")
+160 CALL CHAR(52,"0066667E06060606007E66607E06667E007E66607E66667E007E660606060606",115,"FF81BDA5A5BD81FF")
+170 CALL CHAR(99,"283810FE38282828",92,"181F090B0F037FBF7F0F0F0E0E0E0A0430F020A0E080FCFAFCE0E0E0E0E0A04")
+180 CALL CHAR(140,"00",141,"7113F7F7FF770703",142,"00",143,"8EC8EFEFFFEFE0C")
+190 CALL CHAR(132,"000834330101071F737B6F301F000000002058980000C0F09CBCEC18F")
+200 CALL CHAR(128,"00000E0B191903173F3175317F381B0FF0B080800000D0F0F8DE07DEFE1EDCF8")
+210 CALL CHAR(124,"03070F3F2F27232170F8FCF4F4702000C0E0F0FCF4E4C4840E1F3F2F2F0E04")
+220 CALL CHAR(112,"4040403F4040403F",113,"020202FC020202FC",104,"FFFFFF22555588FF",105,"80C0E03058548AFF",106,"0103070C1A2A51FF")
+230 CALL CHAR(64,"FFFFFF00FFFF00FF",60,"1F3B787F7BE07B1F0F0B000001010D0FF0D81CFE8CAE8CFCE8C09898D07") :: CALL SCREEN(16)
+240 CALL CHAR(120,"7F7F7F100F070301",121,"00",122,"FEFEFE08F0E0C08",123,"00",96,"143E7F7F3E1C08",97,"0C0A080868F8F06",98,"105438EE38541")
+250 CALL CHAR(114,"2424242424242424",108,"1C3E776FDFDFFFFF7F7F3F1F0F070100387CEEDEFFFFFFFFFEFEFCF8F0E08")
+260 CALL CHAR(100,"0101010101010101",101,"0101193D7F7F3C18",102,"80402018",103,"00")
+270 CALL CHAR(116,"01010201090523DE230509010201010000008000204088F6884020008") :: GOSUB 1070 :: CALL COLOR(4,1,7)
+280 CALL CLEAR :: MO=2 :: LO=7 :: WA,LE=1 :: SC,CO,NU=0 :: ME=3
+290 DISPLAY AT(1,1):"SCORE";SC;TAB(15);"MEN";ME;TAB(21);"LEVEL";LE:"::::::::::::::::::::::::::::" :: ON WA GOSUB 470,530,590,650
+300 CALL COLOR(9,LO,2) :: CALL SPRITE(#1,136,11,M,N,#4,132,13,153,1,0,5+WA) :: DO=M :: AC=N :: B=N/8+1
+310 CALL JOYST(JO,X,Y) :: IF X+Y=0 THEN 310 ELSE CALL SPRITE(#2,CH,LO,17,(RND*213)+17,MO,0) :: CALL SOUND(-200,1900,0)
+320 CALL KEY(JO,K,S) :: IF K=18 THEN 710 ELSE CALL JOYST(JO,X,Y) :: IF X=-4 THEN 330 :: IF X=4 THEN 340 ELSE ON SGN(Y)+2 GOTO 350,390,370
+330 IF N-8<17 THEN 390 ELSE N=N-8 :: CALL LOCATE(#1,M,N) :: B=N/8+1 :: GOTO 390
+340 IF N+8>225 THEN 390 ELSE N=N+8 :: CALL LOCATE(#1,M,N) :: B=N/8+2 :: GOTO 390
+350 A=M/8+4 :: B=N/8+1 :: CALL GCHAR(A,B,O) :: IF O=112 THEN 360 ELSE 390
+360 IF M>=153 THEN 760 :: CALL LOCATE(#1,M+8,N,#1,M+16,N,#1,M+24,N,#1,M+32,N) :: M=M+32 :: GOTO 390
+370 A=M/8+2 :: B=N/8+1 :: CALL GCHAR(A,B,O) :: IF O=112 THEN 380 ELSE 390
+380 FOR Y=M TO M-32 STEP-8 :: CALL LOCATE(#1,Y,N) :: NEXT Y :: M=M-32 :: GOTO 390
+390 A=M/8+3 :: CALL GCHAR(A,B,O) :: IF O=32 THEN 360 :: IF O=120 THEN 970 ELSE CALL PEEK(-31877,O)
+400 IF O AND 32 THEN 750 ELSE CALL POSITION(#2,F,FF) :: IF F>161 THEN 790 :: A=(RND*(59-LE))+1 :: IF A>5 THEN 320 ELSE CALL PATTERN(#4,132)
+410 CALL POSITION(#4,F,FF) :: ON A GOTO 420,430,440,450,460
+420 CALL SPRITE(#4,132,13,M,FF,0,5+LE) :: GOTO 320
+430 CALL SPRITE(#4,132,13,M,FF,0,-5+LE-(LE*2)) :: GOTO 320
+440 CALL SPRITE(#4,132,13,153,FF,0,-5+LE-(LE*2)) :: GOTO 320
+450 CALL SPRITE(#4,132,13,153,FF,0,5+LE) :: GOTO 320
+460 CALL SPRITE(#4,132,9,F,FF,0,24) :: GOTO 320
+470 DISPLAY AT(6,1):"hhhhhhhhi           jhhhhhhhpq                     pq   pq                     pq   pq                     pq"
+480 DISPLAY AT(10,1):"hhhhhhhhi        jhhhhhhhhhh  pq                pq        pq                pq        pq                pq"
+490 DISPLAY AT(14,1):"hhhhhhhhi     jhhhhhhhhhhhhhpq               pq         pq               pq         pq               pq"
+500 DISPLAY AT(18,1):"hhhhhhhhi  jhhhhhhhhhhhhhhhh  pq          pq              pq          pq              pq          pq"
+510 DISPLAY AT(22,1):"hhhhhhhhhhhhhhhhhhhhi       @@@@@@@@@@@@@@@@@@@@@@@@@@@@ ssssssssssssssssssss   sss "
+520 CH=108 :: LO=7 :: M=25 :: N=225 :: RETURN
+530 DISPLAY AT(6,1):"hhhhhhhi  jhhhhhhi  jhhhhhhhpq        r      r        pqpq        r      r        pqpq        r      r        pq"
+540 DISPLAY AT(10,1):"hhhi  jhhhhi    jhhhhi  jhhh         pq      pq                  pq      pq                  pq      pq"
+550 DISPLAY AT(14,1):"hhi    jhhhhhhhhhhhhi    jhhpq         pq      pq     pqpq         pq      pq     pqpq         pq      pq     pq"
+560 DISPLAY AT(18,1):"hhhhhhhhhhhhhhi  jhhhhhhhhhh       pq         pq    pq         pq         pq    pq         pq         pq    pq"
+570 DISPLAY AT(22,1):"    xzhhhhi  xzhhhhhi xzhhhh@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ssssssssssssssssssss   sss "
+580 CH=100 :: LO=4 :: M,N=121 :: RETURN
+590 DISPLAY AT(6,1):"hhhhhhhhhhhhhhhhhhhhhhhhhhhh   r                    r      r                    r      r                    r"
+600 DISPLAY AT(10,1):"hhhhhhhhhi  jhhi  jhhhhhhhhh  r         r  r         r    r         r  r         r    r         r  r         r"
+610 DISPLAY AT(14,1):"hhhhhi  jhhhhhhhhhhi  jhhhhhr            rr            rr            rr            rr            rr            r"
+620 DISPLAY AT(18,1):"hhhhhhhhhi  jhhi  jhhhhhhhhh  r         r  r         r    r         r  r         r    r         r  r         r"
+630 DISPLAY AT(22,1):"hhhhhhhhhhhhhhhhhhhhhhhhhhhh@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ssssssssssssssssssss   sss "
+640 HU=19 :: TI=0 :: CH=116 :: LO=8 :: M=153 :: N=121 :: RETURN
+650 DISPLAY AT(6,1):"hhhhhhhhhhhhhhhhhhhhhhhhhhhhpq     pq    pq    pq     pqpq     pq    pq    pq     pqpq     pq    pq    pq     pq"
+660 DISPLAY AT(10,1):"pq     pq    pq    pq     pqpq     pq    pq    pq     pqpq     pq    pq    pq     pqpq     pq    pq    pq     pq"
+670 DISPLAY AT(14,1):"pq     pq    pq    pq     pqpq     pq    pq    pq     pqpq     pq    pq    pq     pqpq     pq    pq    pq     pq"
+680 DISPLAY AT(18,1):"pq     pq    pq    pq     pqpq     pq    pq    pq     pqpq     pq    pq    pq     pqpq     pq    pq    pq     pq"
+690 DISPLAY AT(22,1):"hhhhhhhhhhhhhhhhhhhhhhhhhhhh@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ssssssssssssssssssss   sss"
+700 LO=9 :: M,N=153 :: RESTORE 860 :: CH=92 :: RETURN
+710 CALL PATTERN(#1,140) :: CALL COINC(#1,#4,16,O) :: IF O=0 THEN CALL PATTERN(#1,136) :: GOTO 390 ELSE CALL POSITION(#4,F,FF)
+720 IF FF<N THEN 730 ELSE CALL MOTION(#4,0,127) :: GOTO 740
+730 CALL MOTION(#4,0,-127)
+740 CALL SOUND(-90,-7,0) :: SC=SC+200 :: DISPLAY AT(1,6)SIZE(7):SC :: CALL PATTERN(#4,128,#1,136) :: CALL MOTION(#4,0,0) :: GOTO 390
+750 CALL COINC(#1,#2,16,O) :: IF O=-1 THEN 840 ELSE CALL COINC(#1,#4,16,O) :: IF O=-1 THEN 760 ELSE 320
+760 FOR Y=M TO 161 STEP 4 :: CALL LOCATE(#1,Y,N) :: CALL SOUND(-90,3000-(Y*10),0) :: NEXT Y :: CALL DELSPRITE(#2) :: ME=ME-1 :: M=DO :: N=AC
+770 FOR Y=1 TO 6 :: CALL PATTERN(#1,124) :: CALL SOUND(100,-6,0) :: CALL PATTERN(#1,136) :: CALL SOUND(100,-7,0) :: NEXT Y
+780 DISPLAY AT(1,18)SIZE(2):ME :: IF ME=0 THEN 1020 ELSE 300
+790 FOR Y=1 TO 21 STEP 4 :: CALL SOUND(-90,900,Y) :: NEXT Y :: CALL DELSPRITE(#2) :: NU=NU+1 :: CALL HCHAR(24,26+NU,95+WA)
+800 IF NU=3 THEN 830 ELSE CALL SPRITE(#2,CH,LO,17,(RND*213)+17,MO,0) :: ON WA GOTO 320,320,810,900
+810 TI=TI+1 :: IF TI=4 THEN 820 ELSE 320
+820 DISPLAY AT(HU,1):"   pq        pq        pq      pq        pq        pq      pq        pq        pq" :: HU=HU-4 :: TI=0 :: GOTO 320
+830 CALL SOUND(400,900,0) :: NU=0 :: CALL HCHAR(24,27,115,3) :: GOTO 760
+840 CALL SOUND(-90,1000,0) :: CALL POSITION(#2,F,FF) :: CALL DELSPRITE(#2) :: SC=SC+300-F :: DISPLAY AT(1,6)SIZE(7):SC :: CO=CO+1
+850 CALL HCHAR(24,3+CO,95+WA) :: IF CO=20 THEN 910 ELSE 800
+860 DATA 10,1,4,hhhi,14,13,11,jhhhhhhhhhi,18,1,10,hhhhhhhhhi,14,7,4,jhhi,18,13,4,jhhi
+870 DATA 14,26,3,jhh,10,19,4,jhhi,18,19,10,jhhhhhhhhh,14,1,3,hhi,10,7,4,jhhi,10,25,4,jhhh
+880 DATA 18,10,4,hhhh,10,13,7,jhhhhhh,14,3,5,hhhhh,14,23,4,hhhh,10,4,4,hhhh
+890 DATA 14,10,4,hhhh,18,16,4,hhhh,10,10,16,hhhhhhhhhhhhhhhh
+900 READ X,XX,XXX,X$ :: DISPLAY AT(X,XX)SIZE(XXX):X$ :: GOTO 320
+910 FOR Y=1 TO 9 :: CALL COLOR(9,2,LO) :: CALL SOUND(-190,110+(RND*100),0) :: CALL COLOR(9,LO,2) :: CALL SOUND(-190,110+(RND*100),0) :: NEXT Y
+920 Y=3000 :: CALL MOTION(#4,0,0) :: CALL LOCATE(#4,M,N-16) :: CALL PATTERN(#1,140,#4,60) :: CALL SOUND(-90,-7,0) :: CALL MOTION(#4,16,0)
+930 CALL COINC(#4,161,N,16,O) :: CALL SOUND(-90,Y,0) :: Y=Y-50 :: IF O=0 THEN 930 ELSE CALL MOTION(#4,0,0)
+940 FOR Y=1 TO 6 :: CALL PATTERN(#4,60) :: CALL SOUND(150,-6,0) :: CALL PATTERN(#4,128) :: CALL SOUND(150,-7,0) :: NEXT Y
+950 CO,NU=0 :: LE=LE+1 :: WA=WA+1 :: FOR Y=1 TO 300 :: NEXT Y :: CALL DELSPRITE(ALL) :: CALL CLEAR
+960 IF WA<5 THEN 290 ELSE WA=1 :: MO=MO+1 :: ME=ME+1 :: GOTO 290
+970 CALL HCHAR(A,B,32,2) :: CALL SPRITE(#5,120,5,M+16,N)
+980 M=M-8 :: CALL LOCATE(#5,M+16,N,#1,M,N) :: CALL COLOR(#5,9) :: CALL KEY(1,K,S) :: IF K=18 THEN 1000 ELSE CALL COLOR(#5,5)
+990 IF M=25 THEN 1000 ELSE 980
+1000 CALL DELSPRITE(#5) :: DISPLAY AT(A,B-2)SIZE(2):"xz" :: A=M/8+3 :: B=N/8+1 :: CALL COINC(#1,#2,16,O) :: IF O=-1 THEN 1150
+1010 CALL GCHAR(A,B,O) :: CALL GCHAR(A,B+1,P) :: CALL LOCATE(#1,M,N) :: IF O+P>64 THEN 390 ELSE M=M+8 :: A=A+1 :: IF M=153 THEN 390 ELSE 1010
+1020 CALL DELSPRITE(ALL) :: CALL CLEAR :: DISPLAY AT(12,4):"ANOTHER GAME  Y OR N" :: IF SC<HI THEN 1030 ELSE HI=SC
+1030 DISPLAY AT(18,6):"YOUR SCORE";SC:;:TAB(6);"HIGH SCORE";HI
+1040 CALL KEY(0,K,S) :: IF K=121 THEN 280 :: IF K=110 THEN 1050 ELSE 1040
+1050 CALL CLEAR :: FOR Y=1 TO 24 :: DISPLAY AT(Y,1):"GOODBYE    PLEASE PLAY AGAIN" :: NEXT Y :: FOR Y=2000 TO 1000 STEP-50
+1060 CALL SOUND(-80,Y,9) :: NEXT Y :: CALL CLEAR :: RUN "DSK1.MENU"
+1070 CALL COLOR(4,1,8) :: CALL HCHAR(1,1,58,576)
+1080 DISPLAY AT(2,1):"@@@@@::@@::@@::::@@:::@@::@@@@:@@::@@::@@::::@@:::@@::@@@@:@@::@@::@@::::@@:::@@::@@@@@@:::@@::@@::::@@:::@@@@@@"
+1090 DISPLAY AT(6,1):"@@:@@::@@::@@::::@@:::::@@::@@:@@::@@::@@::::@@:::::@@::@@@@@::@@::@@@@::@@@@:::@@::"
+1100 DISPLAY AT(11,1):"@@@@@::@@@@@::@@::::@@::::::@@:@@::@@:@@::@@::::@@::::::@@:@@::@@:@@::@@::::@@:PLAYS@@@@:::@@@@@::@@::::@@::::::"
+1110 DISPLAY AT(15,1):"@@:@@::@@:@@::@@::::@@:CATCH@@:@@::@@:@@::@@::::@@::::::@@@@@::@@:@@::@@@@::@@@@::::"
+1120 DISPLAY AT(20,1):"BY R TRUEMAN   ALFA LOCK OFF": :"ENTER JOYSTICK   1 OR 2" :: ACCEPT AT(22,28)VALIDATE(DIGIT)BEEP SIZE(1):JO
+1130 IF JO<1 OR JO>2 THEN 1120 ELSE DISPLAY AT(20,1):"CATCH SLOWLY FALLING OBJECTS":;:"""FIRE"" TO PUNCH THE LOONIES":;:" PRESS FIRE BUTTON TO START"
+1140 CALL KEY(JO,K,S) :: IF K<>18 THEN CALL COLOR(4,1,14,4,1,8) :: GOTO 1140 ELSE CALL CLEAR :: RETURN
+1150 CO=CO+1 :: CALL SOUND(-90,1000,0) :: CALL POSITION(#2,Z,ZZ) :: CALL DELSPRITE(#2) :: CALL SPRITE(#2,CH,LO,17,(RND*213)+17,MO,0)
+1160 SC=SC+300-Z :: DISPLAY AT(1,6)SIZE(7):SC :: CALL HCHAR(24,3+CO,95+WA) :: IF CO=20 THEN 910 ELSE 1010

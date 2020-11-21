@@ -1,0 +1,119 @@
+100 HI=0 :: RANDOMIZE :: CALL SCREEN(2) :: CALL CLEAR :: CALL MAGNIFY(3) :: V$="00000000000000FF" :: U$="000000000000FF"
+110 CALL COLOR(13,7,2,1,2,16,11,6,16,9,8,16,10,6,2,5,6,16,6,6,16,7,6,16,8,6,16,3,13,16,4,13,16)
+120 CALL CHAR(104,V$,132,"000001070F1F1F3F3F1F1F0F07010000000080E0F0F8F8FCFCF8F8F0E08",33,"FFFFFFFFFFFFFFFF")
+130 CALL CHAR(136,"A0E0C1C7CFFFF97B3F1B1C0F07010000050783E3F3FF9FDEFCD838F0E08")
+140 CALL CHAR(120,"01FFFDC6D6C6FABCC1BCFAC6D6C6FDFF00FE7EC6D6C6BE7A067ABEC6D6C67EFE")
+150 CALL CHAR(128,"01FF80808080808080808080808080FF00FE02020202020202020202020202FE")
+160 CALL CHAR(108,"0001012111080400F00004081121010100000008102040001E0040201008")
+170 CALL CHAR(112,"00000001070F1F1F3F3F3F7F7F7F7FFF00000080E0F0F8F8FCFCFCFEFEFEFEFF")
+180 CALL CHAR(116,"0F1020409592959087948585442740FFF008242221012101C115C95541C20CF")
+190 CALL CHAR(100,"000000010201081463140801020100000080804020408894E39488402040808")
+200 CALL CHAR(40,"0F1F3F7FFFFFFFFFFFFFFFFF7F3F7FFFF0F8FCFEFFFFFFFFFFFFFFFFFFFEFCF")
+210 CALL CHAR(124,"0000030F1F2343030307070707070703000038F8F83800000080808080808",97,"00")
+220 CALL CHAR(60,"00000000000000001F3F3F1F00000000000000001008040686FFFF86060F0F0F",96,"FFBBBB111111")
+230 M=98 :: CALL HCHAR(1,1,33,484) :: CALL HCHAR(16,1,96,32)
+240 DISPLAY AT(1,1):"hhhhh!!!hh!!hh!!!!hh!!hh!!hhaa!aa!!!aa!!aa!!!!aa!!aa!!aaaa!pr!!!aa!!aa!!!!aa!!pr!!praahqsh!!aa!!aa!!!!aa!!qshhqs"
+250 DISPLAY AT(5,1):"aa!!aa!!aa!!aa!!!!aa!!!!aa!!pr!!pr!!pr!!pr!!!!pr!!!!pr!!qshhqs!!qs!!qshh!!qshh!!qs!!"
+260 DISPLAY AT(8,1):"hhhhh!!!hhhhh!!hh!!!!hh!!!!!aa!aa!!!aa!aa!!aa!!!!aa!!!!!aa!pr!!!aa!aa!!aa!!!!aa!!!!!aahqsh!!aahaa!!aa!!!!aa!!!!!"
+270 DISPLAY AT(12,1):"aa!!aa!!aa!aa!!aa!!!!aa!!!!!pr!!pr!!pr!pr!!pr!!!!pr!!!!!qshhqs!!qs!qs!!qshh!!qshh!!!"
+280 DISPLAY AT(17,1):"AT THE HATCHERY BY R TRUEMAN": :"ALFA LOCK OFF   JOYSTICK ONE": :"WALL 1  THE GRYNS           WALL 3  THE BLYPS   THE"
+290 DISPLAY AT(23,1):"WALL 5  THE FLYPS BADDIES   WALL 7  THE IYYES" :: CALL SPRITE(#1,136,11,M,205) :: FOR Y=1 TO 20
+300 CALL LOCATE(#1,M-8,205) :: FOR T=1 TO 30 :: NEXT T :: CALL LOCATE(#1,M,205) :: NEXT Y :: FOR Y=1 TO 250 :: NEXT Y
+310 CALL CLEAR :: CALL DELSPRITE(#1) :: CALL COLOR(2,16,16,12,7,2) :: ME=3 :: WA,LE=1 :: CO,SC=0 :: TI=51 :: M=147 :: N=153
+320 CALL VCHAR(1,31,33,96) :: CALL HCHAR(24,2,96) :: CALL CHAR(140,"00000834330101071F737B6F301F000000002058980000C0F09CBCEC18F")
+330 DISPLAY AT(1,1):"!!!!!!!!!!!!````!!!!!!!!!!!!!hhhhhhhhh!!aaaa!!!!!!!!!!!!!aa!!!!!!!!!aaaa!!hhhhhhh!!!!pr!!!!!!!!!!!!!!!!!xz!aa!!!"
+340 DISPLAY AT(5,1):"!qshhhhhhhhhhhhhhh!!y{!aa!!!!!!xz!xz!aa!!!xzxz!!!!!pr!!!!!!y{!y{!aa!!!y{y{!hhhhqshhh!!!!!!!!!aa!!!!!!!!aa!!!!!xz"
+350 DISPLAY AT(9,1):"!!!!!!!!!pr!!!!!!!!pr!!!!!y{!!!hhhhhhqshhhhh!!!qshhhh!!!!!!aa!xz!!!xz!aa!!!aa!!xz!!!!!!aa!y{!!!y{!aa!!!aa!!y{!!!"
+360 DISPLAY AT(13,1):"!!!aa!!!!!!!!!aa!!!pr!!!!!!!!!!pr!!!!!!!!!pr!!!qshhhhhhh!hhqs!!hhhhhhhqs!!!aa!xz!xz!!xz!!!!aa!xzxz!!!!!aa!y{!y{!"
+370 DISPLAY AT(17,1):"!y{!!!!aa!y{y{!!!!!aa!!!!!!!!!!!!!!aa!!!!!!!!!!aa!!!!!!!!hhhhh!aa!!!!!!!!!!pr!!!!!!!!xz!aa!aa!!hhhhhhhhqshhhhhhh"
+380 DISPLAY AT(21,1):"!y{!aa!aa!!aa!!`````````````!!!!pr!pr!!pr!!aMENaaaaaaaaahhhhqshqshhqshhaLEVELaaaaaaa```````````````aSCOREaaaaaaa"
+390 M=147 :: N=153 :: DO=73 :: AC=217 :: RESTORE 600 :: CALL CHAR(36,"00000F31310101071F737B7F3C1F00000000E018180000C0E09CBCFC78F")
+400 FOR Y=1 TO(RND*9)+1 :: READ A,B :: NEXT Y :: GOSUB 610
+410 CALL SPRITE(#1,132,11,M,N,#6,124,14,1,DO,#7,124,10,145,AC) :: DISPLAY AT(2,14)SIZE(2):STR$(TI) :: DISPLAY AT(22,22):ME
+420 DISPLAY AT(23,22):LE :: DISPLAY AT(24,22):SC :: CALL JOYST(1,X,Y) :: IF X+Y=0 THEN 420
+430 IF Z=(M+15)AND ZZ=N THEN 850 ELSE CALL JOYST(1,X,Y) :: ON SGN(X)+2 GOTO 470,440,450
+440 IF Y<0 THEN 510 :: IF Y>0 THEN 480 ELSE TI=TI+.2 :: GOTO 550
+450 N=N+8 :: A=M/8+2 :: B=N/8+2
+460 CALL LOCATE(#1,M,N) :: CALL GCHAR(A,B,O) :: IF O=33 THEN 560 :: IF O=97 THEN 470 ELSE 550
+470 N=N-8 :: A=M/8+2 :: B=N/8+1 :: GOTO 460
+480 A=M/8+1 :: B=N/8+1 :: CALL GCHAR(A,B,O) :: IF O<>112 THEN 550 ELSE CALL DELSPRITE(#1) :: Y=600
+490 A=A-1 :: M=M-8 :: CALL GCHAR(A,B,O) :: CALL SOUND(-190,Y,10) :: Y=Y+50 :: TI=TI-.2 :: DISPLAY AT(2,14)SIZE(2):STR$(TI)
+500 IF(O=113)+(O=97)+(O=104)THEN 490 ELSE CALL SPRITE(#1,132,11,M,N) :: GOTO 550
+510 A=M/8+3 :: B=N/8+1 :: CALL GCHAR(A,B,O) :: IF O=97 THEN 520 ELSE 550
+520 CALL GCHAR(A,B+1,O) :: IF O<>97 THEN 550 ELSE M=M+8 :: Y=600 :: CALL DELSPRITE(#1)
+530 A=A+1 :: M=M+8 :: CALL GCHAR(A,B,O) :: CALL SOUND(-190,Y,10) :: Y=Y+50 :: TI=TI-.2 :: DISPLAY AT(2,14)SIZE(2):STR$(TI)
+540 IF O<>113 THEN 530 ELSE CALL SPRITE(#1,132,11,M,N) :: GOTO 550
+550 TI=TI-.5 :: IF TI<1 THEN 700 ELSE DISPLAY AT(2,14)SIZE(2):STR$(TI) :: CALL PEEK(-31877,O) :: IF O AND 32 THEN 780 ELSE 430
+560 CALL MOTION(#1,16,0) :: ME=ME-1 :: M=147 :: N=153
+570 CALL POSITION(#1,A,B) :: A=A/8+2 :: B=B/8+1 :: CALL GCHAR(A,B,O) :: IF O=96 THEN 580 ELSE 570
+580 CALL MOTION(#1,0,0) :: CALL POSITION(#1,A,B) :: CALL SPRITE(#3,40,16,A-10,B+12,#2,116,13,A-10,B+12) :: FOR Y=1 TO 20 :: A=(RND*7)-8
+590 CALL SOUND(-90,A,0) :: NEXT Y :: CALL DELSPRITE(ALL) :: TI=51-LE :: GOSUB 610 :: DISPLAY AT(22,23):STR$(ME) :: IF ME=0 THEN 760 ELSE 410
+600 DATA 4,23,20,4,15,25,11,9,6,19,16,15,6,9,8,29,15,28,6,6,16,4,6,17,11,26,16,13,11,14,0,0
+610 READ E,F :: IF E=0 THEN 690 :: IF CO=13+(WA*2)THEN 860 ELSE CALL HCHAR(E,F,128) :: CALL HCHAR(E+1,F,129) :: CALL HCHAR(E,F+1,130)
+620 CALL HCHAR(E+1,F+1,131) :: Z=E*8-6 :: ZZ=F*8-7 :: CALL SPRITE(#5,140,4,Z,ZZ) :: CO=CO+1 :: RETURN
+630 DATA 4,8,13,23,21,8,8,14,4,10,21,13,9,23,4,12,17,7,21,6,12,15,6,17,16,13,6,28,17,22,8,11,17,24
+640 DATA 12,17,17,26,0,0
+650 DATA 4,6,16,11,16,27,12,7,4,20,12,12,12,27,4,3,8,29,20,15,16,29,8,6
+660 DATA 8,15,17,21,8,24,12,10,13,22,4,8,16,9,8,13,8,22,20,13,8,8,0,0
+670 DATA 4,7,4,20,16,9,13,16,7,11,6,27,20,8,15,28,4,9,11,29,16,5,13,11,7,18,17,16
+680 DATA 10,7,13,20,16,7,11,27,20,6,4,5,15,24,7,16,8,21,10,5,11,25,4,3,16,3,0,0
+690 RESTORE 600 :: IF WA<3 THEN 610 :: RESTORE 630 :: IF WA<5 THEN 610 :: RESTORE 650 :: IF WA<7 THEN 610 :: RESTORE 670 :: GOTO 610
+700 CALL HCHAR(2,16,48) :: CALL HCHAR(E,F,33,2) :: CALL HCHAR(E+1,F,33,2) :: IF M<Z THEN 710 :: IF M>Z THEN 720 ELSE 730
+710 FOR Y=Z TO M STEP-4 :: CALL LOCATE(#5,Y,ZZ) :: CALL PATTERN(#5,140) :: CALL LOCATE(#5,Y-2,ZZ) :: CALL PATTERN(#5,36) :: NEXT Y :: GOTO 730
+720 FOR Y=Z TO M STEP 4 :: CALL LOCATE(#5,Y,ZZ) :: CALL PATTERN(#5,140) :: CALL LOCATE(#5,Y+2,ZZ) :: CALL PATTERN(#5,36) :: NEXT Y
+730 IF ZZ<N THEN 750 :: IF ZZ>N THEN 740 ELSE 560
+740 FOR Y=ZZ TO N STEP-4 :: CALL LOCATE(#5,M,Y) :: CALL PATTERN(#5,140) :: CALL LOCATE(#5,M,Y-2) :: CALL PATTERN(#5,36) :: NEXT Y :: GOTO 560
+750 FOR Y=ZZ TO N STEP 4 :: CALL LOCATE(#5,M,Y) :: CALL PATTERN(#5,140) :: CALL LOCATE(#5,M,Y+2) :: CALL PATTERN(#5,36) :: NEXT Y :: GOTO 560
+760 CALL CLEAR :: CALL DELSPRITE(ALL) :: HI=MAX(HI,SC) :: DISPLAY AT(7,9):"GAME  OVER":;:;:;:"     YOUR SCORE";SC;:;:;:"     HIGH SCORE";HI :: DISPLAY AT(20,4)BEEP:"ANOTHER GAME  Y OR N"
+770 CALL KEY(0,K,S) :: IF K=121 THEN 310 :: IF K<>110 THEN 770 ELSE CALL CLEAR :: RUN "DSK1.MENU"
+780 IF M=3 THEN CALL PATTERN(#6,60) :: GOTO 790 :: ELSE CALL PATTERN(#7,60)
+790 FOR Y=1 TO 4 :: CALL SOUND(-80,-5,0) :: CALL CHAR(104,U$) :: CALL SOUND(-80,-6,0) :: CALL CHAR(104,V$) :: NEXT Y
+800 IF M=3 THEN CALL DELSPRITE(#6) :: GOTO 810 :: ELSE CALL DELSPRITE(#7)
+810 CALL SPRITE(#4,128,7,Z,ZZ) :: CALL HCHAR(E,F,33,2) :: CALL HCHAR(E+1,F,33,2) :: CALL LOCATE(#5,Z+1,ZZ) :: CALL MOTION(#4,16,0,#5,16,0)
+820 CALL POSITION(#4,A,B) :: A=A/8+2 :: B=B/8+1 :: CALL GCHAR(A,B,O) :: IF O<>96 THEN 820 :: CALL MOTION(#4,-16,16,#5,-16,-16)
+830 CALL PATTERN(#1,136) :: CALL SOUND(100,-6,0) :: SC=SC+INT(TI)+(LE*10) :: DISPLAY AT(24,23):STR$(SC)
+840 CALL PATTERN(#1,132,#4,108,#5,108) :: TI=51-LE :: DISPLAY AT(2,14)SIZE(2):STR$(TI) :: CALL DELSPRITE(#4,#5) :: GOSUB 610 :: GOTO 430
+850 FOR Y=1 TO 5 :: CALL LOCATE(#1,M-8,N) :: CALL LOCATE(#1,M,N) :: NEXT Y :: GOTO 810
+860 WA=WA+1 :: TI=51-LE :: CALL PATTERN(#1,136) :: CALL SOUND(50,700,0) :: CALL SOUND(150,1100,0) :: IF M<4 THEN 880 ELSE 870
+870 FOR Y=1 TO 10 :: CALL LOCATE(#1,M-7,N) :: FOR T=1 TO 40 :: NEXT T :: CALL LOCATE(#1,M,N) :: NEXT Y
+880 CALL CLEAR :: IF WA=9 THEN 890 ELSE CO=0 :: CALL DELSPRITE(ALL) :: CALL COLOR(9,8,16) :: ON WA GOTO 320,1060,900,1060,980,1060,1210,1060
+890 WA=1 :: ME=ME+1 :: GOTO 880
+900 CALL VCHAR(1,31,33,96) :: CALL HCHAR(24,1,96,2) :: CALL CHAR(140,"0000000F1F357F1010107F2A1F0F0000000000E0F058FC101010FCA8F0E")
+910 DISPLAY AT(1,1):"!!!!!!!!!!!!````!!!!!!!!!!!!!!!!!!!!!!!!aaaa!!hhhhhh!!!!!hhhhhhhhhh!aaaa!!!!!!aa!!!!!aa!!xzxzxz!!!!!!!!!!!pr!!!!"
+920 DISPLAY AT(5,1):"!aa!!y{y{y{!!hhhhh!!!!qshhh!!aa!!!!!!!!!!!xzaa!!!!aa!xz!!aa!!hhhhhhhh!y{pr!!!!pr!y{!!aa!!aa!xz!xz!!!qshhhhqs!!!!"
+930 DISPLAY AT(9,1):"!aa!!aa!y{!y{!!!aa!!xz!!!!!!!aa!!aa!!!!!!!!!pr!!y{!!!!!!!aa!!aa!!hhhhhhhqs!!!!!!!!!!!aa!!aa!!aa!xzxzaa!!hhhhhhh!"
+940 DISPLAY AT(13,1):"!aa!!aa!!aa!y{y{aa!!xz!!!aa!!aa!!aa!!pr!!!!!aa!!y{!!!aa!!pr!!pr!!qshhh!!pr!!!!!!!pr!!qshhqs!!!xzaa!!qshhhhhhhqs!"
+950 DISPLAY AT(17,1):"!aa!xz!!!!y{aa!!aa!xzxzxz!!!!aa!y{!!!!!!aa!!aa!y{y{y{!!!!pr!!!!!!!!!pr!!pr!!!!!!!!!!!qshhhhhhhhhqs!hqshhhhhhhhhh"
+960 DISPLAY AT(21,1):"!!!xzxz!!!xz!!!`````````````!!!y{y{!!!y{!!!aaaMENaaaaaaahhhhhhhhhhhhhhhaLEVELaaaaaaa```````````````aSCOREaaaaaaa"
+970 RESTORE 630 :: M=147 :: N=153 :: DO=168 :: AC=225 :: CALL CHAR(36,"00000000070F1A3F103F150F0700000000000000F0F8ACFE04FE54F8F") :: GOTO 400
+980 CALL VCHAR(1,31,33,96) :: CALL HCHAR(24,2,96) :: CALL CHAR(140,"00001030080403021B24424224180000003048848448B080804020181")
+990 DISPLAY AT(1,1):"!!!!!!!!!!!!````!!!!!!!!!!!!!!!!!!!!!!!!aaaa!!!!!!!hhhh!hhhhhhhhhhh!aaaa!hhhh!!aa!!!xz!xzxz!!aa!!!!!!xzaa!!aa!!!"
+1000 DISPLAY AT(5,1):"y{!y{y{!!aa!!!!!!y{aa!!aa!!!!!!!!!!!!pr!!!!!!!!pr!!pr!!!hhhhhhh!!qshhhhhhhhqshhqshhhaa!xzxz!!!xzxz!!aa!xzxz!!!xz"
+1010 DISPLAY AT(9,1):"aa!y{y{!!!y{y{!!aa!y{y{!!!y{pr!!!!!!!!!!!!!!aa!!!!!!!!!!qshhhhhhhhh!!!!!pr!!!!!!hhhhaa!!xz!xzxz!!hhhqshhhhh!xzaa"
+1020 DISPLAY AT(13,1):"aa!!y{!y{y{!!aa!aa!xzaa!y{aaaa!!!!!!!!!!!aa!aa!y{pr!!!praa!hhhhhhhhh!aa!pr!!!qshhhqsaa!aa!xzxzaa!aa!qshh!aa!xzxz"
+1030 DISPLAY AT(17,1):"aa!aa!y{y{aa!aa!!!xz!aa!y{y{aa!aa!!!!!pr!pr!!!y{!aa!!!!!aa!aa!!!!!qshqs!!!!!!pr!!!!!aa!aa!hhh!xzxz!hhhhhhqshhhhh"
+1040 DISPLAY AT(21,1):"aa!aa!aa!!y{y{!`````````````pr!pr!pr!!!!!!!aaaMENaaaaaaaqshqshqshhhhhhhaLEVELaaaaaaa```````````````aSCOREaaaaaaa"
+1050 CALL CHAR(36,"0018244242241B0203040830100000000000101820408080B0488484483") :: M=147 :: N=153 :: RESTORE 650 :: DO=217 :: AC=73 :: GOTO 400
+1060 D$="dfdfdfdfdfdfdfdfdfdf        egegegegegegegegegeg" :: E$="df                df        eg                eg       "
+1070 CALL COLOR(9,2,16) :: DISPLAY AT(2,1):D$;E$;E$;E$;D$:"dfdf":"egeg":D$;E$;E$;E$;D$ :: M=73 :: N=161 :: TI=2
+1080 DISPLAY AT(5,5):"BONUS"; :: DISPLAY AT(7,5):"ROUND"; :: CALL SPRITE(#1,132,11,M,N) :: CALL SOUND(100,900,9) :: DISPLAY AT(3,22):"COLLECT" :: DISPLAY AT(5,22):"ALL THE"
+1090 DISPLAY AT(7,22):"SNOW-" :: DISPLAY AT(9,22):"FLAKES" :: DISPLAY AT(13,22):"KEEP" :: DISPLAY AT(15,22):"MOVING"
+1100 CALL JOYST(1,X,Y) :: IF X+Y=0 THEN 1080 ELSE LE=LE+1
+1110 CALL JOYST(1,X,Y) :: ON SGN(X)+2 GOTO 1140,1120,1130
+1120 ON SGN(Y)+2 GOTO 1180,1200,1190
+1130 N=N+16 :: GOTO 1150
+1140 IF N-16<0 THEN 1200 ELSE N=N-16 :: GOTO 1150
+1150 CALL LOCATE(#1,M,N) :: A=M/8+1 :: B=N/8+1 :: CALL GCHAR(A,B,O) :: IF O=32 THEN 1200 ELSE BO=BO+(LE*5)
+1160 CALL HCHAR(A,B,32,2) :: CALL HCHAR(A+1,B,32,2) :: TI=TI+1 :: IF TI>15 THEN 1170 ELSE CALL COLOR(9,TI,16) :: GOTO 1110
+1170 CALL COLOR(9,2,16) :: TI=2 :: GOTO 1110
+1180 M=M+16 :: GOTO 1150
+1190 IF M-16<0 THEN 1200 ELSE M=M-16 :: GOTO 1150
+1200 DISPLAY AT(7,11)SIZE(6):STR$(BO) :: SC=SC+BO :: BO=0 :: GOTO 860
+1210 CALL CHAR(140,"00003C7E73616961733F1B0C07030000000078FC9C0C4C0C9CF8B060C08") :: CALL VCHAR(1,31,33,96) :: CALL HCHAR(24,2,96)
+1220 DISPLAY AT(1,1):"!!!!!!!!!!!!````!!!!!!!!!!!!!!!!!!!!!!!!aaaa!!!!!!!hhhhhhhhhhhhhhh!!aaaa!hhhhh!aa!!!xzxzxzxzaa!!!!!!!xz!aa!pr!!!"
+1230 DISPLAY AT(5,1):"y{y{y{y{pr!!!!!!!y{!aa!qshhh!!!!!!!!qshhhhhhh!!!pr!!xzaa!!!!!!!!xzaa!xzxz!hhqs!!y{aa!!!!!!!!y{aa!y{y{!xzaa!!!!aa"
+1240 DISPLAY AT(9,1):"hhhhhhhh!!aa!!!!!!y{pr!!!!praaxzxzaa!!aa!!!!!!!!qshhhhqsaay{y{pr!!pr!!!!!!!!aaxzxzxzaa!!!!qshhqs!hhhhhh!aay{y{y{"
+1250 DISPLAY AT(13,1):"aa!!!!aaxzaa!xzaaxz!pr!!!!!!pr!!!!pry{aa!y{aay{!qshhhhhhqshhhhqs!!aa!!!pr!!!!xzaaxz!xzxzxzxz!!aa!hhqshh!!y{aay{!"
+1260 DISPLAY AT(17,1):"y{y{y{y{!!aa!xz!!aa!!!!aa!!!!!!!!!!!!!aa!y{!!aa!!!!aa!!!hhhhhhhhh!aa!!!!!pr!!!!pr!!!aa!xzxzaa!aa!hhhhqshhhhqshhh"
+1270 DISPLAY AT(21,1):"aa!y{y{pr!pr!aa`````````````pr!!!!!qshqs!praaaMENaaaaaaaqshhhhhhhhhhhqsaLEVELaaaaaaa```````````````aSCOREaaaaaaa"
+1280 M=147 :: N=153 :: RESTORE 670 :: DO,AC=225 :: CALL CHAR(36,"00003C7E7F7F617F7F3F1B0C07030000000078FCFCFC0CFCFCF8B060C08") :: GOTO 400

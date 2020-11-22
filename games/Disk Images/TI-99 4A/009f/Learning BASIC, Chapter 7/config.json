@@ -1,0 +1,27 @@
+{
+    "name": "Learning BASIC, Chapter 7",
+    "shortName": "learnbas7",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"Unknown"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 009f.dsk",
+	"publisher": "Various",
+	"date": "",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "learnbas7.ti99"
+    }
+}

@@ -1,0 +1,326 @@
+3 RANDOMIZE
+4 CALL SCREEN(2)
+5 CALL CLEAR :: CALL CHARSET
+10 A$="FFF00FF00FF00FF"
+12 Y=39
+15 T=16
+17 B$=SEG$(A$,1,T)
+18 CALL CHAR(Y,B$)
+20 Y=Y-1
+22 T=T-2
+24 IF Y>32 THEN 17
+45 DATA 128,18187E5A5A242424,129,0018187E5A5A2424,130,000018187E5A5A24,131,00000018187E5A5A
+46 DATA 132,0000000018187E5A,133,000000000018187E,134,0000000000001818,135,0000000000000018
+50 DATA 91,1818101E18141414,92,1818087818282828,104,187E7EFFFF7E7E18
+55 DATA 105,000038FEFE7C381,108,0010387CFE7C381,106,3C7EFFFFFFFF7E3C,107,0000003C7EFF7E3C
+60 DATA 40,F7F7F7007F7F7F,113,1818181818181818,114,FFFF181818181818,94,FFFF00FF00FFFF
+65 DATA 115,FFFF18181818FFFF,116,181818181818FFFF,96,000010281010386C
+66 DATA 121,FF80A2968E9EBE8,122,FF81FF8181FF81FF,123,FFA5A5A5A5A5A5FF,124,FF01456971797D01
+67 DATA 125,017D7971694501FF,126,80BE9E8E96A280FF,127,245A815A5A815A24
+70 FOR Y=1 TO 29
+75 READ A,A$
+80 CALL CHAR(A,A$)
+81 NEXT Y
+82 PRINT TAB(7);"`` FLOORAWAY ``":TAB(5);"(!(#($(%(&(%($(#(!(": : :TAB(8);"BY  R TRUEMAN":TAB(8);"!#$%&'''&%$#!": :
+83 PRINT " S JUMP LEFT   F JUMP RIGHT": :" X WALK LEFT   C WALK RIGHT": :" SPACE BAR JUMP STRAIGHT UP": : :
+84 PRINT "    PRESS A KEY TO START": : : :
+85 CALL VCHAR(1,30,40,144)
+86 CALL HCHAR(22,1,40,192)
+200 DATA 2,7,11,1,4,1,11,9,1,12,14,1,9,5,1,10,16,1,3,6,1,4,6,1
+201 DATA 5,14,1,6,14,1,7,14,1,8,8,1,0,0,0
+209 Y=200
+210 READ A,B,C
+212 IF A=0 THEN 230
+215 CALL COLOR(A,B,C)
+218 CALL SOUND(-190,Y,6)
+219 Y=Y+60
+220 GOTO 210
+230 CALL KEY(0,K,S)
+231 IF S=0 THEN 230
+264 CALL CLEAR
+265 PRINT TAB(10);"WOULD YOU": :TAB(9);"LIKE TO SEE": :TAB(5);"THE DIFFERENT WALLS": :TAB(12);"Y OR N": : : : : : : :
+266 CALL KEY(0,K,S)
+267 IF S=0 THEN 266
+268 ON POS("YNyn",CHR$(K),1)+1 GOTO 266,19000,280,19000,280
+280 SC=0
+281 CO=0
+282 IN=0
+283 ME=3
+284 LE=1
+285 DO=5
+286 AC=5
+287 WA=1
+288 AM=.1
+289 AI=32
+299 CALL CLEAR
+300 PRINT "LEVEL";LE;TAB(10);"MEN";ME;TAB(16);"SCORE";SC
+301 ON WA GOTO 1000,1100,1200,1300,1400
+1000 PRINT "(((((((((((((((((((((((((((((             h            ((             '''          ("
+1005 PRINT "((((((!!                   ((                ''   ''   ((       !                ((("
+1010 PRINT "('''(                     i((    (  '''      '(((  %(((((   j(            (     (k ("
+1015 PRINT "(#(((((((((((( '''(l ' %(''(( (  (      h     (((   (( (( ( i(    '(#              ("
+1020 PRINT "(%('!                    '((( (     '''        ''      (( (  (                     ("
+1025 PRINT "($(' ('''##'('   ''   ((((((( (  (      (         (    (( (  (  '   (         ( y{|("
+1030 PRINT "(!('((      ('   ''   ( z z((   ((     j(           ~{}((((((((((((((((((((((((((((("
+1031 CALL HCHAR(21,28,127)
+1033 DO=5
+1035 AC=5
+1040 GOTO 2000
+1100 PRINT "(((((((((((((((((((((((((((((     h                    ((#(((((''         (((      ("
+1102 PRINT "(               `  i   ((  ((         &'  ((((((#######((((              j ('&%$#!!("
+1104 PRINT "(       %  '' '  !#((((''''((           (      ($%#$&((((  !        (      (((''(&&("
+1108 PRINT "(  '    '     &   &(&%'''k'((           (      (!#$%&''(( '   (    l(    `     `   ("
+1112 PRINT "(   h ( ''(!( !''((((((((((((''#( (     (              ((     (     (       !((((! ("
+1116 PRINT "(  `  (     (           (  ((  ((((  `  (           (  ((# y{|(('(' (s(#####'   (# ("
+1118 PRINT "(  z z(                 (  ((  ~{}(i   `   `       j(  ((((((((((((((((((((((((((((("
+1120 CALL HCHAR(21,7,127)
+1124 DO=22
+1126 AC=28
+1130 GOTO 2000
+1200 PRINT "((((((((((((((((((((((((((((((((((((      (            (((((((((   !! (!!!     !!( ("
+1202 PRINT "(         ```  ```        h(((((!#$%&(((((((((((&$!  (((( i(      (       (        ("
+1204 PRINT "(##(``````(   ((( (        (( (((((((((  $(y{|('!  '  '(($     (      (z z(        ("
+1206 PRINT "(      (      (~{}(k       ((  `l  ( %   $((((((((('''!((#((((#       (        (   ("
+1208 PRINT "(  (          (  !(((&(('' ((!!(  !  &(   (     (  (   ((  (             !  ( h(   ("
+1210 PRINT "(  (  '   i         (''( ' (((!('(((''(  !   !  (  (   ((  ( (              (# ($ #("
+1212 PRINT "( $($( (('   !      (  ( ( ((`   (l       ``````(     k((((((((((((((((((((((((((((("
+1214 CALL HCHAR(11,19,127)
+1216 DO=6
+1218 AC=5
+1220 GOTO 2000
+1300 PRINT "(((((((((((((((((((((((((((((    (             y{|(    ((    (h         (((z z(  i ("
+1302 PRINT "(    ((#   !   #(((~{}(  (#(( !! (     (     j(((((    (( ` `(      k  ###    (    ("
+1304 PRINT "( (!(( #(((((    (    ((!!#((   `(   (    ```  ```     (( !!(( !!( (!!(((!!(((((!%!("
+1306 PRINT "(    (   (((          l(   ((  (#(   (h       #####(` `((    ( (#((#####       ((!(("
+1308 PRINT "(  `   ` (    #  '#        (( ((((((((                 ((        ((  ! `````(!!!!!!("
+1310 PRINT "(              ((((((! ! ! ((s!!!!((%    (      ( ! (i!((                  !(! ! ( ("
+1312 PRINT "(      $% ( ###   ( (      (( ````  ` (    ``` j(``````((((((((((((((((((((((((((((("
+1320 CALL HCHAR(5,23,127)
+1325 DO=11
+1326 AC=13
+1330 GOTO 2000
+1400 PRINT "(((((((((((((((((((((((((((((         h(   i           ((        !(( !(((!         ("
+1405 PRINT "(    ` `   (               ((    (((((!(`!      ` `  !!((    (  k( ((    !  (!(    ("
+1410 PRINT "(   !(#(!(  (!   !  ( ( ! !((    (    ! (!       `(  ``((   !(#     (    !   (( !((("
+1415 PRINT "(    (  `    `        (   l((   !(# (((( ( !!   ! (#(((((    (``(y{|!(             ("
+1420 PRINT "(   !((((z z (```  `      `((    (h (~{} ((((  (!###!!(((    ((!(((((( i(  ( !   !(("
+1425 PRINT "(             !((  (` ! ! l((s                 ((`   !(((   (!!(  !   &  !  ((` ``(("
+1430 PRINT "(                    ((!(((((`ss(((( ```    ` ``      k((((((((((((((((((((((((((((("
+1435 CALL HCHAR(15,13,127)
+1440 DO=6
+1445 AC=29
+1450 GOTO 2000
+2000 CALL HCHAR(DO,AC,91)
+2020 CALL HCHAR(1,2,94,31)
+2024 IF VE=2 THEN 20000
+2900 CALL KEY(0,K,S)
+2903 CALL SOUND(-90,(RND*500)+500,9)
+2904 CALL COLOR(10,(RND*13)+3,1)
+2905 IF S=0 THEN 2900 ELSE 3001
+3000 CALL KEY(0,K,S)
+3001 AI=AI-AM
+3002 CALL HCHAR(1,AI,32)
+3003 IF AI<=1 THEN 14000
+3004 CALL COLOR(10,(RND*12)+4,1)
+3005 IF(AI>5)*(AI<5.5)THEN 25000
+3006 IF S=0 THEN 5000
+3007 ON POS("SsXxFfCc ",CHR$(K),1)+1 GOTO 5000,8300,8300,6000,6000,8700,8700,7000,7000,8000
+4990 CALL SOUND(-90,-7,0)
+5000 CALL GCHAR(DO+1,AC,O)
+5005 IF O=40 THEN 3000
+5006 IF O=32 THEN 11000
+5007 IF O=115 THEN 13000
+5009 IF O=96 THEN 5900
+5020 IF(O>103)*(O<109)THEN 8900
+5023 IF(O>120)*(O<128)THEN 16000
+5025 CALL HCHAR(DO+1,AC,O-1)
+5030 GOTO 3000
+5900 CALL HCHAR(DO,AC,32)
+5902 DO=DO+1
+5903 GOTO 14000
+6000 CALL GCHAR(DO,AC-1,O)
+6025 IF O=40 THEN 5000
+6030 IF(O>120)*(O<128)THEN 16000
+6032 CALL HCHAR(DO,AC,32)
+6035 AC=AC-1
+6040 CALL HCHAR(DO,AC,92)
+6042 IF(O>103)*(O<109)THEN 9000
+6044 IF O=96 THEN 14000
+6050 GOTO 5000
+7000 CALL GCHAR(DO,AC+1,O)
+7009 IF(O>120)*(O<128)THEN 16000
+7012 IF O=40 THEN 5000
+7015 CALL HCHAR(DO,AC,32)
+7020 AC=AC+1
+7030 CALL HCHAR(DO,AC,91)
+7033 IF O=96 THEN 14000
+7035 GOTO 6042
+8000 CALL GCHAR(DO-1,AC,O)
+8004 IF O=40 THEN 4990
+8005 CALL HCHAR(DO,AC,32)
+8006 DO=DO-1
+8008 CALL HCHAR(DO,AC,91)
+8025 CALL GCHAR(DO-1,AC,OO)
+8030 IF OO=40 THEN 4990
+8032 CALL HCHAR(DO,AC,O)
+8034 DO=DO-1
+8036 CALL HCHAR(DO,AC,91)
+8040 CALL GCHAR(DO-1,AC,O)
+8042 IF O=40 THEN 4990
+8044 CALL HCHAR(DO,AC,OO)
+8046 DO=DO-1
+8050 CALL HCHAR(DO,AC,91)
+8055 CALL GCHAR(DO+1,AC,OO)
+8059 IF OO>32 THEN 5000
+8061 CALL HCHAR(DO,AC,O)
+8062 DO=DO+1
+8064 CALL HCHAR(DO,AC,92)
+8066 GOTO 5000
+8300 CALL GCHAR(DO-1,AC-1,O)
+8302 IF O=40 THEN 4990
+8305 CALL HCHAR(DO,AC,32)
+8306 DO=DO-1
+8308 AC=AC-1
+8309 CALL HCHAR(DO,AC,92)
+8310 CALL GCHAR(DO-1,AC-1,OO)
+8312 IF OO=40 THEN 4990
+8315 CALL HCHAR(DO,AC,O)
+8318 DO=DO-1
+8320 AC=AC-1
+8325 CALL HCHAR(DO,AC,92)
+8330 CALL GCHAR(DO+1,AC-1,O)
+8332 IF(O>32)*(O<95)THEN 4990
+8334 CALL HCHAR(DO,AC,OO)
+8336 DO=DO+1
+8338 AC=AC-1
+8340 CALL HCHAR(DO,AC,92)
+8341 IF O=96 THEN 14000
+8342 CALL GCHAR(DO+1,AC-1,OO)
+8344 IF(OO>32)*(OO<95)THEN 5000
+8346 CALL HCHAR(DO,AC,O)
+8348 DO=DO+1
+8350 AC=AC-1
+8352 CALL HCHAR(DO,AC,92)
+8354 IF OO=96 THEN 14000 ELSE 5000
+8700 CALL GCHAR(DO-1,AC+1,O)
+8702 IF O>39 THEN 4990
+8703 CALL HCHAR(DO,AC,32)
+8704 DO=DO-1
+8706 AC=AC+1
+8708 CALL HCHAR(DO,AC,91)
+8709 CALL GCHAR(DO-1,AC+1,OO)
+8711 IF OO>39 THEN 4990
+8714 CALL HCHAR(DO,AC,O)
+8716 DO=DO-1
+8718 AC=AC+1
+8720 CALL HCHAR(DO,AC,91)
+8722 CALL GCHAR(DO+1,AC+1,O)
+8724 IF(O>32)*(O<95)THEN 5000
+8726 CALL HCHAR(DO,AC,OO)
+8728 DO=DO+1
+8730 AC=AC+1
+8732 CALL HCHAR(DO,AC,91)
+8733 IF O=96 THEN 14000
+8734 CALL GCHAR(DO+1,AC+1,OO)
+8736 IF(OO>32)*(OO<95)THEN 5000
+8738 CALL HCHAR(DO,AC,O)
+8740 DO=DO+1
+8742 AC=AC+1
+8744 CALL HCHAR(DO,AC,91)
+8745 IF OO=96 THEN 14000 ELSE 5000
+8900 CALL HCHAR(DO,AC,32)
+8902 DO=DO+1
+8904 CALL HCHAR(DO,AC,91)
+9000 SC=SC+100
+9001 CO=CO+1
+9002 D$=STR$(SC)
+9003 FOR Y=1 TO LEN(D$)
+9004 CALL HCHAR(2,23+Y,ASC(SEG$(D$,Y,1)))
+9005 NEXT Y
+9009 CALL SOUND(100,1110+(CO*100),0)
+9010 IF CO<8 THEN 5000
+9015 IN=1
+9020 FOR Y=1 TO 5
+9025 CALL COLOR(12,14,16)
+9026 CALL COLOR(12,16,14)
+9028 CALL SOUND(-90,(RND*1000)+1000,0)
+9030 NEXT Y
+9500 GOTO 5000
+11000 Y=1
+11001 GOTO 11050
+11040 Y=Y+1
+11042 CALL HCHAR(DO,AC,32)
+11043 DO=DO+1
+11045 CALL HCHAR(DO,AC,92)
+11050 CALL GCHAR(DO+1,AC,O)
+11052 IF O=96 THEN 14000
+11054 IF O>32 THEN 11090 ELSE 11040
+11090 IF Y>4 THEN 14000 ELSE 5000
+13000 CALL HCHAR(DO+1,AC,116)
+13001 Y=DO+1
+13002 FOR DO=DO TO 7 STEP-1
+13004 CALL HCHAR(DO,AC,114)
+13005 CALL HCHAR(DO-1,AC,92)
+13006 CALL HCHAR(DO+1,AC,113)
+13007 NEXT DO
+13008 CALL VCHAR(5,AC,32,Y-5)
+13012 CALL HCHAR(Y,AC,115)
+13014 CALL HCHAR(DO,AC,91)
+13020 GOTO 3000
+14000 FOR Y=1 TO 8
+14001 CALL HCHAR(DO,AC,127+Y)
+14003 CALL COLOR(13,(RND*13)+3,1)
+14005 CALL SOUND(-90,2000-(Y*100),Y)
+14020 NEXT Y
+14021 CALL COLOR(12,14,1)
+14022 AI=32
+14023 CALL HCHAR(DO,AC,32)
+14024 ME=ME-1
+14025 CALL COLOR(8,8,1)
+14030 IF ME<=0 THEN 15000
+14031 CO=0
+14032 CALL CLEAR
+14033 GOTO 300
+15000 CALL CLEAR
+15005 IF SC<HI THEN 15010
+15006 HI=SC
+15010 PRINT TAB(9);"GAME  OVER": : : :"YOUR SCORE ";SC: : :"HIGH SCORE ";HI: : : : :"    ANOTHER GAME  Y OR N": : : :
+15020 CALL KEY(0,K,S)
+15030 CALL SOUND(-90,(RND*110)+110,9)
+15032 IF S=0 THEN 15020
+15034 ON POS("YNyn",CHR$(K),1)+1 GOTO 15020,280,15040,280,15040
+15040 CALL CLEAR
+15042 RUN "DSK1.MENU"
+16000 IF IN<1 THEN 5000
+16001 CALL HCHAR(DO,AC,32)
+16002 T=200
+16003 SC=SC+INT(AI*100)
+16005 FOR Y=1 TO 15
+16009 CALL SOUND(-90,T,0)
+16015 T=T+200
+16020 NEXT Y
+16030 AI=32
+16032 CO=0
+16034 WA=WA+1
+16036 LE=LE+1
+16038 CALL COLOR(12,14,1)
+16039 CALL COLOR(8,8,1)
+16040 IF WA<6 THEN 299
+16042 WA=1
+16043 AM=AM+.05
+16044 GOTO 299
+19000 VE=2
+19002 WA=1
+19003 GOTO 300
+20000 FOR Y=1 TO 1500
+20001 NEXT Y
+20002 WA=WA+1
+20003 CALL CLEAR
+20004 IF WA<6 THEN 300
+20005 VE=1
+20006 CALL CLEAR
+20008 WA=1
+20010 GOTO 280
+25000 CALL COLOR(8,9,1)
+25002 CALL SOUND(-100,1000,0)
+25005 GOTO 3006

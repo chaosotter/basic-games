@@ -1,0 +1,27 @@
+{
+    "name": "2nd Floor",
+    "shortName": "2ndfloor",
+    "platform": {
+	"system": "TI99"
+    },
+    "authors": [
+	"R. Trueman"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "misc",
+	"title": "Disk Image 0096.dsk",
+	"publisher": "Various",
+	"date": "Unknown",
+	"url": "N/A"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "2ndfloor.ti99"
+    }
+}

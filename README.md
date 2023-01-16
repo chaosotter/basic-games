@@ -7,8 +7,8 @@ aims to be a comprehensive collection of games written in BASIC for
 If you're simply interested in playing and exploring the game, there's
 no need to mess around with this repository.  The goal of the project
 is to make all games available on the [Internet
-Archive](http://archive.org/), configured to run in an emulator
-directly in the browser.
+Archive](https://archive.org/details/basic-games), configured to run
+in an emulator directly in the browser.
 
 ## Contributions
 

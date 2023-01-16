@@ -34,6 +34,7 @@ efforts within the collection.
 
 * 33 Challenging Computer Games for TRS-80/Apple/PET
 * BASIC Computer Games
+* Games Commodore 64 Computers Play
 * Games for Your TI-99/4A
 * Tim Hartnell's Second Giant Book of Computer Games
 

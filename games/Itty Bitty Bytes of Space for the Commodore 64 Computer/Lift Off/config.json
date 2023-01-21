@@ -1,6 +1,6 @@
 {
-    "name": "Kaboom!",
-    "shortName": "kaboom",
+    "name": "Lift Off",
+    "shortName": "liftoff",
     "platform": {
 	"system": "C64"
     },
@@ -18,10 +18,10 @@
 	"title": "Itty Bitty Bytes of Space for the Commodore 64 Computer",
 	"publisher": "Reston",
 	"date": "1984",
-	"url": "https://archive.org/details/itty-bitty-bytes-of-space-for-the-commodore-64/page/n21/mode/2up"
+	"url": "https://archive.org/details/itty-bitty-bytes-of-space-for-the-commodore-64/page/n23/mode/2up"
     },
     "ia": {
 	"standard": "legacy",
-	"id": "kaboom.c64"
+	"id": "liftoff.c64"
     }
 }

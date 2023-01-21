@@ -36,6 +36,7 @@ efforts within the collection.
 * BASIC Computer Games
 * Games Commodore 64 Computers Play
 * Games for Your TI-99/4A
+* Itty Bitty Bytes of Space for the Commodore 64 Computer
 * Tim Hartnell's Second Giant Book of Computer Games
 
 ### Magazines

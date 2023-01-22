@@ -450,7 +450,7 @@ sub sub_curly {
     my ($curly) = @_;
 
     # declare local variables
-    my ($count);
+    my ($count, $tag);
 
     # find the count
     if ($curly =~ /^\d+/) {
@@ -460,7 +460,11 @@ sub sub_curly {
     }
 
     # handle the special cases first
-       if ($curly eq 'space')   { return ' '                                   x $count; }
-    elsif ($curly =~ /^[A-Z]$/) { return pack('C', $rcmap{$curly})             x $count; }
-    else                        { return pack('C', $rcmap{'{' . $curly . '}'}) x $count; }
+       if ($curly eq 'space')   { return ' '                       x $count; }
+    elsif ($curly =~ /^[A-Z]$/) { return pack('C', $rcmap{$curly}) x $count; }
+    else {
+	$tag = '{' . $curly . '}';
+	print "Unknown $tag" unless exists $rcmap{$tag};
+	return pack('C', $rcmap{$tag}) x $count;
+    }
 }

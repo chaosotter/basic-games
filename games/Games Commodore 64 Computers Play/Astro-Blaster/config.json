@@ -1,0 +1,27 @@
+{
+    "name": "Astro-Blaster",
+    "shortName": "astroblast",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"Daniel Quinn"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Games Commodore 64 Computers Play",
+	"publisher": "Addison-Wesley",
+	"date": "1984",
+	"url": "https://archive.org/details/games-commodore-64-computers-play/page/n60/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "astroblast.c64"
+    }
+}

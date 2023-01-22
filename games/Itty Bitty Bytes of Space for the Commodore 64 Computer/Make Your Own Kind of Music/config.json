@@ -1,0 +1,27 @@
+{
+    "name": "Make Your Own Kind of Music",
+    "shortName": "makemusic",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"Claire Bailey Passantino"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Itty Bitty Bytes of Space for the Commodore 64 Computer",
+	"publisher": "Reston",
+	"date": "1984",
+	"url": "https://archive.org/details/itty-bitty-bytes-of-space-for-the-commodore-64/page/n29/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "makemusic.c64"
+    }
+}

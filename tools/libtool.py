@@ -20,7 +20,8 @@ def main():
     try:
         lib = library.Library(db='games.db')
     except FileNotFoundError:
-        lib = library.Library(base=os.path.join('..', 'games'))
+        lib = library.Library(base='../games')
+        #lib = library.Library(base=os.path.join('..', 'games'))
 
     if sys.argv[1] == 'help':
         Help()

@@ -1,0 +1,27 @@
+{
+    "name": "Astrosmash (Keyboard)",
+    "shortName": "astrosmk",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"William Leader"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Games Commodore 64 Computers Play",
+	"publisher": "Addison-Wesley",
+	"date": "1984",
+	"url": "https://archive.org/details/games-commodore-64-computers-play/page/n92/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "astrosmk.c64"
+    }
+}

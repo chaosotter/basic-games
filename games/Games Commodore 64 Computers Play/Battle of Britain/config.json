@@ -1,0 +1,28 @@
+{
+    "name": "Battle of Britain",
+    "shortName": "battlebrit",
+    "platform": {
+	"system": "C64"
+    },
+    "authors": [
+	"Robert Young",
+	"Roger Bush"
+    ],
+    "contributors": [
+	{
+	    "name": "Mark Meiss",
+	    "email": "meiss.mark@gmail.com"
+	}
+    ],
+    "origin": {
+	"type": "book",
+	"title": "Games Commodore 64 Computers Play",
+	"publisher": "Addison-Wesley",
+	"date": "1984",
+	"url": "https://archive.org/details/games-commodore-64-computers-play/page/n128/mode/2up"
+    },
+    "ia": {
+	"standard": "legacy",
+	"id": "battlebrit.c64"
+    }
+}
